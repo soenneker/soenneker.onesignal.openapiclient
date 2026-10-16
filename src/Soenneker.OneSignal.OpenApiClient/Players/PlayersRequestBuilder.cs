@@ -165,7 +165,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Players
         /// View the details of multiple devices in one of your OneSignal appsUnavailable for Apps Over 80,000 UsersFor performance reasons, this method is not available for larger apps. Larger apps should use the CSV export API endpoint, which is much more performant.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class PlayersRequestBuilderGetQueryParameters
+        public partial class PlayersRequestBuilderGetQueryParameters 
         {
             /// <summary>The app ID that you want to view players from</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

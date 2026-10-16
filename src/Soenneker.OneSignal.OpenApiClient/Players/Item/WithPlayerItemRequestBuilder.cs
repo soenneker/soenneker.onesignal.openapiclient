@@ -187,7 +187,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Players.Item
         /// Delete player - Required:Used to delete a single, specific Player ID record from a specific OneSignal app.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithPlayerItemRequestBuilderDeleteQueryParameters
+        public partial class WithPlayerItemRequestBuilderDeleteQueryParameters 
         {
             /// <summary>The OneSignal App ID for your app.  Available in Keys &amp; IDs.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -204,7 +204,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Players.Item
         /// View the details of an existing device in one of your OneSignal apps
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithPlayerItemRequestBuilderGetQueryParameters
+        public partial class WithPlayerItemRequestBuilderGetQueryParameters 
         {
             /// <summary>Your app_id for this device</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

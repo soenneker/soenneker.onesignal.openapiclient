@@ -90,7 +90,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Apps.Item.Outcomes
         /// View the details of all the outcomes associated with your app&amp;#x1F6A7;Requires Authentication KeyRequires your OneSignal App&apos;s REST API Key, available in Keys &amp; IDs.&amp;#x1F6A7;Outcome Data LimitationsOutcomes are only accessible for around 30 days before deleted from our servers. You will need to export this data every month if you want to keep it.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class OutcomesRequestBuilderGetQueryParameters
+        public partial class OutcomesRequestBuilderGetQueryParameters 
         {
             /// <summary>OptionalAttribution type for the outcomes. The values can be direct or influenced or unattributed.Example: outcome_attribution=directDefault is total (returns direct+influenced+unattributed) if the parameter is omitted.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

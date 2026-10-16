@@ -151,7 +151,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Notifications.Item
         /// Used to stop a scheduled or currently outgoing notification
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithNotificationItemRequestBuilderDeleteQueryParameters
+        public partial class WithNotificationItemRequestBuilderDeleteQueryParameters 
         {
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -171,7 +171,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Notifications.Item
         /// View the details of a single notification and outcomes associated with it
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class WithNotificationItemRequestBuilderGetQueryParameters
+        public partial class WithNotificationItemRequestBuilderGetQueryParameters 
         {
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable

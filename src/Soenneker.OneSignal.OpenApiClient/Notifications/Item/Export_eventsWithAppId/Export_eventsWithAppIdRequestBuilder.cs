@@ -94,7 +94,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Notifications.Item.Export_eventsWith
         /// Generate a compressed CSV report of all of the events data for a notification.This will return a URL immediately upon success but it may take several minutes for the CSV to become available at that URL depending on the volume of data. Only one export can be in-progress per OneSignal account at any given time.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class Export_eventsWithAppIdRequestBuilderPostQueryParameters
+        public partial class Export_eventsWithAppIdRequestBuilderPostQueryParameters 
         {
             /// <summary>The ID of the app that the notification belongs to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

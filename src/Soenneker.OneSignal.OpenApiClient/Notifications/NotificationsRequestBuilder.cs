@@ -152,7 +152,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Notifications
         /// View the details of multiple notifications
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-        public partial class NotificationsRequestBuilderGetQueryParameters
+        public partial class NotificationsRequestBuilderGetQueryParameters 
         {
             /// <summary>The app ID that you want to view notifications from</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
