@@ -7,30 +7,29 @@ using System.IO;
 using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
-    /// <summary>
-    /// Channel: Push NotificationsPlatform: iOS 10+Adds media attachments to notifications. Set as JSON object, key as a media id of your choice and the value as a valid local filename or URL. User must press and hold on the notification to view.Do not set mutable_content to download attachments. The OneSignal SDK does this automaticallyExample: {&quot;id1&quot;: &quot;https://domain.com/image.jpg&quot;}
-    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationIosAttachments : IAdditionalDataHolder, IParsable
+    #pragma warning disable CS1591
+    public partial class NotificationWithMetaMember2_throttle_rate_per_minute : IAdditionalDataHolder, IParsable
+    #pragma warning restore CS1591
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationIosAttachments"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember2_throttle_rate_per_minute"/> and sets the default values.
         /// </summary>
-        public NotificationIosAttachments()
+        public NotificationWithMetaMember2_throttle_rate_per_minute()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationIosAttachments"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember2_throttle_rate_per_minute"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationIosAttachments CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember2_throttle_rate_per_minute CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationIosAttachments();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember2_throttle_rate_per_minute();
         }
         /// <summary>
         /// The deserialization information for the current model

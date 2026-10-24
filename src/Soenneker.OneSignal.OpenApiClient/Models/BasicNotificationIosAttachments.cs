@@ -8,29 +8,29 @@ using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
     /// <summary>
-    /// Channel: AllJSON object that can be used as a source of message personalization data for fields that support tag variable substitution.Push, SMS: Can accept up to 2048 bytes of valid JSON. Email: Can accept up to 10000 bytes of valid JSON.Example: {&quot;order_id&quot;: 123, &quot;currency&quot;: &quot;USD&quot;, &quot;amount&quot;: 25}
+    /// Channel: Push NotificationsPlatform: iOS 10+Adds media attachments to notifications. Set as JSON object, key as a media id of your choice and the value as a valid local filename or URL. User must press and hold on the notification to view.Do not set mutable_content to download attachments. The OneSignal SDK does this automaticallyExample: {&quot;id1&quot;: &quot;https://domain.com/image.jpg&quot;}
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationWithMetaCustomData : IAdditionalDataHolder, IParsable
+    public partial class BasicNotificationIosAttachments : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaCustomData"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments"/> and sets the default values.
         /// </summary>
-        public NotificationWithMetaCustomData()
+        public BasicNotificationIosAttachments()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaCustomData"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaCustomData CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaCustomData();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments();
         }
         /// <summary>
         /// The deserialization information for the current model

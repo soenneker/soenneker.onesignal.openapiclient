@@ -8,7 +8,7 @@ using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
     /// <summary>
-    /// Composed type wrapper for classes <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.InvalidIdentifierError"/>, <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NoSubscribersErrorWrapper"/>
+    /// Composed type wrapper for classes <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.InvalidIdentifierError"/>, List&lt;string&gt;
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class Notification200Errors : IComposedTypeWrapper, IParsable
@@ -21,13 +21,13 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 #else
         public global::Soenneker.OneSignal.OpenApiClient.Models.InvalidIdentifierError InvalidIdentifierError { get; set; }
 #endif
-        /// <summary>Composed type representation for type <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NoSubscribersErrorWrapper"/></summary>
+        /// <summary>Composed type representation for type List&lt;string&gt;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.NoSubscribersErrorWrapper? NoSubscribersErrorWrapper { get; set; }
+        public List<string>? String { get; set; }
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.NoSubscribersErrorWrapper NoSubscribersErrorWrapper { get; set; }
+        public List<string> String { get; set; }
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -43,9 +43,9 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             {
                 result.InvalidIdentifierError = new global::Soenneker.OneSignal.OpenApiClient.Models.InvalidIdentifierError();
             }
-            else if("NoSubscribersErrorWrapper".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            else if(parseNode.GetCollectionOfPrimitiveValues<string>()?.AsList() is List<string> stringValue)
             {
-                result.NoSubscribersErrorWrapper = new global::Soenneker.OneSignal.OpenApiClient.Models.NoSubscribersErrorWrapper();
+                result.String = stringValue;
             }
             return result;
         }
@@ -58,10 +58,6 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             if(InvalidIdentifierError != null)
             {
                 return InvalidIdentifierError.GetFieldDeserializers();
-            }
-            else if(NoSubscribersErrorWrapper != null)
-            {
-                return NoSubscribersErrorWrapper.GetFieldDeserializers();
             }
             return new Dictionary<string, Action<IParseNode>>();
         }
@@ -76,9 +72,9 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             {
                 writer.WriteObjectValue<global::Soenneker.OneSignal.OpenApiClient.Models.InvalidIdentifierError>(null, InvalidIdentifierError);
             }
-            else if(NoSubscribersErrorWrapper != null)
+            else if(String != null)
             {
-                writer.WriteObjectValue<global::Soenneker.OneSignal.OpenApiClient.Models.NoSubscribersErrorWrapper>(null, NoSubscribersErrorWrapper);
+                writer.WriteCollectionOfPrimitiveValues<string>(null, String);
             }
         }
     }

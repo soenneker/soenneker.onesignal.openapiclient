@@ -7,30 +7,37 @@ using System.IO;
 using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
-    /// <summary>
-    /// Channel: Push NotificationsPlatform: AmazonSummary message to display when 2+ notifications are stacked together. Default is &quot;# new messages&quot;. Include $[notif_count] in your message and it will be replaced with the current number. &quot;en&quot; (English) is required. The key of each hash is either a a 2 character language code or one of zh-Hans/zh-Hant for Simplified or Traditional Chinese. The value of each key is the message that will be sent to users for that language.Example: {&quot;en&quot;: &quot;You have $[notif_count] new messages&quot;}
-    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationAdmGroupMessage : IAdditionalDataHolder, IParsable
+    #pragma warning disable CS1591
+    public partial class PlayerNotificationTargetIncludeAliases : IAdditionalDataHolder, IParsable
+    #pragma warning restore CS1591
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
+        /// <summary>The alias_label property</summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public List<string>? AliasLabel { get; set; }
+#nullable restore
+#else
+        public List<string> AliasLabel { get; set; }
+#endif
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationAdmGroupMessage"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases"/> and sets the default values.
         /// </summary>
-        public NotificationAdmGroupMessage()
+        public PlayerNotificationTargetIncludeAliases()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationAdmGroupMessage"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationAdmGroupMessage CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationAdmGroupMessage();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -40,6 +47,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         {
             return new Dictionary<string, Action<IParseNode>>
             {
+                { "alias_label", n => { AliasLabel = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
             };
         }
         /// <summary>
@@ -49,6 +57,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
+            writer.WriteCollectionOfPrimitiveValues<string>("alias_label", AliasLabel);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

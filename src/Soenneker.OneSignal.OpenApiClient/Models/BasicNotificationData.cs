@@ -8,29 +8,29 @@ using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
     /// <summary>
-    /// Channel: Push NotificationsPlatform: iOS 10+iOS can localize push notification messages on the client using special parameters such as loc-key. When using the Create Notification endpoint, you must include these parameters inside of a field called apns_alert. Please see Apple&apos;s guide on localizing push notifications to learn more.
+    /// Channel: Push NotificationsPlatform: HuaweiA custom map of data that is passed back to your app. Same as using Additional Data within the dashboard. Can use up to 2048 bytes of data.Example: {&quot;abc&quot;: 123, &quot;foo&quot;: &quot;bar&quot;, &quot;event_performed&quot;: true, &quot;amount&quot;: 12.1}
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationApnsAlert : IAdditionalDataHolder, IParsable
+    public partial class BasicNotificationData : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationApnsAlert"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData"/> and sets the default values.
         /// </summary>
-        public NotificationApnsAlert()
+        public BasicNotificationData()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationApnsAlert"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationApnsAlert CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationApnsAlert();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData();
         }
         /// <summary>
         /// The deserialization information for the current model

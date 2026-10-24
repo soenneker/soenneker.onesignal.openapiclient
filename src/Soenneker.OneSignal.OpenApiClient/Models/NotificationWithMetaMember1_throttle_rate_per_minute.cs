@@ -7,30 +7,29 @@ using System.IO;
 using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
-    /// <summary>
-    /// Channel: AllJSON object that can be used as a source of message personalization data for fields that support tag variable substitution.Push, SMS: Can accept up to 2048 bytes of valid JSON. Email: Can accept up to 10000 bytes of valid JSON.Example: {&quot;order_id&quot;: 123, &quot;currency&quot;: &quot;USD&quot;, &quot;amount&quot;: 25}
-    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationCustomData : IAdditionalDataHolder, IParsable
+    #pragma warning disable CS1591
+    public partial class NotificationWithMetaMember1_throttle_rate_per_minute : IAdditionalDataHolder, IParsable
+    #pragma warning restore CS1591
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationCustomData"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember1_throttle_rate_per_minute"/> and sets the default values.
         /// </summary>
-        public NotificationCustomData()
+        public NotificationWithMetaMember1_throttle_rate_per_minute()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationCustomData"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember1_throttle_rate_per_minute"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationCustomData CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember1_throttle_rate_per_minute CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationCustomData();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaMember1_throttle_rate_per_minute();
         }
         /// <summary>
         /// The deserialization information for the current model

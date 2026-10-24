@@ -8,29 +8,29 @@ using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
     /// <summary>
-    /// Channel: Push NotificationsPlatform: HuaweiA custom map of data that is passed back to your app. Same as using Additional Data within the dashboard. Can use up to 2048 bytes of data.Example: {&quot;abc&quot;: 123, &quot;foo&quot;: &quot;bar&quot;, &quot;event_performed&quot;: true, &quot;amount&quot;: 12.1}
+    /// Channel: AllJSON object that can be used as a source of message personalization data for fields that support tag variable substitution.Push, SMS: Can accept up to 2048 bytes of valid JSON. Email: Can accept up to 10000 bytes of valid JSON.Example: {&quot;order_id&quot;: 123, &quot;currency&quot;: &quot;USD&quot;, &quot;amount&quot;: 25}
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationWithMetaData : IAdditionalDataHolder, IParsable
+    public partial class BasicNotificationCustomData : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaData"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData"/> and sets the default values.
         /// </summary>
-        public NotificationWithMetaData()
+        public BasicNotificationCustomData()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaData"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaData CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMetaData();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData();
         }
         /// <summary>
         /// The deserialization information for the current model

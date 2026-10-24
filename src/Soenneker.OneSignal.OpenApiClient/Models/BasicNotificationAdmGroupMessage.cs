@@ -8,29 +8,29 @@ using System;
 namespace Soenneker.OneSignal.OpenApiClient.Models
 {
     /// <summary>
-    /// Channel: Push NotificationsPlatform: HuaweiA custom map of data that is passed back to your app. Same as using Additional Data within the dashboard. Can use up to 2048 bytes of data.Example: {&quot;abc&quot;: 123, &quot;foo&quot;: &quot;bar&quot;, &quot;event_performed&quot;: true, &quot;amount&quot;: 12.1}
+    /// Channel: Push NotificationsPlatform: AmazonSummary message to display when 2+ notifications are stacked together. Default is &quot;# new messages&quot;. Include $[notif_count] in your message and it will be replaced with the current number. &quot;en&quot; (English) is required. The key of each hash is either a a 2 character language code or one of zh-Hans/zh-Hant for Simplified or Traditional Chinese. The value of each key is the message that will be sent to users for that language.Example: {&quot;en&quot;: &quot;You have $[notif_count] new messages&quot;}
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class NotificationData : IAdditionalDataHolder, IParsable
+    public partial class BasicNotificationAdmGroupMessage : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationData"/> and sets the default values.
+        /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage"/> and sets the default values.
         /// </summary>
-        public NotificationData()
+        public BasicNotificationAdmGroupMessage()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationData"/></returns>
+        /// <returns>A <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationData CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationData();
+            return new global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage();
         }
         /// <summary>
         /// The deserialization information for the current model
