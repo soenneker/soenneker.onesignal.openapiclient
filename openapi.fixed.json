@@ -9050,21 +9050,19 @@
       "NoSubscribersError": {
         "type": "array",
         "items": {
-          "type": "string",
-          "format": "string"
+          "type": "string"
         },
         "description": "Returned if no subscribed players.\n"
       },
       "Notification200Errors": {
-        "oneOf": [
+        "anyOf": [
           {
             "$ref": "#/components/schemas/InvalidIdentifierError"
           },
           {
             "type": "array",
             "items": {
-              "type": "string",
-              "format": "string"
+              "type": "string"
             },
             "description": "Returned if no subscribed players.\n"
           }
