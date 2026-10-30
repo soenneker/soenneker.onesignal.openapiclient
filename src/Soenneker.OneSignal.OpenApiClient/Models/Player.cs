@@ -11,88 +11,142 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class Player : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ad_id") is { } nullNodeAdId && nullNodeAdId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdId = null;
+            if (parseNode.GetChildNode("amount_spent") is { } nullNodeAmountSpent && nullNodeAmountSpent.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AmountSpent = null;
+            if (parseNode.GetChildNode("app_id") is { } nullNodeAppId && nullNodeAppId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AppId = null;
+            if (parseNode.GetChildNode("badge_count") is { } nullNodeBadgeCount && nullNodeBadgeCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BadgeCount = null;
+            if (parseNode.GetChildNode("country") is { } nullNodeCountry && nullNodeCountry.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Country = null;
+            if (parseNode.GetChildNode("created_at") is { } nullNodeCreatedAt && nullNodeCreatedAt.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CreatedAt = null;
+            if (parseNode.GetChildNode("device_model") is { } nullNodeDeviceModel && nullNodeDeviceModel.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceModel = null;
+            if (parseNode.GetChildNode("device_os") is { } nullNodeDeviceOs && nullNodeDeviceOs.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceOs = null;
+            if (parseNode.GetChildNode("device_type") is { } nullNodeDeviceType && nullNodeDeviceType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceType = null;
+            if (parseNode.GetChildNode("email_auth_hash") is { } nullNodeEmailAuthHash && nullNodeEmailAuthHash.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EmailAuthHash = null;
+            if (parseNode.GetChildNode("external_user_id") is { } nullNodeExternalUserId && nullNodeExternalUserId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalUserId = null;
+            if (parseNode.GetChildNode("external_user_id_auth_hash") is { } nullNodeExternalUserIdAuthHash && nullNodeExternalUserIdAuthHash.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalUserIdAuthHash = null;
+            if (parseNode.GetChildNode("game_version") is { } nullNodeGameVersion && nullNodeGameVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GameVersion = null;
+            if (parseNode.GetChildNode("identifier") is { } nullNodeIdentifier && nullNodeIdentifier.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Identifier = null;
+            if (parseNode.GetChildNode("language") is { } nullNodeLanguage && nullNodeLanguage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Language = null;
+            if (parseNode.GetChildNode("last_active") is { } nullNodeLastActive && nullNodeLastActive.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastActive = null;
+            if (parseNode.GetChildNode("lat") is { } nullNodeLat && nullNodeLat.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Lat = null;
+            if (parseNode.GetChildNode("long") is { } nullNodeLong && nullNodeLong.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Long = null;
+            if (parseNode.GetChildNode("notification_types") is { } nullNodeNotificationTypes && nullNodeNotificationTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NotificationTypes = null;
+            if (parseNode.GetChildNode("playtime") is { } nullNodePlaytime && nullNodePlaytime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Playtime = null;
+            if (parseNode.GetChildNode("sdk") is { } nullNodeSdk && nullNodeSdk.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Sdk = null;
+            if (parseNode.GetChildNode("session_count") is { } nullNodeSessionCount && nullNodeSessionCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionCount = null;
+            if (parseNode.GetChildNode("tags") is { } nullNodeTags && nullNodeTags.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Tags = null;
+            if (parseNode.GetChildNode("test_type") is { } nullNodeTestType && nullNodeTestType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TestType = null;
+            if (parseNode.GetChildNode("timezone") is { } nullNodeTimezone && nullNodeTimezone.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Timezone = null;
+        }
+
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>The ad id for the device&apos;s platform:Android = Advertising IdiOS = identifierForVendorWP8.0 = DeviceUniqueIdWP8.1 = AdvertisingId</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AdId { get; set; }
+        public string? AdId { get => _explicitNullValueAdId; set { _explicitNullValueAdId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ad_id"); else _explicitNullProperties?.Remove("ad_id"); } }
+        private string? _explicitNullValueAdId = default!;
 #nullable restore
 #else
-        public string AdId { get; set; }
+        public string AdId { get => _explicitNullValueAdId; set { _explicitNullValueAdId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ad_id"); else _explicitNullProperties?.Remove("ad_id"); } }
+        private string _explicitNullValueAdId = default!;
 #endif
         /// <summary>Amount the user has spent in USD, up to two decimal places</summary>
-        public double? AmountSpent { get; set; }
+        public double? AmountSpent { get => _explicitNullValueAmountSpent; set { _explicitNullValueAmountSpent = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("amount_spent"); else _explicitNullProperties?.Remove("amount_spent"); } }
+        private double? _explicitNullValueAmountSpent = default!;
         /// <summary>The app_id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AppId { get; set; }
+        public string? AppId { get => _explicitNullValueAppId; set { _explicitNullValueAppId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("app_id"); else _explicitNullProperties?.Remove("app_id"); } }
+        private string? _explicitNullValueAppId = default!;
 #nullable restore
 #else
-        public string AppId { get; set; }
+        public string AppId { get => _explicitNullValueAppId; set { _explicitNullValueAppId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("app_id"); else _explicitNullProperties?.Remove("app_id"); } }
+        private string _explicitNullValueAppId = default!;
 #endif
         /// <summary>Current iOS badge count displayed on the app iconNOTE: Not supported for apps created after June 2018, since badge count for apps created after this date are handled on the client.</summary>
-        public int? BadgeCount { get; set; }
+        public int? BadgeCount { get => _explicitNullValueBadgeCount; set { _explicitNullValueBadgeCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("badge_count"); else _explicitNullProperties?.Remove("badge_count"); } }
+        private int? _explicitNullValueBadgeCount = default!;
         /// <summary>Country code in the ISO 3166-1 Alpha 2 format</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Country { get; set; }
+        public string? Country { get => _explicitNullValueCountry; set { _explicitNullValueCountry = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("country"); else _explicitNullProperties?.Remove("country"); } }
+        private string? _explicitNullValueCountry = default!;
 #nullable restore
 #else
-        public string Country { get; set; }
+        public string Country { get => _explicitNullValueCountry; set { _explicitNullValueCountry = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("country"); else _explicitNullProperties?.Remove("country"); } }
+        private string _explicitNullValueCountry = default!;
 #endif
         /// <summary>Unixtime when the player joined the game</summary>
-        public long? CreatedAt { get; set; }
+        public long? CreatedAt { get => _explicitNullValueCreatedAt; set { _explicitNullValueCreatedAt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("created_at"); else _explicitNullProperties?.Remove("created_at"); } }
+        private long? _explicitNullValueCreatedAt = default!;
         /// <summary>Device make and model. Example: iPhone5,1</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeviceModel { get; set; }
+        public string? DeviceModel { get => _explicitNullValueDeviceModel; set { _explicitNullValueDeviceModel = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("device_model"); else _explicitNullProperties?.Remove("device_model"); } }
+        private string? _explicitNullValueDeviceModel = default!;
 #nullable restore
 #else
-        public string DeviceModel { get; set; }
+        public string DeviceModel { get => _explicitNullValueDeviceModel; set { _explicitNullValueDeviceModel = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("device_model"); else _explicitNullProperties?.Remove("device_model"); } }
+        private string _explicitNullValueDeviceModel = default!;
 #endif
         /// <summary>Device operating system version. Example: 7.0.4</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeviceOs { get; set; }
+        public string? DeviceOs { get => _explicitNullValueDeviceOs; set { _explicitNullValueDeviceOs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("device_os"); else _explicitNullProperties?.Remove("device_os"); } }
+        private string? _explicitNullValueDeviceOs = default!;
 #nullable restore
 #else
-        public string DeviceOs { get; set; }
+        public string DeviceOs { get => _explicitNullValueDeviceOs; set { _explicitNullValueDeviceOs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("device_os"); else _explicitNullProperties?.Remove("device_os"); } }
+        private string _explicitNullValueDeviceOs = default!;
 #endif
         /// <summary>RequiredThe device&apos;s platform:  0 = iOS  1 = Android  2 = Amazon  3 = WindowsPhone (MPNS)  4 = Chrome Apps / Extensions  5 = Chrome Web Push  6 = Windows (WNS)  7 = Safari  8 = Firefox  9 = MacOS  10 = Alexa  11 = Email  13 = For Huawei App Gallery Builds SDK Setup. Not for Huawei Devices using FCM  14 = SMS</summary>
-        public int? DeviceType { get; set; }
+        public int? DeviceType { get => _explicitNullValueDeviceType; set { _explicitNullValueDeviceType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("device_type"); else _explicitNullProperties?.Remove("device_type"); } }
+        private int? _explicitNullValueDeviceType = default!;
         /// <summary>Email - Only required if you have enabled Identity Verification and device_type is email (11).</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EmailAuthHash { get; set; }
+        public string? EmailAuthHash { get => _explicitNullValueEmailAuthHash; set { _explicitNullValueEmailAuthHash = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_auth_hash"); else _explicitNullProperties?.Remove("email_auth_hash"); } }
+        private string? _explicitNullValueEmailAuthHash = default!;
 #nullable restore
 #else
-        public string EmailAuthHash { get; set; }
+        public string EmailAuthHash { get => _explicitNullValueEmailAuthHash; set { _explicitNullValueEmailAuthHash = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_auth_hash"); else _explicitNullProperties?.Remove("email_auth_hash"); } }
+        private string _explicitNullValueEmailAuthHash = default!;
 #endif
         /// <summary>a custom user ID</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalUserId { get; set; }
+        public string? ExternalUserId { get => _explicitNullValueExternalUserId; set { _explicitNullValueExternalUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("external_user_id"); else _explicitNullProperties?.Remove("external_user_id"); } }
+        private string? _explicitNullValueExternalUserId = default!;
 #nullable restore
 #else
-        public string ExternalUserId { get; set; }
+        public string ExternalUserId { get => _explicitNullValueExternalUserId; set { _explicitNullValueExternalUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("external_user_id"); else _explicitNullProperties?.Remove("external_user_id"); } }
+        private string _explicitNullValueExternalUserId = default!;
 #endif
         /// <summary>Only required if you have enabled Identity Verification and device_type is NOT 11 email.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalUserIdAuthHash { get; set; }
+        public string? ExternalUserIdAuthHash { get => _explicitNullValueExternalUserIdAuthHash; set { _explicitNullValueExternalUserIdAuthHash = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("external_user_id_auth_hash"); else _explicitNullProperties?.Remove("external_user_id_auth_hash"); } }
+        private string? _explicitNullValueExternalUserIdAuthHash = default!;
 #nullable restore
 #else
-        public string ExternalUserIdAuthHash { get; set; }
+        public string ExternalUserIdAuthHash { get => _explicitNullValueExternalUserIdAuthHash; set { _explicitNullValueExternalUserIdAuthHash = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("external_user_id_auth_hash"); else _explicitNullProperties?.Remove("external_user_id_auth_hash"); } }
+        private string _explicitNullValueExternalUserIdAuthHash = default!;
 #endif
         /// <summary>Version of your app. Example: 1.1</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? GameVersion { get; set; }
+        public string? GameVersion { get => _explicitNullValueGameVersion; set { _explicitNullValueGameVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("game_version"); else _explicitNullProperties?.Remove("game_version"); } }
+        private string? _explicitNullValueGameVersion = default!;
 #nullable restore
 #else
-        public string GameVersion { get; set; }
+        public string GameVersion { get => _explicitNullValueGameVersion; set { _explicitNullValueGameVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("game_version"); else _explicitNullProperties?.Remove("game_version"); } }
+        private string _explicitNullValueGameVersion = default!;
 #endif
         /// <summary>The device&apos;s OneSignal ID</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -105,53 +159,69 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Recommended: For Push Notifications, this is the Push Token Identifier from Google or Apple. For Apple Push identifiers, you must strip all non alphanumeric characters.Examples:iOS: 7abcd558f29d0b1f048083e2834ad8ea4b3d87d8ad9c088b33c132706ff445f0Android: APA91bHbYHk7aq-Uam_2pyJ2qbZvqllyyh2wjfPRaw5gLEX2SUlQBRvOc6sck1sa7H7nGeLNlDco8lXj83HWWwzV...For Email Addresses, set the full email address email@email.com and make sure to set device_type to 11.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Identifier { get; set; }
+        public string? Identifier { get => _explicitNullValueIdentifier; set { _explicitNullValueIdentifier = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("identifier"); else _explicitNullProperties?.Remove("identifier"); } }
+        private string? _explicitNullValueIdentifier = default!;
 #nullable restore
 #else
-        public string Identifier { get; set; }
+        public string Identifier { get => _explicitNullValueIdentifier; set { _explicitNullValueIdentifier = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("identifier"); else _explicitNullProperties?.Remove("identifier"); } }
+        private string _explicitNullValueIdentifier = default!;
 #endif
         /// <summary>If true, this is the equivalent of a user being Unsubscribed</summary>
         public bool? InvalidIdentifier { get; private set; }
         /// <summary>Language code. Typically lower case two letters, except for Chinese where it must be one of zh-Hans or zh-Hant. Example: en</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Language { get; set; }
+        public string? Language { get => _explicitNullValueLanguage; set { _explicitNullValueLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("language"); else _explicitNullProperties?.Remove("language"); } }
+        private string? _explicitNullValueLanguage = default!;
 #nullable restore
 #else
-        public string Language { get; set; }
+        public string Language { get => _explicitNullValueLanguage; set { _explicitNullValueLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("language"); else _explicitNullProperties?.Remove("language"); } }
+        private string _explicitNullValueLanguage = default!;
 #endif
         /// <summary>Unixtime when the player was last active</summary>
-        public int? LastActive { get; set; }
+        public int? LastActive { get => _explicitNullValueLastActive; set { _explicitNullValueLastActive = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active"); else _explicitNullProperties?.Remove("last_active"); } }
+        private int? _explicitNullValueLastActive = default!;
         /// <summary>Latitude of the device, used for geotagging to segment on.</summary>
-        public double? Lat { get; set; }
+        public double? Lat { get => _explicitNullValueLat; set { _explicitNullValueLat = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("lat"); else _explicitNullProperties?.Remove("lat"); } }
+        private double? _explicitNullValueLat = default!;
         /// <summary>Longitude of the device, used for geotagging to segment on.</summary>
-        public double? Long { get; set; }
+        public double? Long { get => _explicitNullValueLong; set { _explicitNullValueLong = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("long"); else _explicitNullProperties?.Remove("long"); } }
+        private double? _explicitNullValueLong = default!;
         /// <summary>1 = subscribed-2 = unsubscribediOS - These values are set each time the user opens the app from the SDK. Use the SDK function set Subscription instead.Android - You may set this but you can no longer use the SDK method setSubscription later in your app as it will create synchronization issues.</summary>
-        public int? NotificationTypes { get; set; }
+        public int? NotificationTypes { get => _explicitNullValueNotificationTypes; set { _explicitNullValueNotificationTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("notification_types"); else _explicitNullProperties?.Remove("notification_types"); } }
+        private int? _explicitNullValueNotificationTypes = default!;
         /// <summary>Seconds player was running your app.</summary>
-        public long? Playtime { get; set; }
+        public long? Playtime { get => _explicitNullValuePlaytime; set { _explicitNullValuePlaytime = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("playtime"); else _explicitNullProperties?.Remove("playtime"); } }
+        private long? _explicitNullValuePlaytime = default!;
         /// <summary>Name and version of the sdk/plugin that&apos;s calling this API method (if any)</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Sdk { get; set; }
+        public string? Sdk { get => _explicitNullValueSdk; set { _explicitNullValueSdk = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("sdk"); else _explicitNullProperties?.Remove("sdk"); } }
+        private string? _explicitNullValueSdk = default!;
 #nullable restore
 #else
-        public string Sdk { get; set; }
+        public string Sdk { get => _explicitNullValueSdk; set { _explicitNullValueSdk = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("sdk"); else _explicitNullProperties?.Remove("sdk"); } }
+        private string _explicitNullValueSdk = default!;
 #endif
         /// <summary>Number of times the user has played the game, defaults to 1</summary>
-        public int? SessionCount { get; set; }
+        public int? SessionCount { get => _explicitNullValueSessionCount; set { _explicitNullValueSessionCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("session_count"); else _explicitNullProperties?.Remove("session_count"); } }
+        private int? _explicitNullValueSessionCount = default!;
         /// <summary>Custom tags for the player. Only support string and integer key value pairs. Does not support arrays or other nested objects. Setting a tag value to null or an empty string will remove the tag. Example: {&quot;foo&quot;:&quot;bar&quot;,&quot;this&quot;:&quot;that&quot;}Limitations:- 100 tags per call- Android SDK users: tags cannot be removed or changed via API if set through SDK sendTag methods.Recommended to only tag devices with 1 kilobyte of dataPlease consider using your own Database to save more than 1 kilobyte of data. See: Internal Database &amp; CRM</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty? Tags { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty? Tags { get => _explicitNullValueTags; set { _explicitNullValueTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("tags"); else _explicitNullProperties?.Remove("tags"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty? _explicitNullValueTags = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty Tags { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty Tags { get => _explicitNullValueTags; set { _explicitNullValueTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("tags"); else _explicitNullProperties?.Remove("tags"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty _explicitNullValueTags = default!;
 #endif
         /// <summary>This is used in deciding whether to use your iOS Sandbox or Production push certificate when sending a push when both have been uploaded. Set to the iOS provisioning profile that was used to build your app.1 = Development2 = Ad-HocOmit this field for App Store builds.</summary>
-        public int? TestType { get; set; }
+        public int? TestType { get => _explicitNullValueTestType; set { _explicitNullValueTestType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("test_type"); else _explicitNullProperties?.Remove("test_type"); } }
+        private int? _explicitNullValueTestType = default!;
         /// <summary>Number of seconds away from UTC. Example: -28800</summary>
-        public int? Timezone { get; set; }
+        public int? Timezone { get => _explicitNullValueTimezone; set { _explicitNullValueTimezone = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("timezone"); else _explicitNullProperties?.Remove("timezone"); } }
+        private int? _explicitNullValueTimezone = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.Player"/> and sets the default values.
         /// </summary>
@@ -167,7 +237,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public static global::Soenneker.OneSignal.OpenApiClient.Models.Player CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.Player();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.OneSignal.OpenApiClient.Models.Player(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -238,6 +308,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             writer.WriteObjectValue<global::Soenneker.OneSignal.OpenApiClient.Models.PlayerTagsProperty>("tags", Tags);
             writer.WriteIntValue("test_type", TestType);
             writer.WriteIntValue("timezone", Timezone);
+            if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

@@ -57,6 +57,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Notifications.Item.History
             {
                 { "400", global::Soenneker.OneSignal.OpenApiClient.Models.GenericError.CreateFromDiscriminatorValue },
                 { "429", global::Soenneker.OneSignal.OpenApiClient.Models.RateLimiterError.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.OneSignal.OpenApiClient.Models.NotificationHistorySuccessResponse>(requestInfo, global::Soenneker.OneSignal.OpenApiClient.Models.NotificationHistorySuccessResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }

@@ -11,760 +11,1083 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class NotificationWithMeta : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("adm_big_picture") is { } nullNodeAdmBigPicture && nullNodeAdmBigPicture.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdmBigPicture = null;
+            if (parseNode.GetChildNode("adm_group") is { } nullNodeAdmGroup && nullNodeAdmGroup.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdmGroup = null;
+            if (parseNode.GetChildNode("adm_group_message") is { } nullNodeAdmGroupMessage && nullNodeAdmGroupMessage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdmGroupMessage = null;
+            if (parseNode.GetChildNode("adm_large_icon") is { } nullNodeAdmLargeIcon && nullNodeAdmLargeIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdmLargeIcon = null;
+            if (parseNode.GetChildNode("adm_small_icon") is { } nullNodeAdmSmallIcon && nullNodeAdmSmallIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdmSmallIcon = null;
+            if (parseNode.GetChildNode("adm_sound") is { } nullNodeAdmSound && nullNodeAdmSound.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdmSound = null;
+            if (parseNode.GetChildNode("android_accent_color") is { } nullNodeAndroidAccentColor && nullNodeAndroidAccentColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidAccentColor = null;
+            if (parseNode.GetChildNode("android_background_layout") is { } nullNodeAndroidBackgroundLayout && nullNodeAndroidBackgroundLayout.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidBackgroundLayout = null;
+            if (parseNode.GetChildNode("android_channel_id") is { } nullNodeAndroidChannelId && nullNodeAndroidChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidChannelId = null;
+            if (parseNode.GetChildNode("android_group") is { } nullNodeAndroidGroup && nullNodeAndroidGroup.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidGroup = null;
+            if (parseNode.GetChildNode("android_group_message") is { } nullNodeAndroidGroupMessage && nullNodeAndroidGroupMessage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidGroupMessage = null;
+            if (parseNode.GetChildNode("android_led_color") is { } nullNodeAndroidLedColor && nullNodeAndroidLedColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidLedColor = null;
+            if (parseNode.GetChildNode("android_sound") is { } nullNodeAndroidSound && nullNodeAndroidSound.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidSound = null;
+            if (parseNode.GetChildNode("android_visibility") is { } nullNodeAndroidVisibility && nullNodeAndroidVisibility.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidVisibility = null;
+            if (parseNode.GetChildNode("apns_alert") is { } nullNodeApnsAlert && nullNodeApnsAlert.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsAlert = null;
+            if (parseNode.GetChildNode("apns_push_type_override") is { } nullNodeApnsPushTypeOverride && nullNodeApnsPushTypeOverride.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsPushTypeOverride = null;
+            if (parseNode.GetChildNode("app_id") is { } nullNodeAppId && nullNodeAppId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AppId = null;
+            if (parseNode.GetChildNode("app_url") is { } nullNodeAppUrl && nullNodeAppUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AppUrl = null;
+            if (parseNode.GetChildNode("big_picture") is { } nullNodeBigPicture && nullNodeBigPicture.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BigPicture = null;
+            if (parseNode.GetChildNode("buttons") is { } nullNodeButtons && nullNodeButtons.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Buttons = null;
+            if (parseNode.GetChildNode("channel_for_external_user_ids") is { } nullNodeChannelForExternalUserIds && nullNodeChannelForExternalUserIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChannelForExternalUserIds = null;
+            if (parseNode.GetChildNode("chrome_big_picture") is { } nullNodeChromeBigPicture && nullNodeChromeBigPicture.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeBigPicture = null;
+            if (parseNode.GetChildNode("chrome_icon") is { } nullNodeChromeIcon && nullNodeChromeIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeIcon = null;
+            if (parseNode.GetChildNode("chrome_web_badge") is { } nullNodeChromeWebBadge && nullNodeChromeWebBadge.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebBadge = null;
+            if (parseNode.GetChildNode("chrome_web_icon") is { } nullNodeChromeWebIcon && nullNodeChromeWebIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebIcon = null;
+            if (parseNode.GetChildNode("chrome_web_image") is { } nullNodeChromeWebImage && nullNodeChromeWebImage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebImage = null;
+            if (parseNode.GetChildNode("collapse_id") is { } nullNodeCollapseId && nullNodeCollapseId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CollapseId = null;
+            if (parseNode.GetChildNode("completed_at") is { } nullNodeCompletedAt && nullNodeCompletedAt.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CompletedAt = null;
+            if (parseNode.GetChildNode("content_available") is { } nullNodeContentAvailable && nullNodeContentAvailable.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContentAvailable = null;
+            if (parseNode.GetChildNode("contents") is { } nullNodeContents && nullNodeContents.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Contents = null;
+            if (parseNode.GetChildNode("converted") is { } nullNodeConverted && nullNodeConverted.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Converted = null;
+            if (parseNode.GetChildNode("custom_data") is { } nullNodeCustomData && nullNodeCustomData.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CustomData = null;
+            if (parseNode.GetChildNode("data") is { } nullNodeData && nullNodeData.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Data = null;
+            if (parseNode.GetChildNode("delayed_option") is { } nullNodeDelayedOption && nullNodeDelayedOption.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DelayedOption = null;
+            if (parseNode.GetChildNode("delivery_time_of_day") is { } nullNodeDeliveryTimeOfDay && nullNodeDeliveryTimeOfDay.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeliveryTimeOfDay = null;
+            if (parseNode.GetChildNode("email_body") is { } nullNodeEmailBody && nullNodeEmailBody.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EmailBody = null;
+            if (parseNode.GetChildNode("email_from_address") is { } nullNodeEmailFromAddress && nullNodeEmailFromAddress.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EmailFromAddress = null;
+            if (parseNode.GetChildNode("email_from_name") is { } nullNodeEmailFromName && nullNodeEmailFromName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EmailFromName = null;
+            if (parseNode.GetChildNode("email_preheader") is { } nullNodeEmailPreheader && nullNodeEmailPreheader.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EmailPreheader = null;
+            if (parseNode.GetChildNode("email_subject") is { } nullNodeEmailSubject && nullNodeEmailSubject.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EmailSubject = null;
+            if (parseNode.GetChildNode("errored") is { } nullNodeErrored && nullNodeErrored.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Errored = null;
+            if (parseNode.GetChildNode("excluded_segments") is { } nullNodeExcludedSegments && nullNodeExcludedSegments.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExcludedSegments = null;
+            if (parseNode.GetChildNode("existing_android_channel_id") is { } nullNodeExistingAndroidChannelId && nullNodeExistingAndroidChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExistingAndroidChannelId = null;
+            if (parseNode.GetChildNode("external_id") is { } nullNodeExternalId && nullNodeExternalId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalId = null;
+            if (parseNode.GetChildNode("failed") is { } nullNodeFailed && nullNodeFailed.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Failed = null;
+            if (parseNode.GetChildNode("filters") is { } nullNodeFilters && nullNodeFilters.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Filters = null;
+            if (parseNode.GetChildNode("firefox_icon") is { } nullNodeFirefoxIcon && nullNodeFirefoxIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) FirefoxIcon = null;
+            if (parseNode.GetChildNode("headings") is { } nullNodeHeadings && nullNodeHeadings.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Headings = null;
+            if (parseNode.GetChildNode("huawei_accent_color") is { } nullNodeHuaweiAccentColor && nullNodeHuaweiAccentColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiAccentColor = null;
+            if (parseNode.GetChildNode("huawei_big_picture") is { } nullNodeHuaweiBigPicture && nullNodeHuaweiBigPicture.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiBigPicture = null;
+            if (parseNode.GetChildNode("huawei_channel_id") is { } nullNodeHuaweiChannelId && nullNodeHuaweiChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiChannelId = null;
+            if (parseNode.GetChildNode("huawei_existing_channel_id") is { } nullNodeHuaweiExistingChannelId && nullNodeHuaweiExistingChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiExistingChannelId = null;
+            if (parseNode.GetChildNode("huawei_large_icon") is { } nullNodeHuaweiLargeIcon && nullNodeHuaweiLargeIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiLargeIcon = null;
+            if (parseNode.GetChildNode("huawei_led_color") is { } nullNodeHuaweiLedColor && nullNodeHuaweiLedColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiLedColor = null;
+            if (parseNode.GetChildNode("huawei_msg_type") is { } nullNodeHuaweiMsgType && nullNodeHuaweiMsgType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiMsgType = null;
+            if (parseNode.GetChildNode("huawei_small_icon") is { } nullNodeHuaweiSmallIcon && nullNodeHuaweiSmallIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiSmallIcon = null;
+            if (parseNode.GetChildNode("huawei_sound") is { } nullNodeHuaweiSound && nullNodeHuaweiSound.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiSound = null;
+            if (parseNode.GetChildNode("huawei_visibility") is { } nullNodeHuaweiVisibility && nullNodeHuaweiVisibility.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HuaweiVisibility = null;
+            if (parseNode.GetChildNode("id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("include_aliases") is { } nullNodeIncludeAliases && nullNodeIncludeAliases.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeAliases = null;
+            if (parseNode.GetChildNode("include_amazon_reg_ids") is { } nullNodeIncludeAmazonRegIds && nullNodeIncludeAmazonRegIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeAmazonRegIds = null;
+            if (parseNode.GetChildNode("include_android_reg_ids") is { } nullNodeIncludeAndroidRegIds && nullNodeIncludeAndroidRegIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeAndroidRegIds = null;
+            if (parseNode.GetChildNode("include_chrome_reg_ids") is { } nullNodeIncludeChromeRegIds && nullNodeIncludeChromeRegIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeChromeRegIds = null;
+            if (parseNode.GetChildNode("include_chrome_web_reg_ids") is { } nullNodeIncludeChromeWebRegIds && nullNodeIncludeChromeWebRegIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeChromeWebRegIds = null;
+            if (parseNode.GetChildNode("included_segments") is { } nullNodeIncludedSegments && nullNodeIncludedSegments.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludedSegments = null;
+            if (parseNode.GetChildNode("include_email_tokens") is { } nullNodeIncludeEmailTokens && nullNodeIncludeEmailTokens.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeEmailTokens = null;
+            if (parseNode.GetChildNode("include_external_user_ids") is { } nullNodeIncludeExternalUserIds && nullNodeIncludeExternalUserIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeExternalUserIds = null;
+            if (parseNode.GetChildNode("include_ios_tokens") is { } nullNodeIncludeIosTokens && nullNodeIncludeIosTokens.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeIosTokens = null;
+            if (parseNode.GetChildNode("include_phone_numbers") is { } nullNodeIncludePhoneNumbers && nullNodeIncludePhoneNumbers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludePhoneNumbers = null;
+            if (parseNode.GetChildNode("include_player_ids") is { } nullNodeIncludePlayerIds && nullNodeIncludePlayerIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludePlayerIds = null;
+            if (parseNode.GetChildNode("include_unsubscribed") is { } nullNodeIncludeUnsubscribed && nullNodeIncludeUnsubscribed.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeUnsubscribed = null;
+            if (parseNode.GetChildNode("include_wp_wns_uris") is { } nullNodeIncludeWpWnsUris && nullNodeIncludeWpWnsUris.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeWpWnsUris = null;
+            if (parseNode.GetChildNode("ios_attachments") is { } nullNodeIosAttachments && nullNodeIosAttachments.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IosAttachments = null;
+            if (parseNode.GetChildNode("ios_badgeCount") is { } nullNodeIosBadgeCount && nullNodeIosBadgeCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IosBadgeCount = null;
+            if (parseNode.GetChildNode("ios_badgeType") is { } nullNodeIosBadgeType && nullNodeIosBadgeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IosBadgeType = null;
+            if (parseNode.GetChildNode("ios_category") is { } nullNodeIosCategory && nullNodeIosCategory.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IosCategory = null;
+            if (parseNode.GetChildNode("ios_sound") is { } nullNodeIosSound && nullNodeIosSound.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IosSound = null;
+            if (parseNode.GetChildNode("isAdm") is { } nullNodeIsAdm && nullNodeIsAdm.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAdm = null;
+            if (parseNode.GetChildNode("isAndroid") is { } nullNodeIsAndroid && nullNodeIsAndroid.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAndroid = null;
+            if (parseNode.GetChildNode("isAnyWeb") is { } nullNodeIsAnyWeb && nullNodeIsAnyWeb.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAnyWeb = null;
+            if (parseNode.GetChildNode("isChrome") is { } nullNodeIsChrome && nullNodeIsChrome.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsChrome = null;
+            if (parseNode.GetChildNode("isChromeWeb") is { } nullNodeIsChromeWeb && nullNodeIsChromeWeb.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsChromeWeb = null;
+            if (parseNode.GetChildNode("isFirefox") is { } nullNodeIsFirefox && nullNodeIsFirefox.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsFirefox = null;
+            if (parseNode.GetChildNode("isHuawei") is { } nullNodeIsHuawei && nullNodeIsHuawei.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsHuawei = null;
+            if (parseNode.GetChildNode("isIos") is { } nullNodeIsIos && nullNodeIsIos.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsIos = null;
+            if (parseNode.GetChildNode("isSafari") is { } nullNodeIsSafari && nullNodeIsSafari.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsSafari = null;
+            if (parseNode.GetChildNode("isWP_WNS") is { } nullNodeIsWPWNS && nullNodeIsWPWNS.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsWPWNS = null;
+            if (parseNode.GetChildNode("large_icon") is { } nullNodeLargeIcon && nullNodeLargeIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LargeIcon = null;
+            if (parseNode.GetChildNode("mutable_content") is { } nullNodeMutableContent && nullNodeMutableContent.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MutableContent = null;
+            if (parseNode.GetChildNode("name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("outcomes") is { } nullNodeOutcomes && nullNodeOutcomes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Outcomes = null;
+            if (parseNode.GetChildNode("platform_delivery_stats") is { } nullNodePlatformDeliveryStats && nullNodePlatformDeliveryStats.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlatformDeliveryStats = null;
+            if (parseNode.GetChildNode("priority") is { } nullNodePriority && nullNodePriority.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Priority = null;
+            if (parseNode.GetChildNode("queued_at") is { } nullNodeQueuedAt && nullNodeQueuedAt.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) QueuedAt = null;
+            if (parseNode.GetChildNode("received") is { } nullNodeReceived && nullNodeReceived.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Received = null;
+            if (parseNode.GetChildNode("remaining") is { } nullNodeRemaining && nullNodeRemaining.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Remaining = null;
+            if (parseNode.GetChildNode("send_after") is { } nullNodeSendAfter && nullNodeSendAfter.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SendAfter = null;
+            if (parseNode.GetChildNode("small_icon") is { } nullNodeSmallIcon && nullNodeSmallIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SmallIcon = null;
+            if (parseNode.GetChildNode("sms_from") is { } nullNodeSmsFrom && nullNodeSmsFrom.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SmsFrom = null;
+            if (parseNode.GetChildNode("sms_media_urls") is { } nullNodeSmsMediaUrls && nullNodeSmsMediaUrls.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SmsMediaUrls = null;
+            if (parseNode.GetChildNode("subtitle") is { } nullNodeSubtitle && nullNodeSubtitle.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Subtitle = null;
+            if (parseNode.GetChildNode("successful") is { } nullNodeSuccessful && nullNodeSuccessful.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Successful = null;
+            if (parseNode.GetChildNode("summary_arg") is { } nullNodeSummaryArg && nullNodeSummaryArg.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SummaryArg = null;
+            if (parseNode.GetChildNode("summary_arg_count") is { } nullNodeSummaryArgCount && nullNodeSummaryArgCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SummaryArgCount = null;
+            if (parseNode.GetChildNode("target_channel") is { } nullNodeTargetChannel && nullNodeTargetChannel.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TargetChannel = null;
+            if (parseNode.GetChildNode("target_content_identifier") is { } nullNodeTargetContentIdentifier && nullNodeTargetContentIdentifier.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TargetContentIdentifier = null;
+            if (parseNode.GetChildNode("template_id") is { } nullNodeTemplateId && nullNodeTemplateId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TemplateId = null;
+            if (parseNode.GetChildNode("thread_id") is { } nullNodeThreadId && nullNodeThreadId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ThreadId = null;
+            if (parseNode.GetChildNode("throttle_rate_per_minute") is { } nullNodeThrottleRatePerMinute && nullNodeThrottleRatePerMinute.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ThrottleRatePerMinute = null;
+            if (parseNode.GetChildNode("ttl") is { } nullNodeTtl && nullNodeTtl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Ttl = null;
+            if (parseNode.GetChildNode("url") is { } nullNodeUrl && nullNodeUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Url = null;
+            if (parseNode.GetChildNode("web_buttons") is { } nullNodeWebButtons && nullNodeWebButtons.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) WebButtons = null;
+            if (parseNode.GetChildNode("web_push_topic") is { } nullNodeWebPushTopic && nullNodeWebPushTopic.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) WebPushTopic = null;
+            if (parseNode.GetChildNode("web_url") is { } nullNodeWebUrl && nullNodeWebUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) WebUrl = null;
+            if (parseNode.GetChildNode("wp_wns_sound") is { } nullNodeWpWnsSound && nullNodeWpWnsSound.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) WpWnsSound = null;
+        }
+
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>Channel: Push NotificationsPlatform: AmazonPicture to display in the expanded view. Can be a drawable resource name or a URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AdmBigPicture { get; set; }
+        public string? AdmBigPicture { get => _explicitNullValueAdmBigPicture; set { _explicitNullValueAdmBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_big_picture"); else _explicitNullProperties?.Remove("adm_big_picture"); } }
+        private string? _explicitNullValueAdmBigPicture = default!;
 #nullable restore
 #else
-        public string AdmBigPicture { get; set; }
+        public string AdmBigPicture { get => _explicitNullValueAdmBigPicture; set { _explicitNullValueAdmBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_big_picture"); else _explicitNullProperties?.Remove("adm_big_picture"); } }
+        private string _explicitNullValueAdmBigPicture = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AmazonNotifications with the same group will be stacked together using Android&apos;s Notification Grouping feature.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AdmGroup { get; set; }
+        public string? AdmGroup { get => _explicitNullValueAdmGroup; set { _explicitNullValueAdmGroup = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_group"); else _explicitNullProperties?.Remove("adm_group"); } }
+        private string? _explicitNullValueAdmGroup = default!;
 #nullable restore
 #else
-        public string AdmGroup { get; set; }
+        public string AdmGroup { get => _explicitNullValueAdmGroup; set { _explicitNullValueAdmGroup = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_group"); else _explicitNullProperties?.Remove("adm_group"); } }
+        private string _explicitNullValueAdmGroup = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AmazonSummary message to display when 2+ notifications are stacked together. Default is &quot;# new messages&quot;. Include $[notif_count] in your message and it will be replaced with the current number. &quot;en&quot; (English) is required. The key of each hash is either a a 2 character language code or one of zh-Hans/zh-Hant for Simplified or Traditional Chinese. The value of each key is the message that will be sent to users for that language.Example: {&quot;en&quot;: &quot;You have $[notif_count] new messages&quot;}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage? AdmGroupMessage { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage? AdmGroupMessage { get => _explicitNullValueAdmGroupMessage; set { _explicitNullValueAdmGroupMessage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_group_message"); else _explicitNullProperties?.Remove("adm_group_message"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage? _explicitNullValueAdmGroupMessage = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage AdmGroupMessage { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage AdmGroupMessage { get => _explicitNullValueAdmGroupMessage; set { _explicitNullValueAdmGroupMessage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_group_message"); else _explicitNullProperties?.Remove("adm_group_message"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAdmGroupMessage _explicitNullValueAdmGroupMessage = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AmazonIf blank the small_icon is used. Can be a drawable resource name or a URL.See: How to create large icons</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AdmLargeIcon { get; set; }
+        public string? AdmLargeIcon { get => _explicitNullValueAdmLargeIcon; set { _explicitNullValueAdmLargeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_large_icon"); else _explicitNullProperties?.Remove("adm_large_icon"); } }
+        private string? _explicitNullValueAdmLargeIcon = default!;
 #nullable restore
 #else
-        public string AdmLargeIcon { get; set; }
+        public string AdmLargeIcon { get => _explicitNullValueAdmLargeIcon; set { _explicitNullValueAdmLargeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_large_icon"); else _explicitNullProperties?.Remove("adm_large_icon"); } }
+        private string _explicitNullValueAdmLargeIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AmazonIf not set a bell icon will be used or ic_stat_onesignal_default if you have set this resource name.See: How to create small icons</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AdmSmallIcon { get; set; }
+        public string? AdmSmallIcon { get => _explicitNullValueAdmSmallIcon; set { _explicitNullValueAdmSmallIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_small_icon"); else _explicitNullProperties?.Remove("adm_small_icon"); } }
+        private string? _explicitNullValueAdmSmallIcon = default!;
 #nullable restore
 #else
-        public string AdmSmallIcon { get; set; }
+        public string AdmSmallIcon { get => _explicitNullValueAdmSmallIcon; set { _explicitNullValueAdmSmallIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_small_icon"); else _explicitNullProperties?.Remove("adm_small_icon"); } }
+        private string _explicitNullValueAdmSmallIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Amazon&amp;#9888;&amp;#65039;Deprecated, this field doesn&apos;t work on Android 8 (Oreo) and newer devices!Please use Notification Categories / Channels noted above instead to support ALL versions of Android.Sound file that is included in your app to play instead of the default device notification sound. Pass nil to disable sound for the notification.NOTE: Leave off file extension for Android.Example: &quot;notification&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AdmSound { get; set; }
+        public string? AdmSound { get => _explicitNullValueAdmSound; set { _explicitNullValueAdmSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_sound"); else _explicitNullProperties?.Remove("adm_sound"); } }
+        private string? _explicitNullValueAdmSound = default!;
 #nullable restore
 #else
-        public string AdmSound { get; set; }
+        public string AdmSound { get => _explicitNullValueAdmSound; set { _explicitNullValueAdmSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("adm_sound"); else _explicitNullProperties?.Remove("adm_sound"); } }
+        private string _explicitNullValueAdmSound = default!;
 #endif
         /// <summary>The aggregation property</summary>
         public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAggregation? Aggregation { get; private set; }
         /// <summary>Channel: Push NotificationsPlatform: AndroidSets the background color of the notification circle to the left of the notification text. Only applies to apps targeting Android API level 21+ on Android 5.0+ devices.Example(Red): &quot;FFFF0000&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidAccentColor { get; set; }
+        public string? AndroidAccentColor { get => _explicitNullValueAndroidAccentColor; set { _explicitNullValueAndroidAccentColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_accent_color"); else _explicitNullProperties?.Remove("android_accent_color"); } }
+        private string? _explicitNullValueAndroidAccentColor = default!;
 #nullable restore
 #else
-        public string AndroidAccentColor { get; set; }
+        public string AndroidAccentColor { get => _explicitNullValueAndroidAccentColor; set { _explicitNullValueAndroidAccentColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_accent_color"); else _explicitNullProperties?.Remove("android_accent_color"); } }
+        private string _explicitNullValueAndroidAccentColor = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AndroidAllowing setting a background image for the notification. This is a JSON object containing the following keys. See our Background Image documentation for image sizes.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2AndroidBackgroundLayout? AndroidBackgroundLayout { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2AndroidBackgroundLayout? AndroidBackgroundLayout { get => _explicitNullValueAndroidBackgroundLayout; set { _explicitNullValueAndroidBackgroundLayout = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_background_layout"); else _explicitNullProperties?.Remove("android_background_layout"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2AndroidBackgroundLayout? _explicitNullValueAndroidBackgroundLayout = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2AndroidBackgroundLayout AndroidBackgroundLayout { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2AndroidBackgroundLayout AndroidBackgroundLayout { get => _explicitNullValueAndroidBackgroundLayout; set { _explicitNullValueAndroidBackgroundLayout = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_background_layout"); else _explicitNullProperties?.Remove("android_background_layout"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2AndroidBackgroundLayout _explicitNullValueAndroidBackgroundLayout = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AndroidThe Android Oreo Notification Category to send the notification under. See the Category documentation on creating one and getting it&apos;s id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidChannelId { get; set; }
+        public string? AndroidChannelId { get => _explicitNullValueAndroidChannelId; set { _explicitNullValueAndroidChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_channel_id"); else _explicitNullProperties?.Remove("android_channel_id"); } }
+        private string? _explicitNullValueAndroidChannelId = default!;
 #nullable restore
 #else
-        public string AndroidChannelId { get; set; }
+        public string AndroidChannelId { get => _explicitNullValueAndroidChannelId; set { _explicitNullValueAndroidChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_channel_id"); else _explicitNullProperties?.Remove("android_channel_id"); } }
+        private string _explicitNullValueAndroidChannelId = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AndroidNotifications with the same group will be stacked together using Android&apos;s Notification Grouping feature.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidGroup { get; set; }
+        public string? AndroidGroup { get => _explicitNullValueAndroidGroup; set { _explicitNullValueAndroidGroup = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_group"); else _explicitNullProperties?.Remove("android_group"); } }
+        private string? _explicitNullValueAndroidGroup = default!;
 #nullable restore
 #else
-        public string AndroidGroup { get; set; }
+        public string AndroidGroup { get => _explicitNullValueAndroidGroup; set { _explicitNullValueAndroidGroup = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_group"); else _explicitNullProperties?.Remove("android_group"); } }
+        private string _explicitNullValueAndroidGroup = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AndroidNote: This only works for Android 6 and older. Android 7+ allows full expansion of all message.Summary message to display when 2+ notifications are stacked together. Default is &quot;# new messages&quot;. Include $[notif_count] in your message and it will be replaced with the current number.Languages - The value of each key is the message that will be sent to users for that language. &quot;en&quot; (English) is required. The key of each hash is either a a 2 character language code or one of zh-Hans/zh-Hant for Simplified or Traditional Chinese. Read more: supported languages.Example: {&quot;en&quot;: &quot;You have $[notif_count] new messages&quot;}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidGroupMessage { get; set; }
+        public string? AndroidGroupMessage { get => _explicitNullValueAndroidGroupMessage; set { _explicitNullValueAndroidGroupMessage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_group_message"); else _explicitNullProperties?.Remove("android_group_message"); } }
+        private string? _explicitNullValueAndroidGroupMessage = default!;
 #nullable restore
 #else
-        public string AndroidGroupMessage { get; set; }
+        public string AndroidGroupMessage { get => _explicitNullValueAndroidGroupMessage; set { _explicitNullValueAndroidGroupMessage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_group_message"); else _explicitNullProperties?.Remove("android_group_message"); } }
+        private string _explicitNullValueAndroidGroupMessage = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Android&amp;#9888;&amp;#65039;Deprecated, this field doesn&apos;t work on Android 8 (Oreo) and newer devices!Please use Notification Categories / Channels noted above instead to support ALL versions of Android.Sets the devices LED notification light if the device has one. ARGB Hex format.Example(Blue): &quot;FF0000FF&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidLedColor { get; set; }
+        public string? AndroidLedColor { get => _explicitNullValueAndroidLedColor; set { _explicitNullValueAndroidLedColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_led_color"); else _explicitNullProperties?.Remove("android_led_color"); } }
+        private string? _explicitNullValueAndroidLedColor = default!;
 #nullable restore
 #else
-        public string AndroidLedColor { get; set; }
+        public string AndroidLedColor { get => _explicitNullValueAndroidLedColor; set { _explicitNullValueAndroidLedColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_led_color"); else _explicitNullProperties?.Remove("android_led_color"); } }
+        private string _explicitNullValueAndroidLedColor = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Android&amp;#9888;&amp;#65039;Deprecated, this field doesn&apos;t work on Android 8 (Oreo) and newer devices!Please use Notification Categories / Channels noted above instead to support ALL versions of Android.Sound file that is included in your app to play instead of the default device notification sound. Pass nil to disable sound for the notification.NOTE: Leave off file extension for Android.Example: &quot;notification&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidSound { get; set; }
+        public string? AndroidSound { get => _explicitNullValueAndroidSound; set { _explicitNullValueAndroidSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_sound"); else _explicitNullProperties?.Remove("android_sound"); } }
+        private string? _explicitNullValueAndroidSound = default!;
 #nullable restore
 #else
-        public string AndroidSound { get; set; }
+        public string AndroidSound { get => _explicitNullValueAndroidSound; set { _explicitNullValueAndroidSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_sound"); else _explicitNullProperties?.Remove("android_sound"); } }
+        private string _explicitNullValueAndroidSound = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Android 5.0_&amp;#9888;&amp;#65039;Deprecated, this field doesn&apos;t work on Android 8 (Oreo) and newer devices!Please use Notification Categories / Channels noted above instead to support ALL versions of Android.1 = Public (default) (Shows the full message on the lock screen unless the user has disabled all notifications from showing on the lock screen. Please consider the user and mark private if the contents are.)0 = Private (Hides message contents on lock screen if the user set &quot;Hide sensitive notification content&quot; in the system settings)-1 = Secret (Notification does not show on the lock screen at all)</summary>
-        public int? AndroidVisibility { get; set; }
+        public int? AndroidVisibility { get => _explicitNullValueAndroidVisibility; set { _explicitNullValueAndroidVisibility = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_visibility"); else _explicitNullProperties?.Remove("android_visibility"); } }
+        private int? _explicitNullValueAndroidVisibility = default!;
         /// <summary>Channel: Push NotificationsPlatform: iOS 10+iOS can localize push notification messages on the client using special parameters such as loc-key. When using the Create Notification endpoint, you must include these parameters inside of a field called apns_alert. Please see Apple&apos;s guide on localizing push notifications to learn more.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationApnsAlert? ApnsAlert { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationApnsAlert? ApnsAlert { get => _explicitNullValueApnsAlert; set { _explicitNullValueApnsAlert = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_alert"); else _explicitNullProperties?.Remove("apns_alert"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationApnsAlert? _explicitNullValueApnsAlert = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationApnsAlert ApnsAlert { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationApnsAlert ApnsAlert { get => _explicitNullValueApnsAlert; set { _explicitNullValueApnsAlert = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_alert"); else _explicitNullProperties?.Remove("apns_alert"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationApnsAlert _explicitNullValueApnsAlert = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOSvalid values: voipSet the value to voip for sending VoIP NotificationsThis field maps to the APNS header apns-push-type.Note: alert and background are automatically set by OneSignal</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsPushTypeOverride { get; set; }
+        public string? ApnsPushTypeOverride { get => _explicitNullValueApnsPushTypeOverride; set { _explicitNullValueApnsPushTypeOverride = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_push_type_override"); else _explicitNullProperties?.Remove("apns_push_type_override"); } }
+        private string? _explicitNullValueApnsPushTypeOverride = default!;
 #nullable restore
 #else
-        public string ApnsPushTypeOverride { get; set; }
+        public string ApnsPushTypeOverride { get => _explicitNullValueApnsPushTypeOverride; set { _explicitNullValueApnsPushTypeOverride = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_push_type_override"); else _explicitNullProperties?.Remove("apns_push_type_override"); } }
+        private string _explicitNullValueApnsPushTypeOverride = default!;
 #endif
         /// <summary>Required: Your OneSignal Application ID, which can be found in Keys &amp; IDs.It is a UUID and looks similar to 8250eaf6-1a58-489e-b136-7c74a864b434.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AppId { get; set; }
+        public string? AppId { get => _explicitNullValueAppId; set { _explicitNullValueAppId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("app_id"); else _explicitNullProperties?.Remove("app_id"); } }
+        private string? _explicitNullValueAppId = default!;
 #nullable restore
 #else
-        public string AppId { get; set; }
+        public string AppId { get => _explicitNullValueAppId; set { _explicitNullValueAppId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("app_id"); else _explicitNullProperties?.Remove("app_id"); } }
+        private string _explicitNullValueAppId = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: All BrowsersSame as url but only sent to web push platforms.Including iOS, Android, macOS, Windows, ChromeApps, etc.Example: https://onesignal.com</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AppUrl { get; set; }
+        public string? AppUrl { get => _explicitNullValueAppUrl; set { _explicitNullValueAppUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("app_url"); else _explicitNullProperties?.Remove("app_url"); } }
+        private string? _explicitNullValueAppUrl = default!;
 #nullable restore
 #else
-        public string AppUrl { get; set; }
+        public string AppUrl { get => _explicitNullValueAppUrl; set { _explicitNullValueAppUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("app_url"); else _explicitNullProperties?.Remove("app_url"); } }
+        private string _explicitNullValueAppUrl = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AndroidPicture to display in the expanded view. Can be a drawable resource name or a URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? BigPicture { get; set; }
+        public string? BigPicture { get => _explicitNullValueBigPicture; set { _explicitNullValueBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("big_picture"); else _explicitNullProperties?.Remove("big_picture"); } }
+        private string? _explicitNullValueBigPicture = default!;
 #nullable restore
 #else
-        public string BigPicture { get; set; }
+        public string BigPicture { get => _explicitNullValueBigPicture; set { _explicitNullValueBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("big_picture"); else _explicitNullProperties?.Remove("big_picture"); } }
+        private string _explicitNullValueBigPicture = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS 8.0+, Android 4.1+, and derivatives like Amazon Buttons to add to the notification. Icon only works for Android.Buttons show in reverse order of array position i.e. Last item in array shows as first button on device.Example: [{&quot;id&quot;: &quot;id2&quot;, &quot;text&quot;: &quot;second button&quot;, &quot;icon&quot;: &quot;ic_menu_share&quot;}, {&quot;id&quot;: &quot;id1&quot;, &quot;text&quot;: &quot;first button&quot;, &quot;icon&quot;: &quot;ic_menu_send&quot;}]</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button>? Buttons { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button>? Buttons { get => _explicitNullValueButtons; set { _explicitNullValueButtons = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("buttons"); else _explicitNullProperties?.Remove("buttons"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.Button>? _explicitNullValueButtons = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button> Buttons { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button> Buttons { get => _explicitNullValueButtons; set { _explicitNullValueButtons = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("buttons"); else _explicitNullProperties?.Remove("buttons"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.Button> _explicitNullValueButtons = default!;
 #endif
         /// <summary>Indicates if the message type when targeting with include_external_user_ids for cases where an email, sms, and/or push subscribers have the same external user id.Example: Use the string &quot;push&quot; to indicate you are sending a push notification or the string &quot;email&quot;for sending emails or &quot;sms&quot;for sending SMS.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChannelForExternalUserIds { get; set; }
+        public string? ChannelForExternalUserIds { get => _explicitNullValueChannelForExternalUserIds; set { _explicitNullValueChannelForExternalUserIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("channel_for_external_user_ids"); else _explicitNullProperties?.Remove("channel_for_external_user_ids"); } }
+        private string? _explicitNullValueChannelForExternalUserIds = default!;
 #nullable restore
 #else
-        public string ChannelForExternalUserIds { get; set; }
+        public string ChannelForExternalUserIds { get => _explicitNullValueChannelForExternalUserIds; set { _explicitNullValueChannelForExternalUserIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("channel_for_external_user_ids"); else _explicitNullProperties?.Remove("channel_for_external_user_ids"); } }
+        private string _explicitNullValueChannelForExternalUserIds = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: ChromeAppLarge picture to display below the notification text. Must be a local URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeBigPicture { get; set; }
+        public string? ChromeBigPicture { get => _explicitNullValueChromeBigPicture; set { _explicitNullValueChromeBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_big_picture"); else _explicitNullProperties?.Remove("chrome_big_picture"); } }
+        private string? _explicitNullValueChromeBigPicture = default!;
 #nullable restore
 #else
-        public string ChromeBigPicture { get; set; }
+        public string ChromeBigPicture { get => _explicitNullValueChromeBigPicture; set { _explicitNullValueChromeBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_big_picture"); else _explicitNullProperties?.Remove("chrome_big_picture"); } }
+        private string _explicitNullValueChromeBigPicture = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: ChromeAppThis flag is not used for web push For web push, please see chrome_web_icon instead.The local URL to an icon to use. If blank, the app icon will be used.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeIcon { get; set; }
+        public string? ChromeIcon { get => _explicitNullValueChromeIcon; set { _explicitNullValueChromeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_icon"); else _explicitNullProperties?.Remove("chrome_icon"); } }
+        private string? _explicitNullValueChromeIcon = default!;
 #nullable restore
 #else
-        public string ChromeIcon { get; set; }
+        public string ChromeIcon { get => _explicitNullValueChromeIcon; set { _explicitNullValueChromeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_icon"); else _explicitNullProperties?.Remove("chrome_icon"); } }
+        private string _explicitNullValueChromeIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: ChromeSets the web push notification icon for Android devices in the notification shade. Please see Web Push Notification Badge.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeWebBadge { get; set; }
+        public string? ChromeWebBadge { get => _explicitNullValueChromeWebBadge; set { _explicitNullValueChromeWebBadge = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_badge"); else _explicitNullProperties?.Remove("chrome_web_badge"); } }
+        private string? _explicitNullValueChromeWebBadge = default!;
 #nullable restore
 #else
-        public string ChromeWebBadge { get; set; }
+        public string ChromeWebBadge { get => _explicitNullValueChromeWebBadge; set { _explicitNullValueChromeWebBadge = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_badge"); else _explicitNullProperties?.Remove("chrome_web_badge"); } }
+        private string _explicitNullValueChromeWebBadge = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: ChromeSets the web push notification&apos;s icon. An image URL linking to a valid image. Common image types are supported; GIF will not animate. We recommend 256x256 (at least 80x80) to display well on high DPI devices. Firefox will also use this icon, unless you specify firefox_icon.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeWebIcon { get; set; }
+        public string? ChromeWebIcon { get => _explicitNullValueChromeWebIcon; set { _explicitNullValueChromeWebIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_icon"); else _explicitNullProperties?.Remove("chrome_web_icon"); } }
+        private string? _explicitNullValueChromeWebIcon = default!;
 #nullable restore
 #else
-        public string ChromeWebIcon { get; set; }
+        public string ChromeWebIcon { get => _explicitNullValueChromeWebIcon; set { _explicitNullValueChromeWebIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_icon"); else _explicitNullProperties?.Remove("chrome_web_icon"); } }
+        private string _explicitNullValueChromeWebIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Chrome 56+Sets the web push notification&apos;s large image to be shown below the notification&apos;s title and text. Please see Web Push Notification Icons.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeWebImage { get; set; }
+        public string? ChromeWebImage { get => _explicitNullValueChromeWebImage; set { _explicitNullValueChromeWebImage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_image"); else _explicitNullProperties?.Remove("chrome_web_image"); } }
+        private string? _explicitNullValueChromeWebImage = default!;
 #nullable restore
 #else
-        public string ChromeWebImage { get; set; }
+        public string ChromeWebImage { get => _explicitNullValueChromeWebImage; set { _explicitNullValueChromeWebImage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_image"); else _explicitNullProperties?.Remove("chrome_web_image"); } }
+        private string _explicitNullValueChromeWebImage = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS 10+, AndroidOnly one notification with the same id will be shown on the device. Use the same id to update an existing notification instead of showing a new one. Limit of 64 characters.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CollapseId { get; set; }
+        public string? CollapseId { get => _explicitNullValueCollapseId; set { _explicitNullValueCollapseId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("collapse_id"); else _explicitNullProperties?.Remove("collapse_id"); } }
+        private string? _explicitNullValueCollapseId = default!;
 #nullable restore
 #else
-        public string CollapseId { get; set; }
+        public string CollapseId { get => _explicitNullValueCollapseId; set { _explicitNullValueCollapseId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("collapse_id"); else _explicitNullProperties?.Remove("collapse_id"); } }
+        private string _explicitNullValueCollapseId = default!;
 #endif
         /// <summary>Unix timestamp indicating when notification delivery completed. The delivery duration from start to finish can be calculated with completed_at - send_after.</summary>
-        public long? CompletedAt { get; set; }
+        public long? CompletedAt { get => _explicitNullValueCompletedAt; set { _explicitNullValueCompletedAt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("completed_at"); else _explicitNullProperties?.Remove("completed_at"); } }
+        private long? _explicitNullValueCompletedAt = default!;
         /// <summary>Channel: Push NotificationsPlatform: iOSSending true wakes your app from background to run custom native code (Apple interprets this as content-available=1). Note: Not applicable if the app is in the &quot;force-quit&quot; state (i.e app was swiped away). Omit the contents field to prevent displaying a visible notification.</summary>
-        public bool? ContentAvailable { get; set; }
+        public bool? ContentAvailable { get => _explicitNullValueContentAvailable; set { _explicitNullValueContentAvailable = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("content_available"); else _explicitNullProperties?.Remove("content_available"); } }
+        private bool? _explicitNullValueContentAvailable = default!;
         /// <summary>Required unless content_available=true or template_id is set.The message&apos;s content (excluding the title), a map of language codes to text for each language.Each hash must have a language code string for a key, mapped to the localized text you would like users to receive for that language.This field supports inline substitutions.English must be included in the hash.Example: {&quot;en&quot;: &quot;English Message&quot;, &quot;es&quot;: &quot;Spanish Message&quot;}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Contents? Contents { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Contents? Contents { get => _explicitNullValueContents; set { _explicitNullValueContents = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("contents"); else _explicitNullProperties?.Remove("contents"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Contents? _explicitNullValueContents = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Contents Contents { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Contents Contents { get => _explicitNullValueContents; set { _explicitNullValueContents = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("contents"); else _explicitNullProperties?.Remove("contents"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Contents _explicitNullValueContents = default!;
 #endif
         /// <summary>Number of messages that were clicked.</summary>
-        public int? Converted { get; set; }
+        public int? Converted { get => _explicitNullValueConverted; set { _explicitNullValueConverted = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("converted"); else _explicitNullProperties?.Remove("converted"); } }
+        private int? _explicitNullValueConverted = default!;
         /// <summary>Channel: AllJSON object that can be used as a source of message personalization data for fields that support tag variable substitution.Push, SMS: Can accept up to 2048 bytes of valid JSON. Email: Can accept up to 10000 bytes of valid JSON.Example: {&quot;order_id&quot;: 123, &quot;currency&quot;: &quot;USD&quot;, &quot;amount&quot;: 25}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData? CustomData { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData? CustomData { get => _explicitNullValueCustomData; set { _explicitNullValueCustomData = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("custom_data"); else _explicitNullProperties?.Remove("custom_data"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData? _explicitNullValueCustomData = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData CustomData { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData CustomData { get => _explicitNullValueCustomData; set { _explicitNullValueCustomData = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("custom_data"); else _explicitNullProperties?.Remove("custom_data"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationCustomData _explicitNullValueCustomData = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiA custom map of data that is passed back to your app. Same as using Additional Data within the dashboard. Can use up to 2048 bytes of data.Example: {&quot;abc&quot;: 123, &quot;foo&quot;: &quot;bar&quot;, &quot;event_performed&quot;: true, &quot;amount&quot;: 12.1}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData? Data { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData? Data { get => _explicitNullValueData; set { _explicitNullValueData = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("data"); else _explicitNullProperties?.Remove("data"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData? _explicitNullValueData = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData Data { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData Data { get => _explicitNullValueData; set { _explicitNullValueData = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("data"); else _explicitNullProperties?.Remove("data"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationData _explicitNullValueData = default!;
 #endif
         /// <summary>Channel: AllPossible values are:timezone (Deliver at a specific time-of-day in each users own timezone)last-active Same as Intelligent Delivery . (Deliver at the same time of day as each user last used your app).If send_after is used, this takes effect after the send_after time has elapsed.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DelayedOption { get; set; }
+        public string? DelayedOption { get => _explicitNullValueDelayedOption; set { _explicitNullValueDelayedOption = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("delayed_option"); else _explicitNullProperties?.Remove("delayed_option"); } }
+        private string? _explicitNullValueDelayedOption = default!;
 #nullable restore
 #else
-        public string DelayedOption { get; set; }
+        public string DelayedOption { get => _explicitNullValueDelayedOption; set { _explicitNullValueDelayedOption = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("delayed_option"); else _explicitNullProperties?.Remove("delayed_option"); } }
+        private string _explicitNullValueDelayedOption = default!;
 #endif
         /// <summary>Channel: AllUse with delayed_option=timezone.Examples: &quot;9:00AM&quot;&quot;21:45&quot;&quot;9:45:30&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeliveryTimeOfDay { get; set; }
+        public string? DeliveryTimeOfDay { get => _explicitNullValueDeliveryTimeOfDay; set { _explicitNullValueDeliveryTimeOfDay = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("delivery_time_of_day"); else _explicitNullProperties?.Remove("delivery_time_of_day"); } }
+        private string? _explicitNullValueDeliveryTimeOfDay = default!;
 #nullable restore
 #else
-        public string DeliveryTimeOfDay { get; set; }
+        public string DeliveryTimeOfDay { get => _explicitNullValueDeliveryTimeOfDay; set { _explicitNullValueDeliveryTimeOfDay = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("delivery_time_of_day"); else _explicitNullProperties?.Remove("delivery_time_of_day"); } }
+        private string _explicitNullValueDeliveryTimeOfDay = default!;
 #endif
         /// <summary>Channel: EmailRequired unless template_id is set.HTML suportedThe body of the email you wish to send. Typically, customers include their own HTML templates here. Must include [unsubscribe_url] in an &lt;a&gt; tag somewhere in the email.Note: any malformed HTML content will be sent to users. Please double-check your HTML is valid.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EmailBody { get; set; }
+        public string? EmailBody { get => _explicitNullValueEmailBody; set { _explicitNullValueEmailBody = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_body"); else _explicitNullProperties?.Remove("email_body"); } }
+        private string? _explicitNullValueEmailBody = default!;
 #nullable restore
 #else
-        public string EmailBody { get; set; }
+        public string EmailBody { get => _explicitNullValueEmailBody; set { _explicitNullValueEmailBody = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_body"); else _explicitNullProperties?.Remove("email_body"); } }
+        private string _explicitNullValueEmailBody = default!;
 #endif
         /// <summary>Channel: EmailThe email address the email is from. If not specified, will default to &quot;from email&quot; set in the OneSignal Dashboard Email Settings.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EmailFromAddress { get; set; }
+        public string? EmailFromAddress { get => _explicitNullValueEmailFromAddress; set { _explicitNullValueEmailFromAddress = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_from_address"); else _explicitNullProperties?.Remove("email_from_address"); } }
+        private string? _explicitNullValueEmailFromAddress = default!;
 #nullable restore
 #else
-        public string EmailFromAddress { get; set; }
+        public string EmailFromAddress { get => _explicitNullValueEmailFromAddress; set { _explicitNullValueEmailFromAddress = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_from_address"); else _explicitNullProperties?.Remove("email_from_address"); } }
+        private string _explicitNullValueEmailFromAddress = default!;
 #endif
         /// <summary>Channel: EmailThe name the email is from. If not specified, will default to &quot;from name&quot; set in the OneSignal Dashboard Email Settings.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EmailFromName { get; set; }
+        public string? EmailFromName { get => _explicitNullValueEmailFromName; set { _explicitNullValueEmailFromName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_from_name"); else _explicitNullProperties?.Remove("email_from_name"); } }
+        private string? _explicitNullValueEmailFromName = default!;
 #nullable restore
 #else
-        public string EmailFromName { get; set; }
+        public string EmailFromName { get => _explicitNullValueEmailFromName; set { _explicitNullValueEmailFromName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_from_name"); else _explicitNullProperties?.Remove("email_from_name"); } }
+        private string _explicitNullValueEmailFromName = default!;
 #endif
         /// <summary>Channel: EmailThe preheader text of the email.Preheader is the preview text displayed immediately after an email subject that provides additional context about the email content.If not specified, will default to null.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EmailPreheader { get; set; }
+        public string? EmailPreheader { get => _explicitNullValueEmailPreheader; set { _explicitNullValueEmailPreheader = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_preheader"); else _explicitNullProperties?.Remove("email_preheader"); } }
+        private string? _explicitNullValueEmailPreheader = default!;
 #nullable restore
 #else
-        public string EmailPreheader { get; set; }
+        public string EmailPreheader { get => _explicitNullValueEmailPreheader; set { _explicitNullValueEmailPreheader = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_preheader"); else _explicitNullProperties?.Remove("email_preheader"); } }
+        private string _explicitNullValueEmailPreheader = default!;
 #endif
         /// <summary>Channel: EmailRequired.  The subject of the email.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EmailSubject { get; set; }
+        public string? EmailSubject { get => _explicitNullValueEmailSubject; set { _explicitNullValueEmailSubject = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_subject"); else _explicitNullProperties?.Remove("email_subject"); } }
+        private string? _explicitNullValueEmailSubject = default!;
 #nullable restore
 #else
-        public string EmailSubject { get; set; }
+        public string EmailSubject { get => _explicitNullValueEmailSubject; set { _explicitNullValueEmailSubject = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("email_subject"); else _explicitNullProperties?.Remove("email_subject"); } }
+        private string _explicitNullValueEmailSubject = default!;
 #endif
         /// <summary>Number of errors reported.</summary>
-        public int? Errored { get; set; }
+        public int? Errored { get => _explicitNullValueErrored; set { _explicitNullValueErrored = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("errored"); else _explicitNullProperties?.Remove("errored"); } }
+        private int? _explicitNullValueErrored = default!;
         /// <summary>Segment that will be excluded when sending. Users in these segments will not receive a notification, even if they were included in included_segments. This targeting parameter is only compatible with included_segments.Example: [&quot;Active Users&quot;, &quot;Inactive Users&quot;]</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? ExcludedSegments { get; set; }
+        public List<string>? ExcludedSegments { get => _explicitNullValueExcludedSegments; set { _explicitNullValueExcludedSegments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("excluded_segments"); else _explicitNullProperties?.Remove("excluded_segments"); } }
+        private List<string>? _explicitNullValueExcludedSegments = default!;
 #nullable restore
 #else
-        public List<string> ExcludedSegments { get; set; }
+        public List<string> ExcludedSegments { get => _explicitNullValueExcludedSegments; set { _explicitNullValueExcludedSegments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("excluded_segments"); else _explicitNullProperties?.Remove("excluded_segments"); } }
+        private List<string> _explicitNullValueExcludedSegments = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AndroidUse this if you have client side Android Oreo Channels you have already defined in your app with code.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExistingAndroidChannelId { get; set; }
+        public string? ExistingAndroidChannelId { get => _explicitNullValueExistingAndroidChannelId; set { _explicitNullValueExistingAndroidChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("existing_android_channel_id"); else _explicitNullProperties?.Remove("existing_android_channel_id"); } }
+        private string? _explicitNullValueExistingAndroidChannelId = default!;
 #nullable restore
 #else
-        public string ExistingAndroidChannelId { get; set; }
+        public string ExistingAndroidChannelId { get => _explicitNullValueExistingAndroidChannelId; set { _explicitNullValueExistingAndroidChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("existing_android_channel_id"); else _explicitNullProperties?.Remove("existing_android_channel_id"); } }
+        private string _explicitNullValueExistingAndroidChannelId = default!;
 #endif
         /// <summary>Correlation and idempotency key.A request received with this parameter will first look for another notification with the same external_id. If one exists, a notification will not be sent, and result of the previous operation will instead be returned. Therefore, if you plan on using this feature, it&apos;s important to use a good source of randomness to generate the UUID passed here.This key is only idempotent for 30 days. After 30 days, the notification could be removed from our system and a notification with the same external_id will be sent again.  See Idempotent Notification Requests for more detailswriteOnly: true</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalId { get; set; }
+        public string? ExternalId { get => _explicitNullValueExternalId; set { _explicitNullValueExternalId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("external_id"); else _explicitNullProperties?.Remove("external_id"); } }
+        private string? _explicitNullValueExternalId = default!;
 #nullable restore
 #else
-        public string ExternalId { get; set; }
+        public string ExternalId { get => _explicitNullValueExternalId; set { _explicitNullValueExternalId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("external_id"); else _explicitNullProperties?.Remove("external_id"); } }
+        private string _explicitNullValueExternalId = default!;
 #endif
         /// <summary>Number of messages sent to unsubscribed devices.</summary>
-        public int? Failed { get; set; }
+        public int? Failed { get => _explicitNullValueFailed; set { _explicitNullValueFailed = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("failed"); else _explicitNullProperties?.Remove("failed"); } }
+        private int? _explicitNullValueFailed = default!;
         /// <summary>The filters property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Filter>? Filters { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Filter>? Filters { get => _explicitNullValueFilters; set { _explicitNullValueFilters = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("filters"); else _explicitNullProperties?.Remove("filters"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.Filter>? _explicitNullValueFilters = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Filter> Filters { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Filter> Filters { get => _explicitNullValueFilters; set { _explicitNullValueFilters = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("filters"); else _explicitNullProperties?.Remove("filters"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.Filter> _explicitNullValueFilters = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: FirefoxNot recommended Few people need to set Firefox-specific icons. We recommend setting chrome_web_icon instead, which Firefox will also use.Sets the web push notification&apos;s icon for Firefox. An image URL linking to a valid image. Common image types are supported; GIF will not animate. We recommend 256x256 (at least 80x80) to display well on high DPI devices.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? FirefoxIcon { get; set; }
+        public string? FirefoxIcon { get => _explicitNullValueFirefoxIcon; set { _explicitNullValueFirefoxIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("firefox_icon"); else _explicitNullProperties?.Remove("firefox_icon"); } }
+        private string? _explicitNullValueFirefoxIcon = default!;
 #nullable restore
 #else
-        public string FirefoxIcon { get; set; }
+        public string FirefoxIcon { get => _explicitNullValueFirefoxIcon; set { _explicitNullValueFirefoxIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("firefox_icon"); else _explicitNullProperties?.Remove("firefox_icon"); } }
+        private string _explicitNullValueFirefoxIcon = default!;
 #endif
         /// <summary>The message&apos;s title, a map of language codes to text for each language. Each hash must have a language code string for a key, mapped to the localized text you would like users to receive for that language.This field supports inline substitutions.Example: {&quot;en&quot;: &quot;English Title&quot;, &quot;es&quot;: &quot;Spanish Title&quot;}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Headings? Headings { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Headings? Headings { get => _explicitNullValueHeadings; set { _explicitNullValueHeadings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("headings"); else _explicitNullProperties?.Remove("headings"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Headings? _explicitNullValueHeadings = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Headings Headings { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Headings Headings { get => _explicitNullValueHeadings; set { _explicitNullValueHeadings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("headings"); else _explicitNullProperties?.Remove("headings"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Headings _explicitNullValueHeadings = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiAccent Color used on Action Buttons and Group overflow count.Uses RGB Hex value (E.g. #9900FF).Defaults to device&apos;s theme color if not set.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiAccentColor { get; set; }
+        public string? HuaweiAccentColor { get => _explicitNullValueHuaweiAccentColor; set { _explicitNullValueHuaweiAccentColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_accent_color"); else _explicitNullProperties?.Remove("huawei_accent_color"); } }
+        private string? _explicitNullValueHuaweiAccentColor = default!;
 #nullable restore
 #else
-        public string HuaweiAccentColor { get; set; }
+        public string HuaweiAccentColor { get => _explicitNullValueHuaweiAccentColor; set { _explicitNullValueHuaweiAccentColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_accent_color"); else _explicitNullProperties?.Remove("huawei_accent_color"); } }
+        private string _explicitNullValueHuaweiAccentColor = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiPicture to display in the expanded view. Can be a drawable resource name or a URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiBigPicture { get; set; }
+        public string? HuaweiBigPicture { get => _explicitNullValueHuaweiBigPicture; set { _explicitNullValueHuaweiBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_big_picture"); else _explicitNullProperties?.Remove("huawei_big_picture"); } }
+        private string? _explicitNullValueHuaweiBigPicture = default!;
 #nullable restore
 #else
-        public string HuaweiBigPicture { get; set; }
+        public string HuaweiBigPicture { get => _explicitNullValueHuaweiBigPicture; set { _explicitNullValueHuaweiBigPicture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_big_picture"); else _explicitNullProperties?.Remove("huawei_big_picture"); } }
+        private string _explicitNullValueHuaweiBigPicture = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiThe Android Oreo Notification Category to send the notification under. See the Category documentation on creating one and getting it&apos;s id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiChannelId { get; set; }
+        public string? HuaweiChannelId { get => _explicitNullValueHuaweiChannelId; set { _explicitNullValueHuaweiChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_channel_id"); else _explicitNullProperties?.Remove("huawei_channel_id"); } }
+        private string? _explicitNullValueHuaweiChannelId = default!;
 #nullable restore
 #else
-        public string HuaweiChannelId { get; set; }
+        public string HuaweiChannelId { get => _explicitNullValueHuaweiChannelId; set { _explicitNullValueHuaweiChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_channel_id"); else _explicitNullProperties?.Remove("huawei_channel_id"); } }
+        private string _explicitNullValueHuaweiChannelId = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiUse this if you have client side Android Oreo Channels you have already defined in your app with code.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiExistingChannelId { get; set; }
+        public string? HuaweiExistingChannelId { get => _explicitNullValueHuaweiExistingChannelId; set { _explicitNullValueHuaweiExistingChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_existing_channel_id"); else _explicitNullProperties?.Remove("huawei_existing_channel_id"); } }
+        private string? _explicitNullValueHuaweiExistingChannelId = default!;
 #nullable restore
 #else
-        public string HuaweiExistingChannelId { get; set; }
+        public string HuaweiExistingChannelId { get => _explicitNullValueHuaweiExistingChannelId; set { _explicitNullValueHuaweiExistingChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_existing_channel_id"); else _explicitNullProperties?.Remove("huawei_existing_channel_id"); } }
+        private string _explicitNullValueHuaweiExistingChannelId = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiCan be a drawable resource name or a URL.See: How to create large icons</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiLargeIcon { get; set; }
+        public string? HuaweiLargeIcon { get => _explicitNullValueHuaweiLargeIcon; set { _explicitNullValueHuaweiLargeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_large_icon"); else _explicitNullProperties?.Remove("huawei_large_icon"); } }
+        private string? _explicitNullValueHuaweiLargeIcon = default!;
 #nullable restore
 #else
-        public string HuaweiLargeIcon { get; set; }
+        public string HuaweiLargeIcon { get => _explicitNullValueHuaweiLargeIcon; set { _explicitNullValueHuaweiLargeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_large_icon"); else _explicitNullProperties?.Remove("huawei_large_icon"); } }
+        private string _explicitNullValueHuaweiLargeIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Huawei&amp;#9888;&amp;#65039;Deprecated, this field ONLY works on EMUI 5 (Android 7 based) and older devices.Please also set Notification Categories / Channels noted above to support EMUI 8 (Android 8 based) devices.Sets the devices LED notification light if the device has one. RGB Hex format.Example(Blue): &quot;0000FF&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiLedColor { get; set; }
+        public string? HuaweiLedColor { get => _explicitNullValueHuaweiLedColor; set { _explicitNullValueHuaweiLedColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_led_color"); else _explicitNullProperties?.Remove("huawei_led_color"); } }
+        private string? _explicitNullValueHuaweiLedColor = default!;
 #nullable restore
 #else
-        public string HuaweiLedColor { get; set; }
+        public string HuaweiLedColor { get => _explicitNullValueHuaweiLedColor; set { _explicitNullValueHuaweiLedColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_led_color"); else _explicitNullProperties?.Remove("huawei_led_color"); } }
+        private string _explicitNullValueHuaweiLedColor = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiUse &quot;data&quot; or &quot;message&quot; depending on the type of notification you are sending. More details in Data &amp; Background Notifications.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiMsgType { get; set; }
+        public string? HuaweiMsgType { get => _explicitNullValueHuaweiMsgType; set { _explicitNullValueHuaweiMsgType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_msg_type"); else _explicitNullProperties?.Remove("huawei_msg_type"); } }
+        private string? _explicitNullValueHuaweiMsgType = default!;
 #nullable restore
 #else
-        public string HuaweiMsgType { get; set; }
+        public string HuaweiMsgType { get => _explicitNullValueHuaweiMsgType; set { _explicitNullValueHuaweiMsgType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_msg_type"); else _explicitNullProperties?.Remove("huawei_msg_type"); } }
+        private string _explicitNullValueHuaweiMsgType = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: HuaweiIcon shown in the status bar and on the top left of the notification.Use an Android resource path (E.g. /drawable/small_icon).Defaults to your app icon if not set.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiSmallIcon { get; set; }
+        public string? HuaweiSmallIcon { get => _explicitNullValueHuaweiSmallIcon; set { _explicitNullValueHuaweiSmallIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_small_icon"); else _explicitNullProperties?.Remove("huawei_small_icon"); } }
+        private string? _explicitNullValueHuaweiSmallIcon = default!;
 #nullable restore
 #else
-        public string HuaweiSmallIcon { get; set; }
+        public string HuaweiSmallIcon { get => _explicitNullValueHuaweiSmallIcon; set { _explicitNullValueHuaweiSmallIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_small_icon"); else _explicitNullProperties?.Remove("huawei_small_icon"); } }
+        private string _explicitNullValueHuaweiSmallIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Huawei&amp;#9888;&amp;#65039;Deprecated, this field ONLY works on EMUI 5 (Android 7 based) and older devices.Please also set Notification Categories / Channels noted above to support EMUI 8 (Android 8 based) devices.Sound file that is included in your app to play instead of the default device notification sound. NOTE: Leave off file extension for and include the full path.Example: &quot;/res/raw/notification&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HuaweiSound { get; set; }
+        public string? HuaweiSound { get => _explicitNullValueHuaweiSound; set { _explicitNullValueHuaweiSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_sound"); else _explicitNullProperties?.Remove("huawei_sound"); } }
+        private string? _explicitNullValueHuaweiSound = default!;
 #nullable restore
 #else
-        public string HuaweiSound { get; set; }
+        public string HuaweiSound { get => _explicitNullValueHuaweiSound; set { _explicitNullValueHuaweiSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_sound"); else _explicitNullProperties?.Remove("huawei_sound"); } }
+        private string _explicitNullValueHuaweiSound = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Huawei&amp;#9888;&amp;#65039;Deprecated, this field ONLY works on EMUI 5 (Android 7 based) and older devices.Please also set Notification Categories / Channels noted above to support EMUI 8 (Android 8 based) devices.1 = Public (default) (Shows the full message on the lock screen unless the user has disabled all notifications from showing on the lock screen. Please consider the user and mark private if the contents are.)0 = Private (Hides message contents on lock screen if the user set &quot;Hide sensitive notification content&quot; in the system settings)-1 = Secret (Notification does not show on the lock screen at all)</summary>
-        public int? HuaweiVisibility { get; set; }
+        public int? HuaweiVisibility { get => _explicitNullValueHuaweiVisibility; set { _explicitNullValueHuaweiVisibility = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("huawei_visibility"); else _explicitNullProperties?.Remove("huawei_visibility"); } }
+        private int? _explicitNullValueHuaweiVisibility = default!;
         /// <summary>The id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("id"); else _explicitNullProperties?.Remove("id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("id"); else _explicitNullProperties?.Remove("id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>The include_aliases property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases? IncludeAliases { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases? IncludeAliases { get => _explicitNullValueIncludeAliases; set { _explicitNullValueIncludeAliases = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_aliases"); else _explicitNullProperties?.Remove("include_aliases"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases? _explicitNullValueIncludeAliases = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases IncludeAliases { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases IncludeAliases { get => _explicitNullValueIncludeAliases; set { _explicitNullValueIncludeAliases = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_aliases"); else _explicitNullProperties?.Remove("include_aliases"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetIncludeAliases _explicitNullValueIncludeAliases = default!;
 #endif
         /// <summary>Not Recommended: Please consider using include_player_ids or include_external_user_ids instead.Target using Amazon ADM registration IDs. If a token does not correspond to an existing user, a new user will be created.Example: amzn1.adm-registration.v1.XpvSSUk0Rc3hTVVV...Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeAmazonRegIds { get; set; }
+        public List<string>? IncludeAmazonRegIds { get => _explicitNullValueIncludeAmazonRegIds; set { _explicitNullValueIncludeAmazonRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_amazon_reg_ids"); else _explicitNullProperties?.Remove("include_amazon_reg_ids"); } }
+        private List<string>? _explicitNullValueIncludeAmazonRegIds = default!;
 #nullable restore
 #else
-        public List<string> IncludeAmazonRegIds { get; set; }
+        public List<string> IncludeAmazonRegIds { get => _explicitNullValueIncludeAmazonRegIds; set { _explicitNullValueIncludeAmazonRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_amazon_reg_ids"); else _explicitNullProperties?.Remove("include_amazon_reg_ids"); } }
+        private List<string> _explicitNullValueIncludeAmazonRegIds = default!;
 #endif
         /// <summary>Not Recommended: Please consider using include_player_ids or include_external_user_ids instead.Target using Android device registration IDs. If a token does not correspond to an existing user, a new user will be created.Example: APA91bEeiUeSukAAUdnw3O2RB45FWlSpgJ7Ji_...Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeAndroidRegIds { get; set; }
+        public List<string>? IncludeAndroidRegIds { get => _explicitNullValueIncludeAndroidRegIds; set { _explicitNullValueIncludeAndroidRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_android_reg_ids"); else _explicitNullProperties?.Remove("include_android_reg_ids"); } }
+        private List<string>? _explicitNullValueIncludeAndroidRegIds = default!;
 #nullable restore
 #else
-        public List<string> IncludeAndroidRegIds { get; set; }
+        public List<string> IncludeAndroidRegIds { get => _explicitNullValueIncludeAndroidRegIds; set { _explicitNullValueIncludeAndroidRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_android_reg_ids"); else _explicitNullProperties?.Remove("include_android_reg_ids"); } }
+        private List<string> _explicitNullValueIncludeAndroidRegIds = default!;
 #endif
         /// <summary>Not Recommended: Please consider using include_player_ids or include_external_user_ids instead.Target using Chrome App registration IDs. If a token does not correspond to an existing user, a new user will be created.Example: APA91bEeiUeSukAAUdnw3O2RB45FWlSpgJ7Ji_...Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeChromeRegIds { get; set; }
+        public List<string>? IncludeChromeRegIds { get => _explicitNullValueIncludeChromeRegIds; set { _explicitNullValueIncludeChromeRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_chrome_reg_ids"); else _explicitNullProperties?.Remove("include_chrome_reg_ids"); } }
+        private List<string>? _explicitNullValueIncludeChromeRegIds = default!;
 #nullable restore
 #else
-        public List<string> IncludeChromeRegIds { get; set; }
+        public List<string> IncludeChromeRegIds { get => _explicitNullValueIncludeChromeRegIds; set { _explicitNullValueIncludeChromeRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_chrome_reg_ids"); else _explicitNullProperties?.Remove("include_chrome_reg_ids"); } }
+        private List<string> _explicitNullValueIncludeChromeRegIds = default!;
 #endif
         /// <summary>Not Recommended: Please consider using include_player_ids or include_external_user_ids instead.Target using Chrome Web Push registration IDs. If a token does not correspond to an existing user, a new user will be created.Example: APA91bEeiUeSukAAUdnw3O2RB45FWlSpgJ7Ji_...Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeChromeWebRegIds { get; set; }
+        public List<string>? IncludeChromeWebRegIds { get => _explicitNullValueIncludeChromeWebRegIds; set { _explicitNullValueIncludeChromeWebRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_chrome_web_reg_ids"); else _explicitNullProperties?.Remove("include_chrome_web_reg_ids"); } }
+        private List<string>? _explicitNullValueIncludeChromeWebRegIds = default!;
 #nullable restore
 #else
-        public List<string> IncludeChromeWebRegIds { get; set; }
+        public List<string> IncludeChromeWebRegIds { get => _explicitNullValueIncludeChromeWebRegIds; set { _explicitNullValueIncludeChromeWebRegIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_chrome_web_reg_ids"); else _explicitNullProperties?.Remove("include_chrome_web_reg_ids"); } }
+        private List<string> _explicitNullValueIncludeChromeWebRegIds = default!;
 #endif
         /// <summary>The segment names you want to target. Users in these segments will receive a notification. This targeting parameter is only compatible with excluded_segments.Example: [&quot;Active Users&quot;, &quot;Inactive Users&quot;]</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludedSegments { get; set; }
+        public List<string>? IncludedSegments { get => _explicitNullValueIncludedSegments; set { _explicitNullValueIncludedSegments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("included_segments"); else _explicitNullProperties?.Remove("included_segments"); } }
+        private List<string>? _explicitNullValueIncludedSegments = default!;
 #nullable restore
 #else
-        public List<string> IncludedSegments { get; set; }
+        public List<string> IncludedSegments { get => _explicitNullValueIncludedSegments; set { _explicitNullValueIncludedSegments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("included_segments"); else _explicitNullProperties?.Remove("included_segments"); } }
+        private List<string> _explicitNullValueIncludedSegments = default!;
 #endif
         /// <summary>Recommended for Sending Emails - Target specific email addresses.If an email does not correspond to an existing user, a new user will be created.Example: nick@catfac.tsLimit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeEmailTokens { get; set; }
+        public List<string>? IncludeEmailTokens { get => _explicitNullValueIncludeEmailTokens; set { _explicitNullValueIncludeEmailTokens = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_email_tokens"); else _explicitNullProperties?.Remove("include_email_tokens"); } }
+        private List<string>? _explicitNullValueIncludeEmailTokens = default!;
 #nullable restore
 #else
-        public List<string> IncludeEmailTokens { get; set; }
+        public List<string> IncludeEmailTokens { get => _explicitNullValueIncludeEmailTokens; set { _explicitNullValueIncludeEmailTokens = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_email_tokens"); else _explicitNullProperties?.Remove("include_email_tokens"); } }
+        private List<string> _explicitNullValueIncludeEmailTokens = default!;
 #endif
         /// <summary>Target specific devices by custom user IDs assigned via API.Not compatible with any other targeting parametersExample: [&quot;custom-id-assigned-by-api&quot;]REQUIRED: REST API Key AuthenticationLimit of 2,000 entries per REST API call.Note: If targeting push, email, or sms subscribers with same ids, use with channel_for_external_user_ids to indicate you are sending a push or email or sms.</summary>
         [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeExternalUserIds { get; set; }
+        public List<string>? IncludeExternalUserIds { get => _explicitNullValueIncludeExternalUserIds; set { _explicitNullValueIncludeExternalUserIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_external_user_ids"); else _explicitNullProperties?.Remove("include_external_user_ids"); } }
+        private List<string>? _explicitNullValueIncludeExternalUserIds = default!;
 #nullable restore
 #else
-        public List<string> IncludeExternalUserIds { get; set; }
+        public List<string> IncludeExternalUserIds { get => _explicitNullValueIncludeExternalUserIds; set { _explicitNullValueIncludeExternalUserIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_external_user_ids"); else _explicitNullProperties?.Remove("include_external_user_ids"); } }
+        private List<string> _explicitNullValueIncludeExternalUserIds = default!;
 #endif
         /// <summary>Not Recommended: Please consider using include_player_ids or include_external_user_ids instead.Target using iOS device tokens.Warning: Only works with Production tokens.All non-alphanumeric characters must be removed from each token. If a token does not correspond to an existing user, a new user will be created.Example: ce777617da7f548fe7a9ab6febb56cf39fba6d38203...Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeIosTokens { get; set; }
+        public List<string>? IncludeIosTokens { get => _explicitNullValueIncludeIosTokens; set { _explicitNullValueIncludeIosTokens = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_ios_tokens"); else _explicitNullProperties?.Remove("include_ios_tokens"); } }
+        private List<string>? _explicitNullValueIncludeIosTokens = default!;
 #nullable restore
 #else
-        public List<string> IncludeIosTokens { get; set; }
+        public List<string> IncludeIosTokens { get => _explicitNullValueIncludeIosTokens; set { _explicitNullValueIncludeIosTokens = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_ios_tokens"); else _explicitNullProperties?.Remove("include_ios_tokens"); } }
+        private List<string> _explicitNullValueIncludeIosTokens = default!;
 #endif
         /// <summary>Recommended for Sending SMS - Target specific phone numbers. The phone number should be in the E.164 format. Phone number should be an existing subscriber on OneSignal. Refer our docs to learn how to add phone numbers to OneSignal.Example phone number: +1999999999Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludePhoneNumbers { get; set; }
+        public List<string>? IncludePhoneNumbers { get => _explicitNullValueIncludePhoneNumbers; set { _explicitNullValueIncludePhoneNumbers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_phone_numbers"); else _explicitNullProperties?.Remove("include_phone_numbers"); } }
+        private List<string>? _explicitNullValueIncludePhoneNumbers = default!;
 #nullable restore
 #else
-        public List<string> IncludePhoneNumbers { get; set; }
+        public List<string> IncludePhoneNumbers { get => _explicitNullValueIncludePhoneNumbers; set { _explicitNullValueIncludePhoneNumbers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_phone_numbers"); else _explicitNullProperties?.Remove("include_phone_numbers"); } }
+        private List<string> _explicitNullValueIncludePhoneNumbers = default!;
 #endif
         /// <summary>Specific playerids to send your notification to. _Does not require API Auth Key.Do not combine with other targeting parameters. Not compatible with any other targeting parameters.Example: [&quot;1dd608f2-c6a1-11e3-851d-000c2940e62c&quot;]Limit of 2,000 entries per REST API call</summary>
         [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludePlayerIds { get; set; }
+        public List<string>? IncludePlayerIds { get => _explicitNullValueIncludePlayerIds; set { _explicitNullValueIncludePlayerIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_player_ids"); else _explicitNullProperties?.Remove("include_player_ids"); } }
+        private List<string>? _explicitNullValueIncludePlayerIds = default!;
 #nullable restore
 #else
-        public List<string> IncludePlayerIds { get; set; }
+        public List<string> IncludePlayerIds { get => _explicitNullValueIncludePlayerIds; set { _explicitNullValueIncludePlayerIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_player_ids"); else _explicitNullProperties?.Remove("include_player_ids"); } }
+        private List<string> _explicitNullValueIncludePlayerIds = default!;
 #endif
         /// <summary>Channel: EmailDefault is `false`. This field is used to send transactional notifications. If set to `true`, this notification will also be sent to unsubscribed emails. If a `template_id` is provided, the `include_unsubscribed` value from the template will be inherited. If you are using a third-party ESP, this field requires the ESP&apos;s list of unsubscribed emails to be cleared.</summary>
-        public bool? IncludeUnsubscribed { get; set; }
+        public bool? IncludeUnsubscribed { get => _explicitNullValueIncludeUnsubscribed; set { _explicitNullValueIncludeUnsubscribed = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_unsubscribed"); else _explicitNullProperties?.Remove("include_unsubscribed"); } }
+        private bool? _explicitNullValueIncludeUnsubscribed = default!;
         /// <summary>Not Recommended: Please consider using include_player_ids or include_external_user_ids instead.Target using Windows URIs. If a token does not correspond to an existing user, a new user will be created.Example: http://s.notify.live.net/u/1/bn1/HmQAAACPaLDr-...Limit of 2,000 entries per REST API call</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? IncludeWpWnsUris { get; set; }
+        public List<string>? IncludeWpWnsUris { get => _explicitNullValueIncludeWpWnsUris; set { _explicitNullValueIncludeWpWnsUris = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_wp_wns_uris"); else _explicitNullProperties?.Remove("include_wp_wns_uris"); } }
+        private List<string>? _explicitNullValueIncludeWpWnsUris = default!;
 #nullable restore
 #else
-        public List<string> IncludeWpWnsUris { get; set; }
+        public List<string> IncludeWpWnsUris { get => _explicitNullValueIncludeWpWnsUris; set { _explicitNullValueIncludeWpWnsUris = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("include_wp_wns_uris"); else _explicitNullProperties?.Remove("include_wp_wns_uris"); } }
+        private List<string> _explicitNullValueIncludeWpWnsUris = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS 10+Adds media attachments to notifications. Set as JSON object, key as a media id of your choice and the value as a valid local filename or URL. User must press and hold on the notification to view.Do not set mutable_content to download attachments. The OneSignal SDK does this automaticallyExample: {&quot;id1&quot;: &quot;https://domain.com/image.jpg&quot;}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments? IosAttachments { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments? IosAttachments { get => _explicitNullValueIosAttachments; set { _explicitNullValueIosAttachments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_attachments"); else _explicitNullProperties?.Remove("ios_attachments"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments? _explicitNullValueIosAttachments = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments IosAttachments { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments IosAttachments { get => _explicitNullValueIosAttachments; set { _explicitNullValueIosAttachments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_attachments"); else _explicitNullProperties?.Remove("ios_attachments"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationIosAttachments _explicitNullValueIosAttachments = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOSUsed with ios_badgeType, describes the value to set or amount to increase/decrease your app&apos;s iOS badge count by.You can use a negative number to decrease the badge count when used with an ios_badgeType of Increase.</summary>
-        public int? IosBadgeCount { get; set; }
+        public int? IosBadgeCount { get => _explicitNullValueIosBadgeCount; set { _explicitNullValueIosBadgeCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_badgeCount"); else _explicitNullProperties?.Remove("ios_badgeCount"); } }
+        private int? _explicitNullValueIosBadgeCount = default!;
         /// <summary>Channel: Push NotificationsPlatform: iOSDescribes whether to set or increase/decrease your app&apos;s iOS badge count by the ios_badgeCount specified count. Can specify None, SetTo, or Increase.`None` leaves the count unaffected.`SetTo` directly sets the badge count to the number specified in ios_badgeCount.`Increase` adds the number specified in ios_badgeCount to the total. Use a negative number to decrease the badge count.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? IosBadgeType { get; set; }
+        public string? IosBadgeType { get => _explicitNullValueIosBadgeType; set { _explicitNullValueIosBadgeType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_badgeType"); else _explicitNullProperties?.Remove("ios_badgeType"); } }
+        private string? _explicitNullValueIosBadgeType = default!;
 #nullable restore
 #else
-        public string IosBadgeType { get; set; }
+        public string IosBadgeType { get => _explicitNullValueIosBadgeType; set { _explicitNullValueIosBadgeType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_badgeType"); else _explicitNullProperties?.Remove("ios_badgeType"); } }
+        private string _explicitNullValueIosBadgeType = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOSCategory APS payload, use with registerUserNotificationSettings:categories in your Objective-C / Swift code.Example: calendar category which contains actions like accept and declineiOS 10+ This will trigger your UNNotificationContentExtension whose ID matches this category.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? IosCategory { get; set; }
+        public string? IosCategory { get => _explicitNullValueIosCategory; set { _explicitNullValueIosCategory = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_category"); else _explicitNullProperties?.Remove("ios_category"); } }
+        private string? _explicitNullValueIosCategory = default!;
 #nullable restore
 #else
-        public string IosCategory { get; set; }
+        public string IosCategory { get => _explicitNullValueIosCategory; set { _explicitNullValueIosCategory = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_category"); else _explicitNullProperties?.Remove("ios_category"); } }
+        private string _explicitNullValueIosCategory = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOSSound file that is included in your app to play instead of the default device notification sound. Pass nil to disable vibration and sound for the notification.Example: &quot;notification.wav&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? IosSound { get; set; }
+        public string? IosSound { get => _explicitNullValueIosSound; set { _explicitNullValueIosSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_sound"); else _explicitNullProperties?.Remove("ios_sound"); } }
+        private string? _explicitNullValueIosSound = default!;
 #nullable restore
 #else
-        public string IosSound { get; set; }
+        public string IosSound { get => _explicitNullValueIosSound; set { _explicitNullValueIosSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ios_sound"); else _explicitNullProperties?.Remove("ios_sound"); } }
+        private string _explicitNullValueIosSound = default!;
 #endif
         /// <summary>Indicates whether to send to all devices registered under your app&apos;s Amazon Fire platform.</summary>
-        public bool? IsAdm { get; set; }
+        public bool? IsAdm { get => _explicitNullValueIsAdm; set { _explicitNullValueIsAdm = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isAdm"); else _explicitNullProperties?.Remove("isAdm"); } }
+        private bool? _explicitNullValueIsAdm = default!;
         /// <summary>Indicates whether to send to all devices registered under your app&apos;s Google Android platform.</summary>
-        public bool? IsAndroid { get; set; }
+        public bool? IsAndroid { get => _explicitNullValueIsAndroid; set { _explicitNullValueIsAndroid = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isAndroid"); else _explicitNullProperties?.Remove("isAndroid"); } }
+        private bool? _explicitNullValueIsAndroid = default!;
         /// <summary>Indicates whether to send to all subscribed web browser users, including Chrome, Firefox, and Safari.You may use this instead as a combined flag instead of separately enabling isChromeWeb, isFirefox, and isSafari, though the three options are equivalent to this one.</summary>
-        public bool? IsAnyWeb { get; set; }
+        public bool? IsAnyWeb { get => _explicitNullValueIsAnyWeb; set { _explicitNullValueIsAnyWeb = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isAnyWeb"); else _explicitNullProperties?.Remove("isAnyWeb"); } }
+        private bool? _explicitNullValueIsAnyWeb = default!;
         /// <summary>This flag is not used for web push Please see isChromeWeb for sending to web push users. This flag only applies to Google Chrome Apps &amp; Extensions.Indicates whether to send to all devices registered under your app&apos;s Google Chrome Apps &amp; Extension platform.</summary>
-        public bool? IsChrome { get; set; }
+        public bool? IsChrome { get => _explicitNullValueIsChrome; set { _explicitNullValueIsChrome = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isChrome"); else _explicitNullProperties?.Remove("isChrome"); } }
+        private bool? _explicitNullValueIsChrome = default!;
         /// <summary>Indicates whether to send to all Google Chrome, Chrome on Android, and Mozilla Firefox users registered under your Chrome &amp; Firefox web push platform.</summary>
-        public bool? IsChromeWeb { get; set; }
+        public bool? IsChromeWeb { get => _explicitNullValueIsChromeWeb; set { _explicitNullValueIsChromeWeb = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isChromeWeb"); else _explicitNullProperties?.Remove("isChromeWeb"); } }
+        private bool? _explicitNullValueIsChromeWeb = default!;
         /// <summary>Indicates whether to send to all Mozilla Firefox desktop users registered under your Firefox web push platform.</summary>
-        public bool? IsFirefox { get; set; }
+        public bool? IsFirefox { get => _explicitNullValueIsFirefox; set { _explicitNullValueIsFirefox = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isFirefox"); else _explicitNullProperties?.Remove("isFirefox"); } }
+        private bool? _explicitNullValueIsFirefox = default!;
         /// <summary>Indicates whether to send to all devices registered under your app&apos;s Huawei Android platform.</summary>
-        public bool? IsHuawei { get; set; }
+        public bool? IsHuawei { get => _explicitNullValueIsHuawei; set { _explicitNullValueIsHuawei = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isHuawei"); else _explicitNullProperties?.Remove("isHuawei"); } }
+        private bool? _explicitNullValueIsHuawei = default!;
         /// <summary>Indicates whether to send to all devices registered under your app&apos;s Apple iOS platform.</summary>
-        public bool? IsIos { get; set; }
+        public bool? IsIos { get => _explicitNullValueIsIos; set { _explicitNullValueIsIos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isIos"); else _explicitNullProperties?.Remove("isIos"); } }
+        private bool? _explicitNullValueIsIos = default!;
         /// <summary>Does not support iOS Safari. Indicates whether to send to all Apple&apos;s Safari desktop users registered under your Safari web push platform. Read more iOS Safari</summary>
-        public bool? IsSafari { get; set; }
+        public bool? IsSafari { get => _explicitNullValueIsSafari; set { _explicitNullValueIsSafari = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isSafari"); else _explicitNullProperties?.Remove("isSafari"); } }
+        private bool? _explicitNullValueIsSafari = default!;
         /// <summary>Indicates whether to send to all devices registered under your app&apos;s Windows platform.</summary>
-        public bool? IsWPWNS { get; set; }
+        public bool? IsWPWNS { get => _explicitNullValueIsWPWNS; set { _explicitNullValueIsWPWNS = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("isWP_WNS"); else _explicitNullProperties?.Remove("isWP_WNS"); } }
+        private bool? _explicitNullValueIsWPWNS = default!;
         /// <summary>Channel: Push NotificationsPlatform: AndroidCan be a drawable resource name or a URL.See: How to create large icons</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LargeIcon { get; set; }
+        public string? LargeIcon { get => _explicitNullValueLargeIcon; set { _explicitNullValueLargeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("large_icon"); else _explicitNullProperties?.Remove("large_icon"); } }
+        private string? _explicitNullValueLargeIcon = default!;
 #nullable restore
 #else
-        public string LargeIcon { get; set; }
+        public string LargeIcon { get => _explicitNullValueLargeIcon; set { _explicitNullValueLargeIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("large_icon"); else _explicitNullProperties?.Remove("large_icon"); } }
+        private string _explicitNullValueLargeIcon = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS 10+Always defaults to true and cannot be turned off. Allows tracking of notification receives and changing of the notification content in your app before it is displayed. Triggers didReceive(_:withContentHandler:) on your UNNotificationServiceExtension.</summary>
-        public bool? MutableContent { get; set; }
+        public bool? MutableContent { get => _explicitNullValueMutableContent; set { _explicitNullValueMutableContent = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("mutable_content"); else _explicitNullProperties?.Remove("mutable_content"); } }
+        private bool? _explicitNullValueMutableContent = default!;
         /// <summary>Required for SMS Messages.An identifier for tracking message within the OneSignal dashboard or export analytics.Not shown to end user.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>The outcomes property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData>? Outcomes { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData>? Outcomes { get => _explicitNullValueOutcomes; set { _explicitNullValueOutcomes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("outcomes"); else _explicitNullProperties?.Remove("outcomes"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData>? _explicitNullValueOutcomes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData> Outcomes { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData> Outcomes { get => _explicitNullValueOutcomes; set { _explicitNullValueOutcomes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("outcomes"); else _explicitNullProperties?.Remove("outcomes"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData> _explicitNullValueOutcomes = default!;
 #endif
         /// <summary>Hash of delivery statistics broken out by target device platform.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryData? PlatformDeliveryStats { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryData? PlatformDeliveryStats { get => _explicitNullValuePlatformDeliveryStats; set { _explicitNullValuePlatformDeliveryStats = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("platform_delivery_stats"); else _explicitNullProperties?.Remove("platform_delivery_stats"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryData? _explicitNullValuePlatformDeliveryStats = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryData PlatformDeliveryStats { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryData PlatformDeliveryStats { get => _explicitNullValuePlatformDeliveryStats; set { _explicitNullValuePlatformDeliveryStats = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("platform_delivery_stats"); else _explicitNullProperties?.Remove("platform_delivery_stats"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryData _explicitNullValuePlatformDeliveryStats = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: Android, Chrome, ChromeWebDelivery priority through the push server (example GCM/FCM). Pass 10 for high priority or any other integer for normal priority. Defaults to normal priority for Android and high for iOS. For Android 6.0+ devices setting priority to high will wake the device out of doze mode.</summary>
-        public int? Priority { get; set; }
+        public int? Priority { get => _explicitNullValuePriority; set { _explicitNullValuePriority = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("priority"); else _explicitNullProperties?.Remove("priority"); } }
+        private int? _explicitNullValuePriority = default!;
         /// <summary>Unix timestamp indicating when the notification was created.</summary>
-        public long? QueuedAt { get; set; }
+        public long? QueuedAt { get => _explicitNullValueQueuedAt; set { _explicitNullValueQueuedAt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("queued_at"); else _explicitNullProperties?.Remove("queued_at"); } }
+        private long? _explicitNullValueQueuedAt = default!;
         /// <summary>Number of devices that received the message.</summary>
-        public int? Received { get; set; }
+        public int? Received { get => _explicitNullValueReceived; set { _explicitNullValueReceived = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("received"); else _explicitNullProperties?.Remove("received"); } }
+        private int? _explicitNullValueReceived = default!;
         /// <summary>Number of notifications that have not been sent out yet. This can mean either our system is still processing the notification or you have delayed options set.</summary>
-        public int? Remaining { get; set; }
+        public int? Remaining { get => _explicitNullValueRemaining; set { _explicitNullValueRemaining = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("remaining"); else _explicitNullProperties?.Remove("remaining"); } }
+        private int? _explicitNullValueRemaining = default!;
         /// <summary>Unix timestamp indicating when notification delivery should begin.</summary>
-        public long? SendAfter { get; set; }
+        public long? SendAfter { get => _explicitNullValueSendAfter; set { _explicitNullValueSendAfter = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("send_after"); else _explicitNullProperties?.Remove("send_after"); } }
+        private long? _explicitNullValueSendAfter = default!;
         /// <summary>Channel: Push NotificationsPlatform: AndroidIcon shown in the status bar and on the top left of the notification.If not set a bell icon will be used or ic_stat_onesignal_default if you have set this resource name.See: How to create small icons</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SmallIcon { get; set; }
+        public string? SmallIcon { get => _explicitNullValueSmallIcon; set { _explicitNullValueSmallIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("small_icon"); else _explicitNullProperties?.Remove("small_icon"); } }
+        private string? _explicitNullValueSmallIcon = default!;
 #nullable restore
 #else
-        public string SmallIcon { get; set; }
+        public string SmallIcon { get => _explicitNullValueSmallIcon; set { _explicitNullValueSmallIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("small_icon"); else _explicitNullProperties?.Remove("small_icon"); } }
+        private string _explicitNullValueSmallIcon = default!;
 #endif
         /// <summary>Channel: SMSPhone Number used to send SMS. Should be a registered Twilio phone number in E.164 format.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SmsFrom { get; set; }
+        public string? SmsFrom { get => _explicitNullValueSmsFrom; set { _explicitNullValueSmsFrom = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("sms_from"); else _explicitNullProperties?.Remove("sms_from"); } }
+        private string? _explicitNullValueSmsFrom = default!;
 #nullable restore
 #else
-        public string SmsFrom { get; set; }
+        public string SmsFrom { get => _explicitNullValueSmsFrom; set { _explicitNullValueSmsFrom = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("sms_from"); else _explicitNullProperties?.Remove("sms_from"); } }
+        private string _explicitNullValueSmsFrom = default!;
 #endif
         /// <summary>Channel: SMSURLs for the media files to be attached to the SMS content.Limit: 10 media urls with a total max. size of 5MBs.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? SmsMediaUrls { get; set; }
+        public List<string>? SmsMediaUrls { get => _explicitNullValueSmsMediaUrls; set { _explicitNullValueSmsMediaUrls = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("sms_media_urls"); else _explicitNullProperties?.Remove("sms_media_urls"); } }
+        private List<string>? _explicitNullValueSmsMediaUrls = default!;
 #nullable restore
 #else
-        public List<string> SmsMediaUrls { get; set; }
+        public List<string> SmsMediaUrls { get => _explicitNullValueSmsMediaUrls; set { _explicitNullValueSmsMediaUrls = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("sms_media_urls"); else _explicitNullProperties?.Remove("sms_media_urls"); } }
+        private List<string> _explicitNullValueSmsMediaUrls = default!;
 #endif
         /// <summary>The message&apos;s subtitle, a map of language codes to text for each language. Each hash must have a language code string for a key, mapped to the localized text you would like users to receive for that language.This field supports inline substitutions.Example: {&quot;en&quot;: &quot;English Subtitle&quot;, &quot;es&quot;: &quot;Spanish Subtitle&quot;}</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Subtitle? Subtitle { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Subtitle? Subtitle { get => _explicitNullValueSubtitle; set { _explicitNullValueSubtitle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("subtitle"); else _explicitNullProperties?.Remove("subtitle"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Subtitle? _explicitNullValueSubtitle = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Subtitle Subtitle { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Subtitle Subtitle { get => _explicitNullValueSubtitle; set { _explicitNullValueSubtitle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("subtitle"); else _explicitNullProperties?.Remove("subtitle"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.BasicNotificationAllOf2Subtitle _explicitNullValueSubtitle = default!;
 #endif
         /// <summary>Number of messages delivered to push servers, mobile carriers, or email service providers.</summary>
-        public int? Successful { get; set; }
+        public int? Successful { get => _explicitNullValueSuccessful; set { _explicitNullValueSuccessful = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("successful"); else _explicitNullProperties?.Remove("successful"); } }
+        private int? _explicitNullValueSuccessful = default!;
         /// <summary>Channel: Push NotificationsPlatform: iOS 12+When using thread_id to create grouped notifications in iOS 12+, you can also control the summary. For example, a grouped notification can say &quot;12 more notifications from John Doe&quot;.The summary_arg lets you set the name of the person/thing the notifications are coming from, and will show up as &quot;X more notifications from summary_arg&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SummaryArg { get; set; }
+        public string? SummaryArg { get => _explicitNullValueSummaryArg; set { _explicitNullValueSummaryArg = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("summary_arg"); else _explicitNullProperties?.Remove("summary_arg"); } }
+        private string? _explicitNullValueSummaryArg = default!;
 #nullable restore
 #else
-        public string SummaryArg { get; set; }
+        public string SummaryArg { get => _explicitNullValueSummaryArg; set { _explicitNullValueSummaryArg = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("summary_arg"); else _explicitNullProperties?.Remove("summary_arg"); } }
+        private string _explicitNullValueSummaryArg = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS 12+When using thread_id, you can also control the count of the number of notifications in the group. For example, if the group already has 12 notifications, and you send a new notification with summary_arg_count = 2, the new total will be 14 and the summary will be &quot;14 more notifications from summary_arg&quot;</summary>
-        public int? SummaryArgCount { get; set; }
+        public int? SummaryArgCount { get => _explicitNullValueSummaryArgCount; set { _explicitNullValueSummaryArgCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("summary_arg_count"); else _explicitNullProperties?.Remove("summary_arg_count"); } }
+        private int? _explicitNullValueSummaryArgCount = default!;
         /// <summary>The target_channel property</summary>
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetTargetChannel? TargetChannel { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetTargetChannel? TargetChannel { get => _explicitNullValueTargetChannel; set { _explicitNullValueTargetChannel = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("target_channel"); else _explicitNullProperties?.Remove("target_channel"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.PlayerNotificationTargetTargetChannel? _explicitNullValueTargetChannel = default!;
         /// <summary>Channel: Push NotificationsPlatform: iOS 13+Use to target a specific experience in your App Clip, or to target your notification to a specific window in a multi-scene App.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? TargetContentIdentifier { get; set; }
+        public string? TargetContentIdentifier { get => _explicitNullValueTargetContentIdentifier; set { _explicitNullValueTargetContentIdentifier = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("target_content_identifier"); else _explicitNullProperties?.Remove("target_content_identifier"); } }
+        private string? _explicitNullValueTargetContentIdentifier = default!;
 #nullable restore
 #else
-        public string TargetContentIdentifier { get; set; }
+        public string TargetContentIdentifier { get => _explicitNullValueTargetContentIdentifier; set { _explicitNullValueTargetContentIdentifier = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("target_content_identifier"); else _explicitNullProperties?.Remove("target_content_identifier"); } }
+        private string _explicitNullValueTargetContentIdentifier = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: AllUse a template you setup on our dashboard. The template_id is the UUID found in the URL when viewing a template on our dashboard.Example: be4a8044-bbd6-11e4-a581-000c2940e62c</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? TemplateId { get; set; }
+        public string? TemplateId { get => _explicitNullValueTemplateId; set { _explicitNullValueTemplateId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("template_id"); else _explicitNullProperties?.Remove("template_id"); } }
+        private string? _explicitNullValueTemplateId = default!;
 #nullable restore
 #else
-        public string TemplateId { get; set; }
+        public string TemplateId { get => _explicitNullValueTemplateId; set { _explicitNullValueTemplateId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("template_id"); else _explicitNullProperties?.Remove("template_id"); } }
+        private string _explicitNullValueTemplateId = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS 12+This parameter is supported in iOS 12 and above. It allows you to group related notifications together.If two notifications have the same thread-id, they will both be added to the same group.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ThreadId { get; set; }
+        public string? ThreadId { get => _explicitNullValueThreadId; set { _explicitNullValueThreadId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("thread_id"); else _explicitNullProperties?.Remove("thread_id"); } }
+        private string? _explicitNullValueThreadId = default!;
 #nullable restore
 #else
-        public string ThreadId { get; set; }
+        public string ThreadId { get => _explicitNullValueThreadId; set { _explicitNullValueThreadId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("thread_id"); else _explicitNullProperties?.Remove("thread_id"); } }
+        private string _explicitNullValueThreadId = default!;
 #endif
         /// <summary>The throttle_rate_per_minute property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta_throttle_rate_per_minute? ThrottleRatePerMinute { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta_throttle_rate_per_minute? ThrottleRatePerMinute { get => _explicitNullValueThrottleRatePerMinute; set { _explicitNullValueThrottleRatePerMinute = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("throttle_rate_per_minute"); else _explicitNullProperties?.Remove("throttle_rate_per_minute"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta_throttle_rate_per_minute? _explicitNullValueThrottleRatePerMinute = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta_throttle_rate_per_minute ThrottleRatePerMinute { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta_throttle_rate_per_minute ThrottleRatePerMinute { get => _explicitNullValueThrottleRatePerMinute; set { _explicitNullValueThrottleRatePerMinute = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("throttle_rate_per_minute"); else _explicitNullProperties?.Remove("throttle_rate_per_minute"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta_throttle_rate_per_minute _explicitNullValueThrottleRatePerMinute = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: iOS, Android, Chrome, Firefox, Safari, ChromeWebTime To Live - In seconds. The notification will be expired if the device does not come back online within this time. The default is 259,200 seconds (3 days).Max value to set is 2419200 seconds (28 days).</summary>
-        public int? Ttl { get; set; }
+        public int? Ttl { get => _explicitNullValueTtl; set { _explicitNullValueTtl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ttl"); else _explicitNullProperties?.Remove("ttl"); } }
+        private int? _explicitNullValueTtl = default!;
         /// <summary>Channel: Push NotificationsPlatform: AllThe URL to open in the browser when a user clicks on the notification.Note: iOS needs https or updated NSAppTransportSecurity in plistThis field supports inline substitutions.Omit if including web_url or app_urlExample: https://onesignal.com</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Url { get; set; }
+        public string? Url { get => _explicitNullValueUrl; set { _explicitNullValueUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("url"); else _explicitNullProperties?.Remove("url"); } }
+        private string? _explicitNullValueUrl = default!;
 #nullable restore
 #else
-        public string Url { get; set; }
+        public string Url { get => _explicitNullValueUrl; set { _explicitNullValueUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("url"); else _explicitNullProperties?.Remove("url"); } }
+        private string _explicitNullValueUrl = default!;
 #endif
         /// <summary>The value property</summary>
         public int? Value { get; private set; }
         /// <summary>Channel: Push NotificationsPlatform: Chrome 48+Add action buttons to the notification. The id field is required.Example: [{&quot;id&quot;: &quot;like-button&quot;, &quot;text&quot;: &quot;Like&quot;, &quot;icon&quot;: &quot;http://i.imgur.com/N8SN8ZS.png&quot;, &quot;url&quot;: &quot;https://yoursite.com&quot;}, {&quot;id&quot;: &quot;read-more-button&quot;, &quot;text&quot;: &quot;Read more&quot;, &quot;icon&quot;: &quot;http://i.imgur.com/MIxJp1L.png&quot;, &quot;url&quot;: &quot;https://yoursite.com&quot;}]</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button>? WebButtons { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button>? WebButtons { get => _explicitNullValueWebButtons; set { _explicitNullValueWebButtons = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("web_buttons"); else _explicitNullProperties?.Remove("web_buttons"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.Button>? _explicitNullValueWebButtons = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button> WebButtons { get; set; }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Button> WebButtons { get => _explicitNullValueWebButtons; set { _explicitNullValueWebButtons = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("web_buttons"); else _explicitNullProperties?.Remove("web_buttons"); } }
+        private List<global::Soenneker.OneSignal.OpenApiClient.Models.Button> _explicitNullValueWebButtons = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: All BrowsersDisplay multiple notifications at once with different topics.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? WebPushTopic { get; set; }
+        public string? WebPushTopic { get => _explicitNullValueWebPushTopic; set { _explicitNullValueWebPushTopic = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("web_push_topic"); else _explicitNullProperties?.Remove("web_push_topic"); } }
+        private string? _explicitNullValueWebPushTopic = default!;
 #nullable restore
 #else
-        public string WebPushTopic { get; set; }
+        public string WebPushTopic { get => _explicitNullValueWebPushTopic; set { _explicitNullValueWebPushTopic = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("web_push_topic"); else _explicitNullProperties?.Remove("web_push_topic"); } }
+        private string _explicitNullValueWebPushTopic = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: All BrowsersSame as url but only sent to web push platforms.Including Chrome, Firefox, Safari, Opera, etc.Example: https://onesignal.com</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? WebUrl { get; set; }
+        public string? WebUrl { get => _explicitNullValueWebUrl; set { _explicitNullValueWebUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("web_url"); else _explicitNullProperties?.Remove("web_url"); } }
+        private string? _explicitNullValueWebUrl = default!;
 #nullable restore
 #else
-        public string WebUrl { get; set; }
+        public string WebUrl { get => _explicitNullValueWebUrl; set { _explicitNullValueWebUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("web_url"); else _explicitNullProperties?.Remove("web_url"); } }
+        private string _explicitNullValueWebUrl = default!;
 #endif
         /// <summary>Channel: Push NotificationsPlatform: WindowsSound file that is included in your app to play instead of the default device notification sound.Example: &quot;notification.wav&quot;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? WpWnsSound { get; set; }
+        public string? WpWnsSound { get => _explicitNullValueWpWnsSound; set { _explicitNullValueWpWnsSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("wp_wns_sound"); else _explicitNullProperties?.Remove("wp_wns_sound"); } }
+        private string? _explicitNullValueWpWnsSound = default!;
 #nullable restore
 #else
-        public string WpWnsSound { get; set; }
+        public string WpWnsSound { get => _explicitNullValueWpWnsSound; set { _explicitNullValueWpWnsSound = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("wp_wns_sound"); else _explicitNullProperties?.Remove("wp_wns_sound"); } }
+        private string _explicitNullValueWpWnsSound = default!;
 #endif
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta"/> and sets the default values.
@@ -781,7 +1104,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public static global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.OneSignal.OpenApiClient.Models.NotificationWithMeta(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -1032,6 +1355,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             writer.WriteStringValue("web_push_topic", WebPushTopic);
             writer.WriteStringValue("web_url", WebUrl);
             writer.WriteStringValue("wp_wns_sound", WpWnsSound);
+            if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

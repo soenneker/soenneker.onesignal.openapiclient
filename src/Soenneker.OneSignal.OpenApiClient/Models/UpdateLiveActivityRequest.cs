@@ -11,23 +11,39 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class UpdateLiveActivityRequest : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("dismiss_at") is { } nullNodeDismissAt && nullNodeDismissAt.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DismissAt = null;
+            if (parseNode.GetChildNode("event") is { } nullNodeEvent && nullNodeEvent.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Event = null;
+            if (parseNode.GetChildNode("event_updates") is { } nullNodeEventUpdates && nullNodeEventUpdates.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EventUpdates = null;
+            if (parseNode.GetChildNode("name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+        }
+
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>Timestamp; only allowed if event is &quot;end&quot;</summary>
-        public double? DismissAt { get; set; }
+        public double? DismissAt { get => _explicitNullValueDismissAt; set { _explicitNullValueDismissAt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("dismiss_at"); else _explicitNullProperties?.Remove("dismiss_at"); } }
+        private double? _explicitNullValueDismissAt = default!;
         /// <summary>The event property</summary>
-        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEvent? Event { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEvent? Event { get => _explicitNullValueEvent; set { _explicitNullValueEvent = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("event"); else _explicitNullProperties?.Remove("event"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEvent? _explicitNullValueEvent = default!;
         /// <summary>The event_updates property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty? EventUpdates { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty? EventUpdates { get => _explicitNullValueEventUpdates; set { _explicitNullValueEventUpdates = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("event_updates"); else _explicitNullProperties?.Remove("event_updates"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty? _explicitNullValueEventUpdates = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty EventUpdates { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty EventUpdates { get => _explicitNullValueEventUpdates; set { _explicitNullValueEventUpdates = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("event_updates"); else _explicitNullProperties?.Remove("event_updates"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty _explicitNullValueEventUpdates = default!;
 #endif
         /// <summary>Type of live activity</summary>
-        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestName? Name { get; set; }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestName? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
+        private global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestName? _explicitNullValueName = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequest"/> and sets the default values.
         /// </summary>
@@ -43,7 +59,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public static global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequest CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequest();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequest(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -70,6 +86,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             writer.WriteEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEvent>("event", Event);
             writer.WriteObjectValue<global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEventUpdatesProperty>("event_updates", EventUpdates);
             writer.WriteEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestName>("name", Name);
+            if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

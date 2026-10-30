@@ -57,6 +57,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Apps.Item.Segments.Item
                 { "400", global::Soenneker.OneSignal.OpenApiClient.Models.GenericError.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.OneSignal.OpenApiClient.Models.DeleteSegmentNotFoundResponse.CreateFromDiscriminatorValue },
                 { "429", global::Soenneker.OneSignal.OpenApiClient.Models.RateLimiterError.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.OneSignal.OpenApiClient.Models.DeleteSegmentSuccessResponse>(requestInfo, global::Soenneker.OneSignal.OpenApiClient.Models.DeleteSegmentSuccessResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }

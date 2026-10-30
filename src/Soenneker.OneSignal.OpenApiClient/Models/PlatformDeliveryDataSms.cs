@@ -11,25 +11,48 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class PlatformDeliveryDataSms : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("converted") is { } nullNodeConverted && nullNodeConverted.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Converted = null;
+            if (parseNode.GetChildNode("errored") is { } nullNodeErrored && nullNodeErrored.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Errored = null;
+            if (parseNode.GetChildNode("failed") is { } nullNodeFailed && nullNodeFailed.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Failed = null;
+            if (parseNode.GetChildNode("provider_errored") is { } nullNodeProviderErrored && nullNodeProviderErrored.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderErrored = null;
+            if (parseNode.GetChildNode("provider_failed") is { } nullNodeProviderFailed && nullNodeProviderFailed.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderFailed = null;
+            if (parseNode.GetChildNode("provider_successful") is { } nullNodeProviderSuccessful && nullNodeProviderSuccessful.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderSuccessful = null;
+            if (parseNode.GetChildNode("received") is { } nullNodeReceived && nullNodeReceived.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Received = null;
+            if (parseNode.GetChildNode("successful") is { } nullNodeSuccessful && nullNodeSuccessful.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Successful = null;
+        }
+
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>Number of messages that were clicked.</summary>
-        public int? Converted { get; set; }
+        public int? Converted { get => _explicitNullValueConverted; set { _explicitNullValueConverted = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("converted"); else _explicitNullProperties?.Remove("converted"); } }
+        private int? _explicitNullValueConverted = default!;
         /// <summary>Number of errors reported.</summary>
-        public int? Errored { get; set; }
+        public int? Errored { get => _explicitNullValueErrored; set { _explicitNullValueErrored = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("errored"); else _explicitNullProperties?.Remove("errored"); } }
+        private int? _explicitNullValueErrored = default!;
         /// <summary>Number of messages sent to unsubscribed devices.</summary>
-        public int? Failed { get; set; }
+        public int? Failed { get => _explicitNullValueFailed; set { _explicitNullValueFailed = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("failed"); else _explicitNullProperties?.Remove("failed"); } }
+        private int? _explicitNullValueFailed = default!;
         /// <summary>Number of errors reported by the SMS service provider.</summary>
-        public int? ProviderErrored { get; set; }
+        public int? ProviderErrored { get => _explicitNullValueProviderErrored; set { _explicitNullValueProviderErrored = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("provider_errored"); else _explicitNullProperties?.Remove("provider_errored"); } }
+        private int? _explicitNullValueProviderErrored = default!;
         /// <summary>Number of recipients who didn&apos;t receive your message as reported by the SMS service provider.</summary>
-        public int? ProviderFailed { get; set; }
+        public int? ProviderFailed { get => _explicitNullValueProviderFailed; set { _explicitNullValueProviderFailed = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("provider_failed"); else _explicitNullProperties?.Remove("provider_failed"); } }
+        private int? _explicitNullValueProviderFailed = default!;
         /// <summary>Number of messages reported as delivered successfully by the SMS service provider.</summary>
-        public int? ProviderSuccessful { get; set; }
+        public int? ProviderSuccessful { get => _explicitNullValueProviderSuccessful; set { _explicitNullValueProviderSuccessful = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("provider_successful"); else _explicitNullProperties?.Remove("provider_successful"); } }
+        private int? _explicitNullValueProviderSuccessful = default!;
         /// <summary>Number of devices that received the message.</summary>
-        public int? Received { get; set; }
+        public int? Received { get => _explicitNullValueReceived; set { _explicitNullValueReceived = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("received"); else _explicitNullProperties?.Remove("received"); } }
+        private int? _explicitNullValueReceived = default!;
         /// <summary>Number of messages delivered to push servers, mobile carriers, or email service providers.</summary>
-        public int? Successful { get; set; }
+        public int? Successful { get => _explicitNullValueSuccessful; set { _explicitNullValueSuccessful = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("successful"); else _explicitNullProperties?.Remove("successful"); } }
+        private int? _explicitNullValueSuccessful = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryDataSms"/> and sets the default values.
         /// </summary>
@@ -45,7 +68,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public static global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryDataSms CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryDataSms();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.OneSignal.OpenApiClient.Models.PlatformDeliveryDataSms(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -80,6 +103,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             writer.WriteIntValue("provider_successful", ProviderSuccessful);
             writer.WriteIntValue("received", Received);
             writer.WriteIntValue("successful", Successful);
+            if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

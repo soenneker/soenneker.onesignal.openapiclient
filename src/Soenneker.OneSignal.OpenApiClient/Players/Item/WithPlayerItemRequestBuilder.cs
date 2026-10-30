@@ -57,6 +57,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Players.Item
                 { "400", global::Soenneker.OneSignal.OpenApiClient.Models.GenericError.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.OneSignal.OpenApiClient.Models.DeletePlayerNotFoundResponse.CreateFromDiscriminatorValue },
                 { "429", global::Soenneker.OneSignal.OpenApiClient.Models.RateLimiterError.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.OneSignal.OpenApiClient.Models.DeletePlayerSuccessResponse>(requestInfo, global::Soenneker.OneSignal.OpenApiClient.Models.DeletePlayerSuccessResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
@@ -82,6 +84,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Players.Item
             {
                 { "400", global::Soenneker.OneSignal.OpenApiClient.Models.GenericError.CreateFromDiscriminatorValue },
                 { "429", global::Soenneker.OneSignal.OpenApiClient.Models.RateLimiterError.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.OneSignal.OpenApiClient.Models.Player>(requestInfo, global::Soenneker.OneSignal.OpenApiClient.Models.Player.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
@@ -111,6 +115,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Players.Item
                 { "400", global::Soenneker.OneSignal.OpenApiClient.Models.GenericError.CreateFromDiscriminatorValue },
                 { "409", global::Soenneker.OneSignal.OpenApiClient.Models.GenericError.CreateFromDiscriminatorValue },
                 { "429", global::Soenneker.OneSignal.OpenApiClient.Models.RateLimiterError.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.OneSignal.OpenApiClient.Models.UpdatePlayerSuccessResponse>(requestInfo, global::Soenneker.OneSignal.OpenApiClient.Models.UpdatePlayerSuccessResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }

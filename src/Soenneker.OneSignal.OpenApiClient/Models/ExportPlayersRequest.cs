@@ -11,32 +11,48 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class ExportPlayersRequest : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("extra_fields") is { } nullNodeExtraFields && nullNodeExtraFields.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExtraFields = null;
+            if (parseNode.GetChildNode("last_active_since") is { } nullNodeLastActiveSince && nullNodeLastActiveSince.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastActiveSince = null;
+            if (parseNode.GetChildNode("segment_name") is { } nullNodeSegmentName && nullNodeSegmentName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SegmentName = null;
+        }
+
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>Additional fields that you wish to include. Currently supports location, country, rooted, notification_types, ip, external_user_id, web_auth, and web_p256.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? ExtraFields { get; set; }
+        public List<string>? ExtraFields { get => _explicitNullValueExtraFields; set { _explicitNullValueExtraFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("extra_fields"); else _explicitNullProperties?.Remove("extra_fields"); } }
+        private List<string>? _explicitNullValueExtraFields = default!;
 #nullable restore
 #else
-        public List<string> ExtraFields { get; set; }
+        public List<string> ExtraFields { get => _explicitNullValueExtraFields; set { _explicitNullValueExtraFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("extra_fields"); else _explicitNullProperties?.Remove("extra_fields"); } }
+        private List<string> _explicitNullValueExtraFields = default!;
 #endif
         /// <summary>Export all devices with a last_active timestamp greater than this time.  Unixtime in seconds.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LastActiveSince { get; set; }
+        public string? LastActiveSince { get => _explicitNullValueLastActiveSince; set { _explicitNullValueLastActiveSince = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active_since"); else _explicitNullProperties?.Remove("last_active_since"); } }
+        private string? _explicitNullValueLastActiveSince = default!;
 #nullable restore
 #else
-        public string LastActiveSince { get; set; }
+        public string LastActiveSince { get => _explicitNullValueLastActiveSince; set { _explicitNullValueLastActiveSince = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active_since"); else _explicitNullProperties?.Remove("last_active_since"); } }
+        private string _explicitNullValueLastActiveSince = default!;
 #endif
         /// <summary>Export all devices belonging to the segment.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SegmentName { get; set; }
+        public string? SegmentName { get => _explicitNullValueSegmentName; set { _explicitNullValueSegmentName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("segment_name"); else _explicitNullProperties?.Remove("segment_name"); } }
+        private string? _explicitNullValueSegmentName = default!;
 #nullable restore
 #else
-        public string SegmentName { get; set; }
+        public string SegmentName { get => _explicitNullValueSegmentName; set { _explicitNullValueSegmentName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("segment_name"); else _explicitNullProperties?.Remove("segment_name"); } }
+        private string _explicitNullValueSegmentName = default!;
 #endif
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.ExportPlayersRequest"/> and sets the default values.
@@ -53,7 +69,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public static global::Soenneker.OneSignal.OpenApiClient.Models.ExportPlayersRequest CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.OneSignal.OpenApiClient.Models.ExportPlayersRequest();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.OneSignal.OpenApiClient.Models.ExportPlayersRequest(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -78,6 +94,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
             writer.WriteCollectionOfPrimitiveValues<string>("extra_fields", ExtraFields);
             writer.WriteStringValue("last_active_since", LastActiveSince);
             writer.WriteStringValue("segment_name", SegmentName);
+            if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
             writer.WriteAdditionalData(AdditionalData);
         }
     }
