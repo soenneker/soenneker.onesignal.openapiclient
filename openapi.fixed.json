@@ -614,6 +614,17 @@
                 }
               }
             }
+          },
+          "200": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateSegmentSuccessResponse"
+                }
+              }
+            },
+            "x-client-success-response-status": "201"
           }
         },
         "security": [
@@ -1323,6 +1334,17 @@
                 }
               }
             }
+          },
+          "200": {
+            "description": "ACCEPTED",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateUser202Response"
+                }
+              }
+            },
+            "x-client-success-response-status": "202"
           }
         },
         "security": [
@@ -1736,6 +1758,20 @@
                 }
               }
             }
+          },
+          "200": {
+            "description": "CREATED",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateSubscriptionSuccessResponse"
+                },
+                "x-client-original-success-schema": {
+                  "$ref": "#/components/schemas/CreateSubscription201Response"
+                }
+              }
+            },
+            "x-client-success-response-status": "201"
           }
         },
         "security": [
