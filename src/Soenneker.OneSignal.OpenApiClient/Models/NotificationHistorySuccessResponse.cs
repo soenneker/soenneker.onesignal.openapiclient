@@ -17,8 +17,10 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("destination_url") is { } nullNodeDestinationUrl && nullNodeDestinationUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DestinationUrl = null;
-            if (parseNode.GetChildNode("success") is { } nullNodeSuccess && nullNodeSuccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Success = null;
+            if (parseNode.GetChildNode("destination_url") is null) { _explicitNullValueDestinationUrl = default!; _explicitNullProperties?.Remove("destination_url"); }
+            else if (parseNode.GetChildNode("destination_url") is { } nullNodeDestinationUrl && nullNodeDestinationUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DestinationUrl = null;
+            if (parseNode.GetChildNode("success") is null) { _explicitNullValueSuccess = default!; _explicitNullProperties?.Remove("success"); }
+            else if (parseNode.GetChildNode("success") is { } nullNodeSuccess && nullNodeSuccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Success = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -26,15 +28,15 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The destination_url property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DestinationUrl { get => _explicitNullValueDestinationUrl; set { _explicitNullValueDestinationUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("destination_url"); else _explicitNullProperties?.Remove("destination_url"); } }
+        public string? DestinationUrl { get => _explicitNullValueDestinationUrl; set { _explicitNullValueDestinationUrl = value; AdditionalData?.Remove("destination_url"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("destination_url"); else _explicitNullProperties?.Remove("destination_url"); } }
         private string? _explicitNullValueDestinationUrl = default!;
 #nullable restore
 #else
-        public string DestinationUrl { get => _explicitNullValueDestinationUrl; set { _explicitNullValueDestinationUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("destination_url"); else _explicitNullProperties?.Remove("destination_url"); } }
+        public string DestinationUrl { get => _explicitNullValueDestinationUrl; set { _explicitNullValueDestinationUrl = value; AdditionalData?.Remove("destination_url"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("destination_url"); else _explicitNullProperties?.Remove("destination_url"); } }
         private string _explicitNullValueDestinationUrl = default!;
 #endif
         /// <summary>The success property</summary>
-        public bool? Success { get => _explicitNullValueSuccess; set { _explicitNullValueSuccess = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("success"); else _explicitNullProperties?.Remove("success"); } }
+        public bool? Success { get => _explicitNullValueSuccess; set { _explicitNullValueSuccess = value; AdditionalData?.Remove("success"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("success"); else _explicitNullProperties?.Remove("success"); } }
         private bool? _explicitNullValueSuccess = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.NotificationHistorySuccessResponse"/> and sets the default values.

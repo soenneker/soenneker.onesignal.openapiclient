@@ -17,13 +17,14 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("operator") is { } nullNodeOperator && nullNodeOperator.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Operator = null;
+            if (parseNode.GetChildNode("operator") is null) { _explicitNullValueOperator = default!; _explicitNullProperties?.Remove("operator"); }
+            else if (parseNode.GetChildNode("operator") is { } nullNodeOperator && nullNodeOperator.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Operator = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>Strictly, this must be either `&quot;OR&quot;`, or `&quot;AND&quot;`.  It can be used to compose Filters as part of a Filters object.</summary>
-        public global::Soenneker.OneSignal.OpenApiClient.Models.OperatorTypeOperator? Operator { get => _explicitNullValueOperator; set { _explicitNullValueOperator = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("operator"); else _explicitNullProperties?.Remove("operator"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.OperatorTypeOperator? Operator { get => _explicitNullValueOperator; set { _explicitNullValueOperator = value; AdditionalData?.Remove("operator"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("operator"); else _explicitNullProperties?.Remove("operator"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.OperatorTypeOperator? _explicitNullValueOperator = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.OperatorType"/> and sets the default values.
@@ -50,7 +51,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "operator", n => { Operator = n.GetEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.OperatorTypeOperator>(); } },
+                { "operator", n => { var parsed = n.GetEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.OperatorTypeOperator>(); if (parsed == null && n.GetStringValue() is string unknown) { _explicitNullValueOperator = default; _explicitNullProperties?.Remove("operator"); AdditionalData["operator"] = unknown; } else { Operator = parsed; AdditionalData.Remove("operator"); } } },
             };
         }
         /// <summary>

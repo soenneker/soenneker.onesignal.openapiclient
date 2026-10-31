@@ -17,52 +17,73 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("additional_data_is_root_payload") is { } nullNodeAdditionalDataIsRootPayload && nullNodeAdditionalDataIsRootPayload.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdditionalDataIsRootPayload = null;
-            if (parseNode.GetChildNode("android_gcm_sender_id") is { } nullNodeAndroidGcmSenderId && nullNodeAndroidGcmSenderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidGcmSenderId = null;
-            if (parseNode.GetChildNode("apns_bundle_id") is { } nullNodeApnsBundleId && nullNodeApnsBundleId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsBundleId = null;
-            if (parseNode.GetChildNode("apns_env") is { } nullNodeApnsEnv && nullNodeApnsEnv.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsEnv = null;
-            if (parseNode.GetChildNode("apns_key_id") is { } nullNodeApnsKeyId && nullNodeApnsKeyId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsKeyId = null;
-            if (parseNode.GetChildNode("apns_p12") is { } nullNodeApnsP12 && nullNodeApnsP12.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsP12 = null;
-            if (parseNode.GetChildNode("apns_p12_password") is { } nullNodeApnsP12Password && nullNodeApnsP12Password.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsP12Password = null;
-            if (parseNode.GetChildNode("apns_p8") is { } nullNodeApnsP8 && nullNodeApnsP8.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsP8 = null;
-            if (parseNode.GetChildNode("apns_team_id") is { } nullNodeApnsTeamId && nullNodeApnsTeamId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsTeamId = null;
-            if (parseNode.GetChildNode("chrome_key") is { } nullNodeChromeKey && nullNodeChromeKey.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeKey = null;
-            if (parseNode.GetChildNode("chrome_web_default_notification_icon") is { } nullNodeChromeWebDefaultNotificationIcon && nullNodeChromeWebDefaultNotificationIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebDefaultNotificationIcon = null;
-            if (parseNode.GetChildNode("chrome_web_origin") is { } nullNodeChromeWebOrigin && nullNodeChromeWebOrigin.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebOrigin = null;
-            if (parseNode.GetChildNode("chrome_web_sub_domain") is { } nullNodeChromeWebSubDomain && nullNodeChromeWebSubDomain.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebSubDomain = null;
-            if (parseNode.GetChildNode("gcm_key") is { } nullNodeGcmKey && nullNodeGcmKey.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GcmKey = null;
-            if (parseNode.GetChildNode("name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
-            if (parseNode.GetChildNode("organization_id") is { } nullNodeOrganizationId && nullNodeOrganizationId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OrganizationId = null;
-            if (parseNode.GetChildNode("safari_apns_p12") is { } nullNodeSafariApnsP12 && nullNodeSafariApnsP12.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariApnsP12 = null;
-            if (parseNode.GetChildNode("safari_apns_p12_password") is { } nullNodeSafariApnsP12Password && nullNodeSafariApnsP12Password.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariApnsP12Password = null;
-            if (parseNode.GetChildNode("safari_icon_256_256") is { } nullNodeSafariIcon256256 && nullNodeSafariIcon256256.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariIcon256256 = null;
-            if (parseNode.GetChildNode("safari_site_origin") is { } nullNodeSafariSiteOrigin && nullNodeSafariSiteOrigin.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariSiteOrigin = null;
-            if (parseNode.GetChildNode("site_name") is { } nullNodeSiteName && nullNodeSiteName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SiteName = null;
+            if (parseNode.GetChildNode("additional_data_is_root_payload") is null) { _explicitNullValueAdditionalDataIsRootPayload = default!; _explicitNullProperties?.Remove("additional_data_is_root_payload"); }
+            else if (parseNode.GetChildNode("additional_data_is_root_payload") is { } nullNodeAdditionalDataIsRootPayload && nullNodeAdditionalDataIsRootPayload.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdditionalDataIsRootPayload = null;
+            if (parseNode.GetChildNode("android_gcm_sender_id") is null) { _explicitNullValueAndroidGcmSenderId = default!; _explicitNullProperties?.Remove("android_gcm_sender_id"); }
+            else if (parseNode.GetChildNode("android_gcm_sender_id") is { } nullNodeAndroidGcmSenderId && nullNodeAndroidGcmSenderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AndroidGcmSenderId = null;
+            if (parseNode.GetChildNode("apns_bundle_id") is null) { _explicitNullValueApnsBundleId = default!; _explicitNullProperties?.Remove("apns_bundle_id"); }
+            else if (parseNode.GetChildNode("apns_bundle_id") is { } nullNodeApnsBundleId && nullNodeApnsBundleId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsBundleId = null;
+            if (parseNode.GetChildNode("apns_env") is null) { _explicitNullValueApnsEnv = default!; _explicitNullProperties?.Remove("apns_env"); }
+            else if (parseNode.GetChildNode("apns_env") is { } nullNodeApnsEnv && nullNodeApnsEnv.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsEnv = null;
+            if (parseNode.GetChildNode("apns_key_id") is null) { _explicitNullValueApnsKeyId = default!; _explicitNullProperties?.Remove("apns_key_id"); }
+            else if (parseNode.GetChildNode("apns_key_id") is { } nullNodeApnsKeyId && nullNodeApnsKeyId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsKeyId = null;
+            if (parseNode.GetChildNode("apns_p12") is null) { _explicitNullValueApnsP12 = default!; _explicitNullProperties?.Remove("apns_p12"); }
+            else if (parseNode.GetChildNode("apns_p12") is { } nullNodeApnsP12 && nullNodeApnsP12.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsP12 = null;
+            if (parseNode.GetChildNode("apns_p12_password") is null) { _explicitNullValueApnsP12Password = default!; _explicitNullProperties?.Remove("apns_p12_password"); }
+            else if (parseNode.GetChildNode("apns_p12_password") is { } nullNodeApnsP12Password && nullNodeApnsP12Password.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsP12Password = null;
+            if (parseNode.GetChildNode("apns_p8") is null) { _explicitNullValueApnsP8 = default!; _explicitNullProperties?.Remove("apns_p8"); }
+            else if (parseNode.GetChildNode("apns_p8") is { } nullNodeApnsP8 && nullNodeApnsP8.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsP8 = null;
+            if (parseNode.GetChildNode("apns_team_id") is null) { _explicitNullValueApnsTeamId = default!; _explicitNullProperties?.Remove("apns_team_id"); }
+            else if (parseNode.GetChildNode("apns_team_id") is { } nullNodeApnsTeamId && nullNodeApnsTeamId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApnsTeamId = null;
+            if (parseNode.GetChildNode("chrome_key") is null) { _explicitNullValueChromeKey = default!; _explicitNullProperties?.Remove("chrome_key"); }
+            else if (parseNode.GetChildNode("chrome_key") is { } nullNodeChromeKey && nullNodeChromeKey.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeKey = null;
+            if (parseNode.GetChildNode("chrome_web_default_notification_icon") is null) { _explicitNullValueChromeWebDefaultNotificationIcon = default!; _explicitNullProperties?.Remove("chrome_web_default_notification_icon"); }
+            else if (parseNode.GetChildNode("chrome_web_default_notification_icon") is { } nullNodeChromeWebDefaultNotificationIcon && nullNodeChromeWebDefaultNotificationIcon.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebDefaultNotificationIcon = null;
+            if (parseNode.GetChildNode("chrome_web_origin") is null) { _explicitNullValueChromeWebOrigin = default!; _explicitNullProperties?.Remove("chrome_web_origin"); }
+            else if (parseNode.GetChildNode("chrome_web_origin") is { } nullNodeChromeWebOrigin && nullNodeChromeWebOrigin.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebOrigin = null;
+            if (parseNode.GetChildNode("chrome_web_sub_domain") is null) { _explicitNullValueChromeWebSubDomain = default!; _explicitNullProperties?.Remove("chrome_web_sub_domain"); }
+            else if (parseNode.GetChildNode("chrome_web_sub_domain") is { } nullNodeChromeWebSubDomain && nullNodeChromeWebSubDomain.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChromeWebSubDomain = null;
+            if (parseNode.GetChildNode("gcm_key") is null) { _explicitNullValueGcmKey = default!; _explicitNullProperties?.Remove("gcm_key"); }
+            else if (parseNode.GetChildNode("gcm_key") is { } nullNodeGcmKey && nullNodeGcmKey.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GcmKey = null;
+            if (parseNode.GetChildNode("name") is null) { _explicitNullValueName = default!; _explicitNullProperties?.Remove("name"); }
+            else if (parseNode.GetChildNode("name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("organization_id") is null) { _explicitNullValueOrganizationId = default!; _explicitNullProperties?.Remove("organization_id"); }
+            else if (parseNode.GetChildNode("organization_id") is { } nullNodeOrganizationId && nullNodeOrganizationId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OrganizationId = null;
+            if (parseNode.GetChildNode("safari_apns_p12") is null) { _explicitNullValueSafariApnsP12 = default!; _explicitNullProperties?.Remove("safari_apns_p12"); }
+            else if (parseNode.GetChildNode("safari_apns_p12") is { } nullNodeSafariApnsP12 && nullNodeSafariApnsP12.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariApnsP12 = null;
+            if (parseNode.GetChildNode("safari_apns_p12_password") is null) { _explicitNullValueSafariApnsP12Password = default!; _explicitNullProperties?.Remove("safari_apns_p12_password"); }
+            else if (parseNode.GetChildNode("safari_apns_p12_password") is { } nullNodeSafariApnsP12Password && nullNodeSafariApnsP12Password.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariApnsP12Password = null;
+            if (parseNode.GetChildNode("safari_icon_256_256") is null) { _explicitNullValueSafariIcon256256 = default!; _explicitNullProperties?.Remove("safari_icon_256_256"); }
+            else if (parseNode.GetChildNode("safari_icon_256_256") is { } nullNodeSafariIcon256256 && nullNodeSafariIcon256256.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariIcon256256 = null;
+            if (parseNode.GetChildNode("safari_site_origin") is null) { _explicitNullValueSafariSiteOrigin = default!; _explicitNullProperties?.Remove("safari_site_origin"); }
+            else if (parseNode.GetChildNode("safari_site_origin") is { } nullNodeSafariSiteOrigin && nullNodeSafariSiteOrigin.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SafariSiteOrigin = null;
+            if (parseNode.GetChildNode("site_name") is null) { _explicitNullValueSiteName = default!; _explicitNullProperties?.Remove("site_name"); }
+            else if (parseNode.GetChildNode("site_name") is { } nullNodeSiteName && nullNodeSiteName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SiteName = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>iOS: Notification data (additional data) values will be added to the root of the apns payload when sent to the device.  Ignore if you&apos;re not using any other plugins, or not using OneSignal SDK methods to read the payload.</summary>
-        public bool? AdditionalDataIsRootPayload { get => _explicitNullValueAdditionalDataIsRootPayload; set { _explicitNullValueAdditionalDataIsRootPayload = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("additional_data_is_root_payload"); else _explicitNullProperties?.Remove("additional_data_is_root_payload"); } }
+        public bool? AdditionalDataIsRootPayload { get => _explicitNullValueAdditionalDataIsRootPayload; set { _explicitNullValueAdditionalDataIsRootPayload = value; AdditionalData?.Remove("additional_data_is_root_payload"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("additional_data_is_root_payload"); else _explicitNullProperties?.Remove("additional_data_is_root_payload"); } }
         private bool? _explicitNullValueAdditionalDataIsRootPayload = default!;
         /// <summary>Android: Your Google Project number.  Also known as Sender ID.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AndroidGcmSenderId { get => _explicitNullValueAndroidGcmSenderId; set { _explicitNullValueAndroidGcmSenderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_gcm_sender_id"); else _explicitNullProperties?.Remove("android_gcm_sender_id"); } }
+        public string? AndroidGcmSenderId { get => _explicitNullValueAndroidGcmSenderId; set { _explicitNullValueAndroidGcmSenderId = value; AdditionalData?.Remove("android_gcm_sender_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_gcm_sender_id"); else _explicitNullProperties?.Remove("android_gcm_sender_id"); } }
         private string? _explicitNullValueAndroidGcmSenderId = default!;
 #nullable restore
 #else
-        public string AndroidGcmSenderId { get => _explicitNullValueAndroidGcmSenderId; set { _explicitNullValueAndroidGcmSenderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_gcm_sender_id"); else _explicitNullProperties?.Remove("android_gcm_sender_id"); } }
+        public string AndroidGcmSenderId { get => _explicitNullValueAndroidGcmSenderId; set { _explicitNullValueAndroidGcmSenderId = value; AdditionalData?.Remove("android_gcm_sender_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("android_gcm_sender_id"); else _explicitNullProperties?.Remove("android_gcm_sender_id"); } }
         private string _explicitNullValueAndroidGcmSenderId = default!;
 #endif
         /// <summary>iOS: Required if using p8. Bundle ID for your app in the Apple ecosystem.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsBundleId { get => _explicitNullValueApnsBundleId; set { _explicitNullValueApnsBundleId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_bundle_id"); else _explicitNullProperties?.Remove("apns_bundle_id"); } }
+        public string? ApnsBundleId { get => _explicitNullValueApnsBundleId; set { _explicitNullValueApnsBundleId = value; AdditionalData?.Remove("apns_bundle_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_bundle_id"); else _explicitNullProperties?.Remove("apns_bundle_id"); } }
         private string? _explicitNullValueApnsBundleId = default!;
 #nullable restore
 #else
-        public string ApnsBundleId { get => _explicitNullValueApnsBundleId; set { _explicitNullValueApnsBundleId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_bundle_id"); else _explicitNullProperties?.Remove("apns_bundle_id"); } }
+        public string ApnsBundleId { get => _explicitNullValueApnsBundleId; set { _explicitNullValueApnsBundleId = value; AdditionalData?.Remove("apns_bundle_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_bundle_id"); else _explicitNullProperties?.Remove("apns_bundle_id"); } }
         private string _explicitNullValueApnsBundleId = default!;
 #endif
         /// <summary>The apns_certificates property</summary>
@@ -74,56 +95,56 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         public string ApnsCertificates { get; private set; }
 #endif
         /// <summary>iOS: Either sandbox or production</summary>
-        public global::Soenneker.OneSignal.OpenApiClient.Models.AppApnsEnv? ApnsEnv { get => _explicitNullValueApnsEnv; set { _explicitNullValueApnsEnv = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_env"); else _explicitNullProperties?.Remove("apns_env"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.AppApnsEnv? ApnsEnv { get => _explicitNullValueApnsEnv; set { _explicitNullValueApnsEnv = value; AdditionalData?.Remove("apns_env"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_env"); else _explicitNullProperties?.Remove("apns_env"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.AppApnsEnv? _explicitNullValueApnsEnv = default!;
         /// <summary>iOS: Required if using p8. Unique identifier for the p8 authentication key.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsKeyId { get => _explicitNullValueApnsKeyId; set { _explicitNullValueApnsKeyId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_key_id"); else _explicitNullProperties?.Remove("apns_key_id"); } }
+        public string? ApnsKeyId { get => _explicitNullValueApnsKeyId; set { _explicitNullValueApnsKeyId = value; AdditionalData?.Remove("apns_key_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_key_id"); else _explicitNullProperties?.Remove("apns_key_id"); } }
         private string? _explicitNullValueApnsKeyId = default!;
 #nullable restore
 #else
-        public string ApnsKeyId { get => _explicitNullValueApnsKeyId; set { _explicitNullValueApnsKeyId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_key_id"); else _explicitNullProperties?.Remove("apns_key_id"); } }
+        public string ApnsKeyId { get => _explicitNullValueApnsKeyId; set { _explicitNullValueApnsKeyId = value; AdditionalData?.Remove("apns_key_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_key_id"); else _explicitNullProperties?.Remove("apns_key_id"); } }
         private string _explicitNullValueApnsKeyId = default!;
 #endif
         /// <summary>iOS: Your apple push notification p12 certificate file, converted to a string and Base64 encoded.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsP12 { get => _explicitNullValueApnsP12; set { _explicitNullValueApnsP12 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12"); else _explicitNullProperties?.Remove("apns_p12"); } }
+        public string? ApnsP12 { get => _explicitNullValueApnsP12; set { _explicitNullValueApnsP12 = value; AdditionalData?.Remove("apns_p12"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12"); else _explicitNullProperties?.Remove("apns_p12"); } }
         private string? _explicitNullValueApnsP12 = default!;
 #nullable restore
 #else
-        public string ApnsP12 { get => _explicitNullValueApnsP12; set { _explicitNullValueApnsP12 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12"); else _explicitNullProperties?.Remove("apns_p12"); } }
+        public string ApnsP12 { get => _explicitNullValueApnsP12; set { _explicitNullValueApnsP12 = value; AdditionalData?.Remove("apns_p12"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12"); else _explicitNullProperties?.Remove("apns_p12"); } }
         private string _explicitNullValueApnsP12 = default!;
 #endif
         /// <summary>iOS: Required if using p12 certificate.  Password for the apns_p12 file.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsP12Password { get => _explicitNullValueApnsP12Password; set { _explicitNullValueApnsP12Password = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12_password"); else _explicitNullProperties?.Remove("apns_p12_password"); } }
+        public string? ApnsP12Password { get => _explicitNullValueApnsP12Password; set { _explicitNullValueApnsP12Password = value; AdditionalData?.Remove("apns_p12_password"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12_password"); else _explicitNullProperties?.Remove("apns_p12_password"); } }
         private string? _explicitNullValueApnsP12Password = default!;
 #nullable restore
 #else
-        public string ApnsP12Password { get => _explicitNullValueApnsP12Password; set { _explicitNullValueApnsP12Password = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12_password"); else _explicitNullProperties?.Remove("apns_p12_password"); } }
+        public string ApnsP12Password { get => _explicitNullValueApnsP12Password; set { _explicitNullValueApnsP12Password = value; AdditionalData?.Remove("apns_p12_password"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p12_password"); else _explicitNullProperties?.Remove("apns_p12_password"); } }
         private string _explicitNullValueApnsP12Password = default!;
 #endif
         /// <summary>iOS: Required if using p8. Base64 encoded p8 key</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsP8 { get => _explicitNullValueApnsP8; set { _explicitNullValueApnsP8 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p8"); else _explicitNullProperties?.Remove("apns_p8"); } }
+        public string? ApnsP8 { get => _explicitNullValueApnsP8; set { _explicitNullValueApnsP8 = value; AdditionalData?.Remove("apns_p8"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p8"); else _explicitNullProperties?.Remove("apns_p8"); } }
         private string? _explicitNullValueApnsP8 = default!;
 #nullable restore
 #else
-        public string ApnsP8 { get => _explicitNullValueApnsP8; set { _explicitNullValueApnsP8 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p8"); else _explicitNullProperties?.Remove("apns_p8"); } }
+        public string ApnsP8 { get => _explicitNullValueApnsP8; set { _explicitNullValueApnsP8 = value; AdditionalData?.Remove("apns_p8"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_p8"); else _explicitNullProperties?.Remove("apns_p8"); } }
         private string _explicitNullValueApnsP8 = default!;
 #endif
         /// <summary>iOS: Required if using p8. Team ID generated by Apple for your developer account.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApnsTeamId { get => _explicitNullValueApnsTeamId; set { _explicitNullValueApnsTeamId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_team_id"); else _explicitNullProperties?.Remove("apns_team_id"); } }
+        public string? ApnsTeamId { get => _explicitNullValueApnsTeamId; set { _explicitNullValueApnsTeamId = value; AdditionalData?.Remove("apns_team_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_team_id"); else _explicitNullProperties?.Remove("apns_team_id"); } }
         private string? _explicitNullValueApnsTeamId = default!;
 #nullable restore
 #else
-        public string ApnsTeamId { get => _explicitNullValueApnsTeamId; set { _explicitNullValueApnsTeamId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_team_id"); else _explicitNullProperties?.Remove("apns_team_id"); } }
+        public string ApnsTeamId { get => _explicitNullValueApnsTeamId; set { _explicitNullValueApnsTeamId = value; AdditionalData?.Remove("apns_team_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("apns_team_id"); else _explicitNullProperties?.Remove("apns_team_id"); } }
         private string _explicitNullValueApnsTeamId = default!;
 #endif
         /// <summary>The basic_auth_key property</summary>
@@ -137,41 +158,41 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Not for web push.  Your Google Push Messaging Auth Key if you use Chrome Apps / Extensions.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeKey { get => _explicitNullValueChromeKey; set { _explicitNullValueChromeKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_key"); else _explicitNullProperties?.Remove("chrome_key"); } }
+        public string? ChromeKey { get => _explicitNullValueChromeKey; set { _explicitNullValueChromeKey = value; AdditionalData?.Remove("chrome_key"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_key"); else _explicitNullProperties?.Remove("chrome_key"); } }
         private string? _explicitNullValueChromeKey = default!;
 #nullable restore
 #else
-        public string ChromeKey { get => _explicitNullValueChromeKey; set { _explicitNullValueChromeKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_key"); else _explicitNullProperties?.Remove("chrome_key"); } }
+        public string ChromeKey { get => _explicitNullValueChromeKey; set { _explicitNullValueChromeKey = value; AdditionalData?.Remove("chrome_key"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_key"); else _explicitNullProperties?.Remove("chrome_key"); } }
         private string _explicitNullValueChromeKey = default!;
 #endif
         /// <summary>Chrome (All Browsers except Safari): Your default notification icon. Should be 256x256 pixels, min 80x80.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeWebDefaultNotificationIcon { get => _explicitNullValueChromeWebDefaultNotificationIcon; set { _explicitNullValueChromeWebDefaultNotificationIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_default_notification_icon"); else _explicitNullProperties?.Remove("chrome_web_default_notification_icon"); } }
+        public string? ChromeWebDefaultNotificationIcon { get => _explicitNullValueChromeWebDefaultNotificationIcon; set { _explicitNullValueChromeWebDefaultNotificationIcon = value; AdditionalData?.Remove("chrome_web_default_notification_icon"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_default_notification_icon"); else _explicitNullProperties?.Remove("chrome_web_default_notification_icon"); } }
         private string? _explicitNullValueChromeWebDefaultNotificationIcon = default!;
 #nullable restore
 #else
-        public string ChromeWebDefaultNotificationIcon { get => _explicitNullValueChromeWebDefaultNotificationIcon; set { _explicitNullValueChromeWebDefaultNotificationIcon = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_default_notification_icon"); else _explicitNullProperties?.Remove("chrome_web_default_notification_icon"); } }
+        public string ChromeWebDefaultNotificationIcon { get => _explicitNullValueChromeWebDefaultNotificationIcon; set { _explicitNullValueChromeWebDefaultNotificationIcon = value; AdditionalData?.Remove("chrome_web_default_notification_icon"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_default_notification_icon"); else _explicitNullProperties?.Remove("chrome_web_default_notification_icon"); } }
         private string _explicitNullValueChromeWebDefaultNotificationIcon = default!;
 #endif
         /// <summary>Chrome (All Browsers except Safari) (Recommended): The URL to your website.  This field is required if you wish to enable web push and specify other web push parameters.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeWebOrigin { get => _explicitNullValueChromeWebOrigin; set { _explicitNullValueChromeWebOrigin = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_origin"); else _explicitNullProperties?.Remove("chrome_web_origin"); } }
+        public string? ChromeWebOrigin { get => _explicitNullValueChromeWebOrigin; set { _explicitNullValueChromeWebOrigin = value; AdditionalData?.Remove("chrome_web_origin"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_origin"); else _explicitNullProperties?.Remove("chrome_web_origin"); } }
         private string? _explicitNullValueChromeWebOrigin = default!;
 #nullable restore
 #else
-        public string ChromeWebOrigin { get => _explicitNullValueChromeWebOrigin; set { _explicitNullValueChromeWebOrigin = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_origin"); else _explicitNullProperties?.Remove("chrome_web_origin"); } }
+        public string ChromeWebOrigin { get => _explicitNullValueChromeWebOrigin; set { _explicitNullValueChromeWebOrigin = value; AdditionalData?.Remove("chrome_web_origin"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_origin"); else _explicitNullProperties?.Remove("chrome_web_origin"); } }
         private string _explicitNullValueChromeWebOrigin = default!;
 #endif
         /// <summary>Chrome (All Browsers except Safari): A subdomain of your choice in order to support Web Push on non-HTTPS websites. This field must be set in order for the chrome_web_gcm_sender_id property to be processed.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChromeWebSubDomain { get => _explicitNullValueChromeWebSubDomain; set { _explicitNullValueChromeWebSubDomain = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_sub_domain"); else _explicitNullProperties?.Remove("chrome_web_sub_domain"); } }
+        public string? ChromeWebSubDomain { get => _explicitNullValueChromeWebSubDomain; set { _explicitNullValueChromeWebSubDomain = value; AdditionalData?.Remove("chrome_web_sub_domain"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_sub_domain"); else _explicitNullProperties?.Remove("chrome_web_sub_domain"); } }
         private string? _explicitNullValueChromeWebSubDomain = default!;
 #nullable restore
 #else
-        public string ChromeWebSubDomain { get => _explicitNullValueChromeWebSubDomain; set { _explicitNullValueChromeWebSubDomain = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_sub_domain"); else _explicitNullProperties?.Remove("chrome_web_sub_domain"); } }
+        public string ChromeWebSubDomain { get => _explicitNullValueChromeWebSubDomain; set { _explicitNullValueChromeWebSubDomain = value; AdditionalData?.Remove("chrome_web_sub_domain"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("chrome_web_sub_domain"); else _explicitNullProperties?.Remove("chrome_web_sub_domain"); } }
         private string _explicitNullValueChromeWebSubDomain = default!;
 #endif
         /// <summary>The created_at property</summary>
@@ -179,11 +200,11 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Android: Your Google Push Messaging Auth Key</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? GcmKey { get => _explicitNullValueGcmKey; set { _explicitNullValueGcmKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("gcm_key"); else _explicitNullProperties?.Remove("gcm_key"); } }
+        public string? GcmKey { get => _explicitNullValueGcmKey; set { _explicitNullValueGcmKey = value; AdditionalData?.Remove("gcm_key"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("gcm_key"); else _explicitNullProperties?.Remove("gcm_key"); } }
         private string? _explicitNullValueGcmKey = default!;
 #nullable restore
 #else
-        public string GcmKey { get => _explicitNullValueGcmKey; set { _explicitNullValueGcmKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("gcm_key"); else _explicitNullProperties?.Remove("gcm_key"); } }
+        public string GcmKey { get => _explicitNullValueGcmKey; set { _explicitNullValueGcmKey = value; AdditionalData?.Remove("gcm_key"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("gcm_key"); else _explicitNullProperties?.Remove("gcm_key"); } }
         private string _explicitNullValueGcmKey = default!;
 #endif
         /// <summary>The id property</summary>
@@ -199,21 +220,21 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The name of your app, as displayed on your apps list on the dashboard.  This can be renamed.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; AdditionalData?.Remove("name"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
         private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; AdditionalData?.Remove("name"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("name"); else _explicitNullProperties?.Remove("name"); } }
         private string _explicitNullValueName = default!;
 #endif
         /// <summary>The Id of the Organization you would like to add this app to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? OrganizationId { get => _explicitNullValueOrganizationId; set { _explicitNullValueOrganizationId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("organization_id"); else _explicitNullProperties?.Remove("organization_id"); } }
+        public string? OrganizationId { get => _explicitNullValueOrganizationId; set { _explicitNullValueOrganizationId = value; AdditionalData?.Remove("organization_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("organization_id"); else _explicitNullProperties?.Remove("organization_id"); } }
         private string? _explicitNullValueOrganizationId = default!;
 #nullable restore
 #else
-        public string OrganizationId { get => _explicitNullValueOrganizationId; set { _explicitNullValueOrganizationId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("organization_id"); else _explicitNullProperties?.Remove("organization_id"); } }
+        public string OrganizationId { get => _explicitNullValueOrganizationId; set { _explicitNullValueOrganizationId = value; AdditionalData?.Remove("organization_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("organization_id"); else _explicitNullProperties?.Remove("organization_id"); } }
         private string _explicitNullValueOrganizationId = default!;
 #endif
         /// <summary>The players property</summary>
@@ -229,21 +250,21 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Safari: Your apple push notification p12 certificate file for Safari Push Notifications, converted to a string and Base64 encoded.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SafariApnsP12 { get => _explicitNullValueSafariApnsP12; set { _explicitNullValueSafariApnsP12 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12"); else _explicitNullProperties?.Remove("safari_apns_p12"); } }
+        public string? SafariApnsP12 { get => _explicitNullValueSafariApnsP12; set { _explicitNullValueSafariApnsP12 = value; AdditionalData?.Remove("safari_apns_p12"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12"); else _explicitNullProperties?.Remove("safari_apns_p12"); } }
         private string? _explicitNullValueSafariApnsP12 = default!;
 #nullable restore
 #else
-        public string SafariApnsP12 { get => _explicitNullValueSafariApnsP12; set { _explicitNullValueSafariApnsP12 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12"); else _explicitNullProperties?.Remove("safari_apns_p12"); } }
+        public string SafariApnsP12 { get => _explicitNullValueSafariApnsP12; set { _explicitNullValueSafariApnsP12 = value; AdditionalData?.Remove("safari_apns_p12"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12"); else _explicitNullProperties?.Remove("safari_apns_p12"); } }
         private string _explicitNullValueSafariApnsP12 = default!;
 #endif
         /// <summary>Safari: Password for safari_apns_p12 file</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SafariApnsP12Password { get => _explicitNullValueSafariApnsP12Password; set { _explicitNullValueSafariApnsP12Password = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12_password"); else _explicitNullProperties?.Remove("safari_apns_p12_password"); } }
+        public string? SafariApnsP12Password { get => _explicitNullValueSafariApnsP12Password; set { _explicitNullValueSafariApnsP12Password = value; AdditionalData?.Remove("safari_apns_p12_password"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12_password"); else _explicitNullProperties?.Remove("safari_apns_p12_password"); } }
         private string? _explicitNullValueSafariApnsP12Password = default!;
 #nullable restore
 #else
-        public string SafariApnsP12Password { get => _explicitNullValueSafariApnsP12Password; set { _explicitNullValueSafariApnsP12Password = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12_password"); else _explicitNullProperties?.Remove("safari_apns_p12_password"); } }
+        public string SafariApnsP12Password { get => _explicitNullValueSafariApnsP12Password; set { _explicitNullValueSafariApnsP12Password = value; AdditionalData?.Remove("safari_apns_p12_password"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_apns_p12_password"); else _explicitNullProperties?.Remove("safari_apns_p12_password"); } }
         private string _explicitNullValueSafariApnsP12Password = default!;
 #endif
         /// <summary>The safari_icon_128_128 property</summary>
@@ -265,11 +286,11 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Safari: A url for a 256x256 png notification icon. This is the only Safari icon URL you need to provide.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SafariIcon256256 { get => _explicitNullValueSafariIcon256256; set { _explicitNullValueSafariIcon256256 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_icon_256_256"); else _explicitNullProperties?.Remove("safari_icon_256_256"); } }
+        public string? SafariIcon256256 { get => _explicitNullValueSafariIcon256256; set { _explicitNullValueSafariIcon256256 = value; AdditionalData?.Remove("safari_icon_256_256"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_icon_256_256"); else _explicitNullProperties?.Remove("safari_icon_256_256"); } }
         private string? _explicitNullValueSafariIcon256256 = default!;
 #nullable restore
 #else
-        public string SafariIcon256256 { get => _explicitNullValueSafariIcon256256; set { _explicitNullValueSafariIcon256256 = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_icon_256_256"); else _explicitNullProperties?.Remove("safari_icon_256_256"); } }
+        public string SafariIcon256256 { get => _explicitNullValueSafariIcon256256; set { _explicitNullValueSafariIcon256256 = value; AdditionalData?.Remove("safari_icon_256_256"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_icon_256_256"); else _explicitNullProperties?.Remove("safari_icon_256_256"); } }
         private string _explicitNullValueSafariIcon256256 = default!;
 #endif
         /// <summary>The safari_icon_32_32 property</summary>
@@ -299,21 +320,21 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Safari (Recommended): The hostname to your website including http(s)://</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SafariSiteOrigin { get => _explicitNullValueSafariSiteOrigin; set { _explicitNullValueSafariSiteOrigin = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_site_origin"); else _explicitNullProperties?.Remove("safari_site_origin"); } }
+        public string? SafariSiteOrigin { get => _explicitNullValueSafariSiteOrigin; set { _explicitNullValueSafariSiteOrigin = value; AdditionalData?.Remove("safari_site_origin"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_site_origin"); else _explicitNullProperties?.Remove("safari_site_origin"); } }
         private string? _explicitNullValueSafariSiteOrigin = default!;
 #nullable restore
 #else
-        public string SafariSiteOrigin { get => _explicitNullValueSafariSiteOrigin; set { _explicitNullValueSafariSiteOrigin = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_site_origin"); else _explicitNullProperties?.Remove("safari_site_origin"); } }
+        public string SafariSiteOrigin { get => _explicitNullValueSafariSiteOrigin; set { _explicitNullValueSafariSiteOrigin = value; AdditionalData?.Remove("safari_site_origin"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("safari_site_origin"); else _explicitNullProperties?.Remove("safari_site_origin"); } }
         private string _explicitNullValueSafariSiteOrigin = default!;
 #endif
         /// <summary>All Browsers (Recommended): The Site Name. Requires both chrome_web_origin and safari_site_origin to be set to add or update it.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SiteName { get => _explicitNullValueSiteName; set { _explicitNullValueSiteName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("site_name"); else _explicitNullProperties?.Remove("site_name"); } }
+        public string? SiteName { get => _explicitNullValueSiteName; set { _explicitNullValueSiteName = value; AdditionalData?.Remove("site_name"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("site_name"); else _explicitNullProperties?.Remove("site_name"); } }
         private string? _explicitNullValueSiteName = default!;
 #nullable restore
 #else
-        public string SiteName { get => _explicitNullValueSiteName; set { _explicitNullValueSiteName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("site_name"); else _explicitNullProperties?.Remove("site_name"); } }
+        public string SiteName { get => _explicitNullValueSiteName; set { _explicitNullValueSiteName = value; AdditionalData?.Remove("site_name"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("site_name"); else _explicitNullProperties?.Remove("site_name"); } }
         private string _explicitNullValueSiteName = default!;
 #endif
         /// <summary>The updated_at property</summary>
@@ -347,7 +368,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
                 { "android_gcm_sender_id", n => { AndroidGcmSenderId = n.GetStringValue(); } },
                 { "apns_bundle_id", n => { ApnsBundleId = n.GetStringValue(); } },
                 { "apns_certificates", n => { ApnsCertificates = n.GetStringValue(); } },
-                { "apns_env", n => { ApnsEnv = n.GetEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.AppApnsEnv>(); } },
+                { "apns_env", n => { var parsed = n.GetEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.AppApnsEnv>(); if (parsed == null && n.GetStringValue() is string unknown) { _explicitNullValueApnsEnv = default; _explicitNullProperties?.Remove("apns_env"); AdditionalData["apns_env"] = unknown; } else { ApnsEnv = parsed; AdditionalData.Remove("apns_env"); } } },
                 { "apns_key_id", n => { ApnsKeyId = n.GetStringValue(); } },
                 { "apns_p12", n => { ApnsP12 = n.GetStringValue(); } },
                 { "apns_p12_password", n => { ApnsP12Password = n.GetStringValue(); } },

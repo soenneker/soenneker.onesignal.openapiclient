@@ -17,7 +17,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("outcomes") is { } nullNodeOutcomes && nullNodeOutcomes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Outcomes = null;
+            if (parseNode.GetChildNode("outcomes") is null) { _explicitNullValueOutcomes = default!; _explicitNullProperties?.Remove("outcomes"); }
+            else if (parseNode.GetChildNode("outcomes") is { } nullNodeOutcomes && nullNodeOutcomes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Outcomes = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -25,11 +26,11 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The outcomes property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData>? Outcomes { get => _explicitNullValueOutcomes; set { _explicitNullValueOutcomes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("outcomes"); else _explicitNullProperties?.Remove("outcomes"); } }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData>? Outcomes { get => _explicitNullValueOutcomes; set { _explicitNullValueOutcomes = value; AdditionalData?.Remove("outcomes"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("outcomes"); else _explicitNullProperties?.Remove("outcomes"); } }
         private List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData>? _explicitNullValueOutcomes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData> Outcomes { get => _explicitNullValueOutcomes; set { _explicitNullValueOutcomes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("outcomes"); else _explicitNullProperties?.Remove("outcomes"); } }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData> Outcomes { get => _explicitNullValueOutcomes; set { _explicitNullValueOutcomes = value; AdditionalData?.Remove("outcomes"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("outcomes"); else _explicitNullProperties?.Remove("outcomes"); } }
         private List<global::Soenneker.OneSignal.OpenApiClient.Models.OutcomeData> _explicitNullValueOutcomes = default!;
 #endif
         /// <summary>

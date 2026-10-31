@@ -17,9 +17,12 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("deltas") is { } nullNodeDeltas && nullNodeDeltas.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Deltas = null;
-            if (parseNode.GetChildNode("properties") is { } nullNodeProperties && nullNodeProperties.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Properties = null;
-            if (parseNode.GetChildNode("refresh_device_metadata") is { } nullNodeRefreshDeviceMetadata && nullNodeRefreshDeviceMetadata.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RefreshDeviceMetadata = null;
+            if (parseNode.GetChildNode("deltas") is null) { _explicitNullValueDeltas = default!; _explicitNullProperties?.Remove("deltas"); }
+            else if (parseNode.GetChildNode("deltas") is { } nullNodeDeltas && nullNodeDeltas.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Deltas = null;
+            if (parseNode.GetChildNode("properties") is null) { _explicitNullValueProperties = default!; _explicitNullProperties?.Remove("properties"); }
+            else if (parseNode.GetChildNode("properties") is { } nullNodeProperties && nullNodeProperties.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Properties = null;
+            if (parseNode.GetChildNode("refresh_device_metadata") is null) { _explicitNullValueRefreshDeviceMetadata = default!; _explicitNullProperties?.Remove("refresh_device_metadata"); }
+            else if (parseNode.GetChildNode("refresh_device_metadata") is { } nullNodeRefreshDeviceMetadata && nullNodeRefreshDeviceMetadata.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RefreshDeviceMetadata = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -27,25 +30,25 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The deltas property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas? Deltas { get => _explicitNullValueDeltas; set { _explicitNullValueDeltas = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("deltas"); else _explicitNullProperties?.Remove("deltas"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas? Deltas { get => _explicitNullValueDeltas; set { _explicitNullValueDeltas = value; AdditionalData?.Remove("deltas"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("deltas"); else _explicitNullProperties?.Remove("deltas"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas? _explicitNullValueDeltas = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas Deltas { get => _explicitNullValueDeltas; set { _explicitNullValueDeltas = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("deltas"); else _explicitNullProperties?.Remove("deltas"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas Deltas { get => _explicitNullValueDeltas; set { _explicitNullValueDeltas = value; AdditionalData?.Remove("deltas"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("deltas"); else _explicitNullProperties?.Remove("deltas"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas _explicitNullValueDeltas = default!;
 #endif
         /// <summary>The properties property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject? Properties { get => _explicitNullValueProperties; set { _explicitNullValueProperties = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("properties"); else _explicitNullProperties?.Remove("properties"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject? Properties { get => _explicitNullValueProperties; set { _explicitNullValueProperties = value; AdditionalData?.Remove("properties"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("properties"); else _explicitNullProperties?.Remove("properties"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject? _explicitNullValueProperties = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject Properties { get => _explicitNullValueProperties; set { _explicitNullValueProperties = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("properties"); else _explicitNullProperties?.Remove("properties"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject Properties { get => _explicitNullValueProperties; set { _explicitNullValueProperties = value; AdditionalData?.Remove("properties"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("properties"); else _explicitNullProperties?.Remove("properties"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject _explicitNullValueProperties = default!;
 #endif
         /// <summary>The refresh_device_metadata property</summary>
-        public bool? RefreshDeviceMetadata { get => _explicitNullValueRefreshDeviceMetadata; set { _explicitNullValueRefreshDeviceMetadata = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("refresh_device_metadata"); else _explicitNullProperties?.Remove("refresh_device_metadata"); } }
+        public bool? RefreshDeviceMetadata { get => _explicitNullValueRefreshDeviceMetadata; set { _explicitNullValueRefreshDeviceMetadata = value; AdditionalData?.Remove("refresh_device_metadata"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("refresh_device_metadata"); else _explicitNullProperties?.Remove("refresh_device_metadata"); } }
         private bool? _explicitNullValueRefreshDeviceMetadata = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.UpdateUserRequest"/> and sets the default values.

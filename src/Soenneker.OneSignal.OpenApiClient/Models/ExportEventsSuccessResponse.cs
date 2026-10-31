@@ -17,7 +17,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("csv_file_url") is { } nullNodeCsvFileUrl && nullNodeCsvFileUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CsvFileUrl = null;
+            if (parseNode.GetChildNode("csv_file_url") is null) { _explicitNullValueCsvFileUrl = default!; _explicitNullProperties?.Remove("csv_file_url"); }
+            else if (parseNode.GetChildNode("csv_file_url") is { } nullNodeCsvFileUrl && nullNodeCsvFileUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CsvFileUrl = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -25,11 +26,11 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The csv_file_url property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CsvFileUrl { get => _explicitNullValueCsvFileUrl; set { _explicitNullValueCsvFileUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("csv_file_url"); else _explicitNullProperties?.Remove("csv_file_url"); } }
+        public string? CsvFileUrl { get => _explicitNullValueCsvFileUrl; set { _explicitNullValueCsvFileUrl = value; AdditionalData?.Remove("csv_file_url"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("csv_file_url"); else _explicitNullProperties?.Remove("csv_file_url"); } }
         private string? _explicitNullValueCsvFileUrl = default!;
 #nullable restore
 #else
-        public string CsvFileUrl { get => _explicitNullValueCsvFileUrl; set { _explicitNullValueCsvFileUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("csv_file_url"); else _explicitNullProperties?.Remove("csv_file_url"); } }
+        public string CsvFileUrl { get => _explicitNullValueCsvFileUrl; set { _explicitNullValueCsvFileUrl = value; AdditionalData?.Remove("csv_file_url"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("csv_file_url"); else _explicitNullProperties?.Remove("csv_file_url"); } }
         private string _explicitNullValueCsvFileUrl = default!;
 #endif
         /// <summary>

@@ -17,7 +17,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("alias_label") is { } nullNodeAliasLabel && nullNodeAliasLabel.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AliasLabel = null;
+            if (parseNode.GetChildNode("alias_label") is null) { _explicitNullValueAliasLabel = default!; _explicitNullProperties?.Remove("alias_label"); }
+            else if (parseNode.GetChildNode("alias_label") is { } nullNodeAliasLabel && nullNodeAliasLabel.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AliasLabel = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -25,11 +26,11 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The alias_label property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? AliasLabel { get => _explicitNullValueAliasLabel; set { _explicitNullValueAliasLabel = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("alias_label"); else _explicitNullProperties?.Remove("alias_label"); } }
+        public List<string>? AliasLabel { get => _explicitNullValueAliasLabel; set { _explicitNullValueAliasLabel = value; AdditionalData?.Remove("alias_label"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("alias_label"); else _explicitNullProperties?.Remove("alias_label"); } }
         private List<string>? _explicitNullValueAliasLabel = default!;
 #nullable restore
 #else
-        public List<string> AliasLabel { get => _explicitNullValueAliasLabel; set { _explicitNullValueAliasLabel = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("alias_label"); else _explicitNullProperties?.Remove("alias_label"); } }
+        public List<string> AliasLabel { get => _explicitNullValueAliasLabel; set { _explicitNullValueAliasLabel = value; AdditionalData?.Remove("alias_label"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("alias_label"); else _explicitNullProperties?.Remove("alias_label"); } }
         private List<string> _explicitNullValueAliasLabel = default!;
 #endif
         /// <summary>

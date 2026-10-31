@@ -17,8 +17,10 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("errors") is { } nullNodeErrors && nullNodeErrors.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Errors = null;
-            if (parseNode.GetChildNode("notification_id") is { } nullNodeNotificationId && nullNodeNotificationId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NotificationId = null;
+            if (parseNode.GetChildNode("errors") is null) { _explicitNullValueErrors = default!; _explicitNullProperties?.Remove("errors"); }
+            else if (parseNode.GetChildNode("errors") is { } nullNodeErrors && nullNodeErrors.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Errors = null;
+            if (parseNode.GetChildNode("notification_id") is null) { _explicitNullValueNotificationId = default!; _explicitNullProperties?.Remove("notification_id"); }
+            else if (parseNode.GetChildNode("notification_id") is { } nullNodeNotificationId && nullNodeNotificationId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NotificationId = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -26,21 +28,21 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The errors property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.Notification200Errors? Errors { get => _explicitNullValueErrors; set { _explicitNullValueErrors = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("errors"); else _explicitNullProperties?.Remove("errors"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.Notification200Errors? Errors { get => _explicitNullValueErrors; set { _explicitNullValueErrors = value; AdditionalData?.Remove("errors"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("errors"); else _explicitNullProperties?.Remove("errors"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.Notification200Errors? _explicitNullValueErrors = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.Notification200Errors Errors { get => _explicitNullValueErrors; set { _explicitNullValueErrors = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("errors"); else _explicitNullProperties?.Remove("errors"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.Notification200Errors Errors { get => _explicitNullValueErrors; set { _explicitNullValueErrors = value; AdditionalData?.Remove("errors"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("errors"); else _explicitNullProperties?.Remove("errors"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.Notification200Errors _explicitNullValueErrors = default!;
 #endif
         /// <summary>The notification_id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? NotificationId { get => _explicitNullValueNotificationId; set { _explicitNullValueNotificationId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("notification_id"); else _explicitNullProperties?.Remove("notification_id"); } }
+        public string? NotificationId { get => _explicitNullValueNotificationId; set { _explicitNullValueNotificationId = value; AdditionalData?.Remove("notification_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("notification_id"); else _explicitNullProperties?.Remove("notification_id"); } }
         private string? _explicitNullValueNotificationId = default!;
 #nullable restore
 #else
-        public string NotificationId { get => _explicitNullValueNotificationId; set { _explicitNullValueNotificationId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("notification_id"); else _explicitNullProperties?.Remove("notification_id"); } }
+        public string NotificationId { get => _explicitNullValueNotificationId; set { _explicitNullValueNotificationId = value; AdditionalData?.Remove("notification_id"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("notification_id"); else _explicitNullProperties?.Remove("notification_id"); } }
         private string _explicitNullValueNotificationId = default!;
 #endif
         /// <summary>

@@ -17,9 +17,12 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("purchases") is { } nullNodePurchases && nullNodePurchases.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Purchases = null;
-            if (parseNode.GetChildNode("session_count") is { } nullNodeSessionCount && nullNodeSessionCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionCount = null;
-            if (parseNode.GetChildNode("session_time") is { } nullNodeSessionTime && nullNodeSessionTime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionTime = null;
+            if (parseNode.GetChildNode("purchases") is null) { _explicitNullValuePurchases = default!; _explicitNullProperties?.Remove("purchases"); }
+            else if (parseNode.GetChildNode("purchases") is { } nullNodePurchases && nullNodePurchases.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Purchases = null;
+            if (parseNode.GetChildNode("session_count") is null) { _explicitNullValueSessionCount = default!; _explicitNullProperties?.Remove("session_count"); }
+            else if (parseNode.GetChildNode("session_count") is { } nullNodeSessionCount && nullNodeSessionCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionCount = null;
+            if (parseNode.GetChildNode("session_time") is null) { _explicitNullValueSessionTime = default!; _explicitNullProperties?.Remove("session_time"); }
+            else if (parseNode.GetChildNode("session_time") is { } nullNodeSessionTime && nullNodeSessionTime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionTime = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -27,18 +30,18 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The purchases property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Purchase>? Purchases { get => _explicitNullValuePurchases; set { _explicitNullValuePurchases = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("purchases"); else _explicitNullProperties?.Remove("purchases"); } }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Purchase>? Purchases { get => _explicitNullValuePurchases; set { _explicitNullValuePurchases = value; AdditionalData?.Remove("purchases"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("purchases"); else _explicitNullProperties?.Remove("purchases"); } }
         private List<global::Soenneker.OneSignal.OpenApiClient.Models.Purchase>? _explicitNullValuePurchases = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Purchase> Purchases { get => _explicitNullValuePurchases; set { _explicitNullValuePurchases = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("purchases"); else _explicitNullProperties?.Remove("purchases"); } }
+        public List<global::Soenneker.OneSignal.OpenApiClient.Models.Purchase> Purchases { get => _explicitNullValuePurchases; set { _explicitNullValuePurchases = value; AdditionalData?.Remove("purchases"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("purchases"); else _explicitNullProperties?.Remove("purchases"); } }
         private List<global::Soenneker.OneSignal.OpenApiClient.Models.Purchase> _explicitNullValuePurchases = default!;
 #endif
         /// <summary>The session_count property</summary>
-        public double? SessionCount { get => _explicitNullValueSessionCount; set { _explicitNullValueSessionCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("session_count"); else _explicitNullProperties?.Remove("session_count"); } }
+        public double? SessionCount { get => _explicitNullValueSessionCount; set { _explicitNullValueSessionCount = value; AdditionalData?.Remove("session_count"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("session_count"); else _explicitNullProperties?.Remove("session_count"); } }
         private double? _explicitNullValueSessionCount = default!;
         /// <summary>The session_time property</summary>
-        public double? SessionTime { get => _explicitNullValueSessionTime; set { _explicitNullValueSessionTime = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("session_time"); else _explicitNullProperties?.Remove("session_time"); } }
+        public double? SessionTime { get => _explicitNullValueSessionTime; set { _explicitNullValueSessionTime = value; AdditionalData?.Remove("session_time"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("session_time"); else _explicitNullProperties?.Remove("session_time"); } }
         private double? _explicitNullValueSessionTime = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesDeltas"/> and sets the default values.

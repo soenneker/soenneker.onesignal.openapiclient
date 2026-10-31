@@ -17,9 +17,12 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("extra_fields") is { } nullNodeExtraFields && nullNodeExtraFields.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExtraFields = null;
-            if (parseNode.GetChildNode("last_active_since") is { } nullNodeLastActiveSince && nullNodeLastActiveSince.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastActiveSince = null;
-            if (parseNode.GetChildNode("segment_name") is { } nullNodeSegmentName && nullNodeSegmentName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SegmentName = null;
+            if (parseNode.GetChildNode("extra_fields") is null) { _explicitNullValueExtraFields = default!; _explicitNullProperties?.Remove("extra_fields"); }
+            else if (parseNode.GetChildNode("extra_fields") is { } nullNodeExtraFields && nullNodeExtraFields.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExtraFields = null;
+            if (parseNode.GetChildNode("last_active_since") is null) { _explicitNullValueLastActiveSince = default!; _explicitNullProperties?.Remove("last_active_since"); }
+            else if (parseNode.GetChildNode("last_active_since") is { } nullNodeLastActiveSince && nullNodeLastActiveSince.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastActiveSince = null;
+            if (parseNode.GetChildNode("segment_name") is null) { _explicitNullValueSegmentName = default!; _explicitNullProperties?.Remove("segment_name"); }
+            else if (parseNode.GetChildNode("segment_name") is { } nullNodeSegmentName && nullNodeSegmentName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SegmentName = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -27,31 +30,31 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Additional fields that you wish to include. Currently supports location, country, rooted, notification_types, ip, external_user_id, web_auth, and web_p256.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? ExtraFields { get => _explicitNullValueExtraFields; set { _explicitNullValueExtraFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("extra_fields"); else _explicitNullProperties?.Remove("extra_fields"); } }
+        public List<string>? ExtraFields { get => _explicitNullValueExtraFields; set { _explicitNullValueExtraFields = value; AdditionalData?.Remove("extra_fields"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("extra_fields"); else _explicitNullProperties?.Remove("extra_fields"); } }
         private List<string>? _explicitNullValueExtraFields = default!;
 #nullable restore
 #else
-        public List<string> ExtraFields { get => _explicitNullValueExtraFields; set { _explicitNullValueExtraFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("extra_fields"); else _explicitNullProperties?.Remove("extra_fields"); } }
+        public List<string> ExtraFields { get => _explicitNullValueExtraFields; set { _explicitNullValueExtraFields = value; AdditionalData?.Remove("extra_fields"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("extra_fields"); else _explicitNullProperties?.Remove("extra_fields"); } }
         private List<string> _explicitNullValueExtraFields = default!;
 #endif
         /// <summary>Export all devices with a last_active timestamp greater than this time.  Unixtime in seconds.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LastActiveSince { get => _explicitNullValueLastActiveSince; set { _explicitNullValueLastActiveSince = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active_since"); else _explicitNullProperties?.Remove("last_active_since"); } }
+        public string? LastActiveSince { get => _explicitNullValueLastActiveSince; set { _explicitNullValueLastActiveSince = value; AdditionalData?.Remove("last_active_since"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active_since"); else _explicitNullProperties?.Remove("last_active_since"); } }
         private string? _explicitNullValueLastActiveSince = default!;
 #nullable restore
 #else
-        public string LastActiveSince { get => _explicitNullValueLastActiveSince; set { _explicitNullValueLastActiveSince = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active_since"); else _explicitNullProperties?.Remove("last_active_since"); } }
+        public string LastActiveSince { get => _explicitNullValueLastActiveSince; set { _explicitNullValueLastActiveSince = value; AdditionalData?.Remove("last_active_since"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("last_active_since"); else _explicitNullProperties?.Remove("last_active_since"); } }
         private string _explicitNullValueLastActiveSince = default!;
 #endif
         /// <summary>Export all devices belonging to the segment.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SegmentName { get => _explicitNullValueSegmentName; set { _explicitNullValueSegmentName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("segment_name"); else _explicitNullProperties?.Remove("segment_name"); } }
+        public string? SegmentName { get => _explicitNullValueSegmentName; set { _explicitNullValueSegmentName = value; AdditionalData?.Remove("segment_name"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("segment_name"); else _explicitNullProperties?.Remove("segment_name"); } }
         private string? _explicitNullValueSegmentName = default!;
 #nullable restore
 #else
-        public string SegmentName { get => _explicitNullValueSegmentName; set { _explicitNullValueSegmentName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("segment_name"); else _explicitNullProperties?.Remove("segment_name"); } }
+        public string SegmentName { get => _explicitNullValueSegmentName; set { _explicitNullValueSegmentName = value; AdditionalData?.Remove("segment_name"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("segment_name"); else _explicitNullProperties?.Remove("segment_name"); } }
         private string _explicitNullValueSegmentName = default!;
 #endif
         /// <summary>

@@ -17,8 +17,10 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("invalid_external_user_ids") is { } nullNodeInvalidExternalUserIds && nullNodeInvalidExternalUserIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) InvalidExternalUserIds = null;
-            if (parseNode.GetChildNode("invalid_player_ids") is { } nullNodeInvalidPlayerIds && nullNodeInvalidPlayerIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) InvalidPlayerIds = null;
+            if (parseNode.GetChildNode("invalid_external_user_ids") is null) { _explicitNullValueInvalidExternalUserIds = default!; _explicitNullProperties?.Remove("invalid_external_user_ids"); }
+            else if (parseNode.GetChildNode("invalid_external_user_ids") is { } nullNodeInvalidExternalUserIds && nullNodeInvalidExternalUserIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) InvalidExternalUserIds = null;
+            if (parseNode.GetChildNode("invalid_player_ids") is null) { _explicitNullValueInvalidPlayerIds = default!; _explicitNullProperties?.Remove("invalid_player_ids"); }
+            else if (parseNode.GetChildNode("invalid_player_ids") is { } nullNodeInvalidPlayerIds && nullNodeInvalidPlayerIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) InvalidPlayerIds = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -26,21 +28,21 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Returned if using include_external_user_ids</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? InvalidExternalUserIds { get => _explicitNullValueInvalidExternalUserIds; set { _explicitNullValueInvalidExternalUserIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_external_user_ids"); else _explicitNullProperties?.Remove("invalid_external_user_ids"); } }
+        public List<string>? InvalidExternalUserIds { get => _explicitNullValueInvalidExternalUserIds; set { _explicitNullValueInvalidExternalUserIds = value; AdditionalData?.Remove("invalid_external_user_ids"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_external_user_ids"); else _explicitNullProperties?.Remove("invalid_external_user_ids"); } }
         private List<string>? _explicitNullValueInvalidExternalUserIds = default!;
 #nullable restore
 #else
-        public List<string> InvalidExternalUserIds { get => _explicitNullValueInvalidExternalUserIds; set { _explicitNullValueInvalidExternalUserIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_external_user_ids"); else _explicitNullProperties?.Remove("invalid_external_user_ids"); } }
+        public List<string> InvalidExternalUserIds { get => _explicitNullValueInvalidExternalUserIds; set { _explicitNullValueInvalidExternalUserIds = value; AdditionalData?.Remove("invalid_external_user_ids"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_external_user_ids"); else _explicitNullProperties?.Remove("invalid_external_user_ids"); } }
         private List<string> _explicitNullValueInvalidExternalUserIds = default!;
 #endif
         /// <summary>Returned if using include_player_ids and some were valid and others were not.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? InvalidPlayerIds { get => _explicitNullValueInvalidPlayerIds; set { _explicitNullValueInvalidPlayerIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_player_ids"); else _explicitNullProperties?.Remove("invalid_player_ids"); } }
+        public List<string>? InvalidPlayerIds { get => _explicitNullValueInvalidPlayerIds; set { _explicitNullValueInvalidPlayerIds = value; AdditionalData?.Remove("invalid_player_ids"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_player_ids"); else _explicitNullProperties?.Remove("invalid_player_ids"); } }
         private List<string>? _explicitNullValueInvalidPlayerIds = default!;
 #nullable restore
 #else
-        public List<string> InvalidPlayerIds { get => _explicitNullValueInvalidPlayerIds; set { _explicitNullValueInvalidPlayerIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_player_ids"); else _explicitNullProperties?.Remove("invalid_player_ids"); } }
+        public List<string> InvalidPlayerIds { get => _explicitNullValueInvalidPlayerIds; set { _explicitNullValueInvalidPlayerIds = value; AdditionalData?.Remove("invalid_player_ids"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("invalid_player_ids"); else _explicitNullProperties?.Remove("invalid_player_ids"); } }
         private List<string> _explicitNullValueInvalidPlayerIds = default!;
 #endif
         /// <summary>

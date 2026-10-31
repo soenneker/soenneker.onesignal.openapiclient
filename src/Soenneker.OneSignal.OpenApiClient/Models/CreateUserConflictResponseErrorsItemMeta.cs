@@ -17,7 +17,8 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("conflicting_aliases") is { } nullNodeConflictingAliases && nullNodeConflictingAliases.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ConflictingAliases = null;
+            if (parseNode.GetChildNode("conflicting_aliases") is null) { _explicitNullValueConflictingAliases = default!; _explicitNullProperties?.Remove("conflicting_aliases"); }
+            else if (parseNode.GetChildNode("conflicting_aliases") is { } nullNodeConflictingAliases && nullNodeConflictingAliases.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ConflictingAliases = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -25,11 +26,11 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>The conflicting_aliases property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.CreateUserConflictResponseErrorsItemMetaConflictingAliasesProperty? ConflictingAliases { get => _explicitNullValueConflictingAliases; set { _explicitNullValueConflictingAliases = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("conflicting_aliases"); else _explicitNullProperties?.Remove("conflicting_aliases"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.CreateUserConflictResponseErrorsItemMetaConflictingAliasesProperty? ConflictingAliases { get => _explicitNullValueConflictingAliases; set { _explicitNullValueConflictingAliases = value; AdditionalData?.Remove("conflicting_aliases"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("conflicting_aliases"); else _explicitNullProperties?.Remove("conflicting_aliases"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.CreateUserConflictResponseErrorsItemMetaConflictingAliasesProperty? _explicitNullValueConflictingAliases = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.CreateUserConflictResponseErrorsItemMetaConflictingAliasesProperty ConflictingAliases { get => _explicitNullValueConflictingAliases; set { _explicitNullValueConflictingAliases = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("conflicting_aliases"); else _explicitNullProperties?.Remove("conflicting_aliases"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.CreateUserConflictResponseErrorsItemMetaConflictingAliasesProperty ConflictingAliases { get => _explicitNullValueConflictingAliases; set { _explicitNullValueConflictingAliases = value; AdditionalData?.Remove("conflicting_aliases"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("conflicting_aliases"); else _explicitNullProperties?.Remove("conflicting_aliases"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.CreateUserConflictResponseErrorsItemMetaConflictingAliasesProperty _explicitNullValueConflictingAliases = default!;
 #endif
         /// <summary>

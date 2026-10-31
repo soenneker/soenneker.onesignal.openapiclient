@@ -17,23 +17,25 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("retain_previous_owner") is { } nullNodeRetainPreviousOwner && nullNodeRetainPreviousOwner.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RetainPreviousOwner = null;
-            if (parseNode.GetChildNode("subscription") is { } nullNodeSubscription && nullNodeSubscription.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Subscription = null;
+            if (parseNode.GetChildNode("retain_previous_owner") is null) { _explicitNullValueRetainPreviousOwner = default!; _explicitNullProperties?.Remove("retain_previous_owner"); }
+            else if (parseNode.GetChildNode("retain_previous_owner") is { } nullNodeRetainPreviousOwner && nullNodeRetainPreviousOwner.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RetainPreviousOwner = null;
+            if (parseNode.GetChildNode("subscription") is null) { _explicitNullValueSubscription = default!; _explicitNullProperties?.Remove("subscription"); }
+            else if (parseNode.GetChildNode("subscription") is { } nullNodeSubscription && nullNodeSubscription.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Subscription = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>The retain_previous_owner property</summary>
-        public bool? RetainPreviousOwner { get => _explicitNullValueRetainPreviousOwner; set { _explicitNullValueRetainPreviousOwner = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("retain_previous_owner"); else _explicitNullProperties?.Remove("retain_previous_owner"); } }
+        public bool? RetainPreviousOwner { get => _explicitNullValueRetainPreviousOwner; set { _explicitNullValueRetainPreviousOwner = value; AdditionalData?.Remove("retain_previous_owner"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("retain_previous_owner"); else _explicitNullProperties?.Remove("retain_previous_owner"); } }
         private bool? _explicitNullValueRetainPreviousOwner = default!;
         /// <summary>The subscription property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.OneSignal.OpenApiClient.Models.SubscriptionObject? Subscription { get => _explicitNullValueSubscription; set { _explicitNullValueSubscription = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("subscription"); else _explicitNullProperties?.Remove("subscription"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.SubscriptionObject? Subscription { get => _explicitNullValueSubscription; set { _explicitNullValueSubscription = value; AdditionalData?.Remove("subscription"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("subscription"); else _explicitNullProperties?.Remove("subscription"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.SubscriptionObject? _explicitNullValueSubscription = default!;
 #nullable restore
 #else
-        public global::Soenneker.OneSignal.OpenApiClient.Models.SubscriptionObject Subscription { get => _explicitNullValueSubscription; set { _explicitNullValueSubscription = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("subscription"); else _explicitNullProperties?.Remove("subscription"); } }
+        public global::Soenneker.OneSignal.OpenApiClient.Models.SubscriptionObject Subscription { get => _explicitNullValueSubscription; set { _explicitNullValueSubscription = value; AdditionalData?.Remove("subscription"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("subscription"); else _explicitNullProperties?.Remove("subscription"); } }
         private global::Soenneker.OneSignal.OpenApiClient.Models.SubscriptionObject _explicitNullValueSubscription = default!;
 #endif
         /// <summary>

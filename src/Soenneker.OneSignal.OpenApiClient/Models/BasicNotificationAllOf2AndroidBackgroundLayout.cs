@@ -18,9 +18,12 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("contents_color") is { } nullNodeContentsColor && nullNodeContentsColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContentsColor = null;
-            if (parseNode.GetChildNode("headings_color") is { } nullNodeHeadingsColor && nullNodeHeadingsColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HeadingsColor = null;
-            if (parseNode.GetChildNode("image") is { } nullNodeImage && nullNodeImage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Image = null;
+            if (parseNode.GetChildNode("contents_color") is null) { _explicitNullValueContentsColor = default!; _explicitNullProperties?.Remove("contents_color"); }
+            else if (parseNode.GetChildNode("contents_color") is { } nullNodeContentsColor && nullNodeContentsColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContentsColor = null;
+            if (parseNode.GetChildNode("headings_color") is null) { _explicitNullValueHeadingsColor = default!; _explicitNullProperties?.Remove("headings_color"); }
+            else if (parseNode.GetChildNode("headings_color") is { } nullNodeHeadingsColor && nullNodeHeadingsColor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HeadingsColor = null;
+            if (parseNode.GetChildNode("image") is null) { _explicitNullValueImage = default!; _explicitNullProperties?.Remove("image"); }
+            else if (parseNode.GetChildNode("image") is { } nullNodeImage && nullNodeImage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Image = null;
         }
 
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
@@ -28,31 +31,31 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <summary>Body text color ARGB Hex format. Example(Red) &quot;FFFF0000&quot;.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ContentsColor { get => _explicitNullValueContentsColor; set { _explicitNullValueContentsColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("contents_color"); else _explicitNullProperties?.Remove("contents_color"); } }
+        public string? ContentsColor { get => _explicitNullValueContentsColor; set { _explicitNullValueContentsColor = value; AdditionalData?.Remove("contents_color"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("contents_color"); else _explicitNullProperties?.Remove("contents_color"); } }
         private string? _explicitNullValueContentsColor = default!;
 #nullable restore
 #else
-        public string ContentsColor { get => _explicitNullValueContentsColor; set { _explicitNullValueContentsColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("contents_color"); else _explicitNullProperties?.Remove("contents_color"); } }
+        public string ContentsColor { get => _explicitNullValueContentsColor; set { _explicitNullValueContentsColor = value; AdditionalData?.Remove("contents_color"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("contents_color"); else _explicitNullProperties?.Remove("contents_color"); } }
         private string _explicitNullValueContentsColor = default!;
 #endif
         /// <summary>Title text color ARGB Hex format. Example(Blue) &quot;FF0000FF&quot;.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HeadingsColor { get => _explicitNullValueHeadingsColor; set { _explicitNullValueHeadingsColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("headings_color"); else _explicitNullProperties?.Remove("headings_color"); } }
+        public string? HeadingsColor { get => _explicitNullValueHeadingsColor; set { _explicitNullValueHeadingsColor = value; AdditionalData?.Remove("headings_color"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("headings_color"); else _explicitNullProperties?.Remove("headings_color"); } }
         private string? _explicitNullValueHeadingsColor = default!;
 #nullable restore
 #else
-        public string HeadingsColor { get => _explicitNullValueHeadingsColor; set { _explicitNullValueHeadingsColor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("headings_color"); else _explicitNullProperties?.Remove("headings_color"); } }
+        public string HeadingsColor { get => _explicitNullValueHeadingsColor; set { _explicitNullValueHeadingsColor = value; AdditionalData?.Remove("headings_color"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("headings_color"); else _explicitNullProperties?.Remove("headings_color"); } }
         private string _explicitNullValueHeadingsColor = default!;
 #endif
         /// <summary>Asset file, android resource name, or URL to remote image.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Image { get => _explicitNullValueImage; set { _explicitNullValueImage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("image"); else _explicitNullProperties?.Remove("image"); } }
+        public string? Image { get => _explicitNullValueImage; set { _explicitNullValueImage = value; AdditionalData?.Remove("image"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("image"); else _explicitNullProperties?.Remove("image"); } }
         private string? _explicitNullValueImage = default!;
 #nullable restore
 #else
-        public string Image { get => _explicitNullValueImage; set { _explicitNullValueImage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("image"); else _explicitNullProperties?.Remove("image"); } }
+        public string Image { get => _explicitNullValueImage; set { _explicitNullValueImage = value; AdditionalData?.Remove("image"); if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("image"); else _explicitNullProperties?.Remove("image"); } }
         private string _explicitNullValueImage = default!;
 #endif
         /// <summary>
