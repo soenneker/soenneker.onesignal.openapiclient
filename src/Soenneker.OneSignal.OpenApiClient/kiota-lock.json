@@ -2,7 +2,7 @@
   "descriptionHash": "6975A1D072D1CA40A4399E5B2E523A973BED006F0D447242F8356954944A6B1E19AAF3BC605A69E48F7C2B022FDD410039F2077FEC6E3DBCD8AE8BB08D702172",
   "descriptionLocation": "../../openapi.fixed.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.37.0",
+  "kiotaVersion": "1.38.0",
   "clientClassName": "OneSignalOpenApiClient",
   "typeAccessModifier": "Public",
   "clientNamespaceName": "Soenneker.OneSignal.OpenApiClient",
