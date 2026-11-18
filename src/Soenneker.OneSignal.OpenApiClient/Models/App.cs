@@ -362,7 +362,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(34)
             {
                 { "additional_data_is_root_payload", n => { AdditionalDataIsRootPayload = n.GetBoolValue(); } },
                 { "android_gcm_sender_id", n => { AndroidGcmSenderId = n.GetStringValue(); } },

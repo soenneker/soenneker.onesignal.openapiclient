@@ -71,7 +71,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(4)
             {
                 { "dismiss_at", n => { DismissAt = n.GetDoubleValue(); } },
                 { "event", n => { var parsed = n.GetEnumValue<global::Soenneker.OneSignal.OpenApiClient.Models.UpdateLiveActivityRequestEvent>(); if (parsed == null && n.GetStringValue() is string unknown) { _explicitNullValueEvent = default; _explicitNullProperties?.Remove("event"); AdditionalData["event"] = unknown; } else { Event = parsed; AdditionalData.Remove("event"); } } },

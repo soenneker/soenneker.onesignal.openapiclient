@@ -92,7 +92,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(4)
             {
                 { "identity", n => { Identity = n.GetObjectValue<global::Soenneker.OneSignal.OpenApiClient.Models.UserIdentity>(global::Soenneker.OneSignal.OpenApiClient.Models.UserIdentity.CreateFromDiscriminatorValue); } },
                 { "properties", n => { Properties = n.GetObjectValue<global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject>(global::Soenneker.OneSignal.OpenApiClient.Models.PropertiesObject.CreateFromDiscriminatorValue); } },

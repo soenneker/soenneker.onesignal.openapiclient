@@ -561,7 +561,7 @@ namespace Soenneker.OneSignal.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(43)
             {
                 { "ar", n => { Ar = n.GetStringValue(); } },
                 { "bg", n => { Bg = n.GetStringValue(); } },
